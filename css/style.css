@@ -355,8 +355,8 @@ img {
 }
 
 #content-container {
-        margin: 10px;
-    background: url("/img/characters/biotemplatebg.png") no-repeat;
+    margin: 10px;
+    background: url("efarcomic.github.io/img/characters/biotemplatebg.png") no-repeat;
     display: flex;
     align-items: flex-start; /* Align items at the start (top) of the cross axis */
     flex-direction: row; /* Arrange items in a row */
