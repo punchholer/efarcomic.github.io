@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="css/style.css" rel="stylesheet" type="text/css" media="all">
+    <title>WebComic | Archive</title>
+
+    <!-- fonts -->
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <!-- Cherry Cream Soda -->
+    <link href="https://fonts.googleapis.com/css2?family=Cherry+Cream+Soda&display=swap" rel="stylesheet">
+     <!-- Font Awesome -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css" integrity="sha512-waa67R2WJ4PmFJUHFLkSm8Q0iXC3m63mgIDlfvksOTELuk9JbiF7pfoR8eC4ZczuRrelL9tkAyyZ0ssAJH2sRA==" crossorigin="anonymous" />
+</head>
+<body>
+    <!-- header -->
+    <div class="writeHeader" align="center"></div>
+    <div id="mobile-menu-icon" class="mobile-menu-icon">&#9776;</div>
+
+    <div class="archivePage subPage" align="center">
+        
+        <h1>Archive</h1>
+        <script>
+        indexPage = "index.html" //set which html page your comics are on, supremely important. archive system will break otherwise
+        </script>
+
+        <div class="chapter1">
+            <h2>Chapter 1</h2>
+        </div>
+
+        <div class="chapter2">
+            <h2>Chapter 2</h2>
+        </div>
+
+        <div class="chapter3">
+            <h2>Chapter 3</h2>
+        </div>
+
+        <div class="chapter4">
+            <h2>Chapter 4</h2>
+        </div>
+    </div>
+    
+    <!-- footer-->
+    <div class="writeFooter"></div>
+
+<!-- really important- every js script is called here, be sure to always put them just before the closing body tag, use a defer attribute, and call them in this specific order.-->
+<script src="js/comic_header.js" defer></script>
+<script src="js/comic_settings.js" defer></script>
+<script src="js/comic_archive.js" defer></script>
+<script src="js/comic_footer.js" defer></script>
+</body>
+</html>
