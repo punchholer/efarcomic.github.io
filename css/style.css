@@ -424,7 +424,7 @@ img {
 
  #content-container {
         flex-direction: column;
-    background: url("/img/characters/biotemplatebg.png");
+    background: url("efarcomic.github.io/img/characters/biotemplatebg.png");
         align-items: center;
     }
 
