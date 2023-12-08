@@ -17,4 +17,5 @@ function caesarDecode(text, shift) {
         const decodedChar = String.fromCharCode((char.charCodeAt(0) - offset - shift + 26) % 26 + offset);
         return isUpperCase ? decodedChar.toUpperCase() : decodedChar;
     });
+
 }

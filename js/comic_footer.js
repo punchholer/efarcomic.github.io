@@ -1,4 +1,3 @@
-<<<<<<< HEAD
 document.querySelector(".writeFooter").innerHTML = `
     <footer align="center">
        <div id="social-icons">
@@ -14,5 +13,4 @@ document.querySelector(".writeFooter").innerHTML = `
     </div>
     </footer>
 `;
-
 document.styleSheets[0].insertRule('.social-icons-container a { margin-right: 5px; }', 0);
