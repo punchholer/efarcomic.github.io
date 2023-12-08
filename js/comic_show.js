@@ -196,6 +196,4 @@ function keyNav() {
     window.scrollBy({ top: 30 });
   }
 
-
-
 });};

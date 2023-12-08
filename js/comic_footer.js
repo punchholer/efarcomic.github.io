@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 document.querySelector(".writeFooter").innerHTML = `
     <footer align="center">
        <div id="social-icons">

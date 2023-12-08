@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 //comic_archive.js was created by geno7
 
 //Writing sections of the archive page involves 2 steps:
@@ -97,6 +98,4 @@ function writeArchive(divClass, min, max, reverseOrder, useThumbs,useNums) {
         //left align text if not using thumbnails
         cellTitle.className += " leftAlignTableText";
     }
-    
-    
 }
