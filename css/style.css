@@ -435,7 +435,7 @@ img {
 
  #content-container {
         flex-direction: column;
-    background: url("..img/characters/biotemplatebg.png");
+    background: url("../img/characters/biotemplatebg.png");
         align-items: center;
     }
     
