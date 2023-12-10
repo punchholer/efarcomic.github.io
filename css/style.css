@@ -189,6 +189,11 @@ img {
 
 /* HOMEPAGE */
 
+.image-button img {
+    width: 600px; /* Adjust the width of the image */
+    height: auto;
+}
+
 /* style nav button images */
 
 #showComic {
@@ -300,6 +305,13 @@ img {
   line-height: 1px;
 }
 
+@media screen and (max-width: 600px) {
+    /* Adjust styles for smaller screens */
+    iframe {
+        /* Example: Set the width to 100% for responsiveness */
+        width: 100%;
+    }
+}
 /* ARCHIVE PAGE */
 
 /* style table in which archive is displayed */
@@ -356,7 +368,7 @@ img {
 
 #content-container {
     margin: 10px;
-    background: url(../img/characters/biotemplatebg.png) no-repeat;
+    background: url("../img/characters/biotemplatebg.png") no-repeat;
     display: flex;
     align-items: flex-start; /* Align items at the start (top) of the cross axis */
     flex-direction: row; /* Arrange items in a row */
@@ -368,26 +380,25 @@ img {
     width: 30%;
 }
 
-#image-container {
-    padding: 10px;
-    border-radius: 10px;
-}
 
 #character-details {
-    margin-top: 20px;
     font-family: 'Courier', monospace;
     background-color: rgba(27, 27, 27, 0);
-    outline: 3px solid #8B0000;
-    outline-style: dashed;
-    padding: 10px;
+    padding-left: 15px;
     text-align: left;
+}
+
+.attribute {
+    display: flex;
+    align-items: center;
+    gap: 5px;
 }
 
 #character-details p {
     color: #000000;
     font-family: 'Courier', monospace;
     font-size: 18px;
-    line-height: .5;
+    line-height: .0;
 }
 
 #character-description {
@@ -424,10 +435,10 @@ img {
 
  #content-container {
         flex-direction: column;
-    background: url(../img/characters/biotemplatebg.png);
+    background: url("/img/characters/biotemplatebg.png");
         align-items: center;
     }
-
+    
     #left-column,
     #image-container,
     #character-description {
