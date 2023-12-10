@@ -3,6 +3,11 @@
 //this is the main file you'll be messing with to manage and update your comic. most (not all) of the main toggle-able settings are here.
 
 //comic_archive has more settings pertaining to the archive page, and comic_show has settings pertaining to the main place that pages of your comic are displayed.
+const maxpg = 81;
+// your value for maxpg
+//the current number of pages your comic has in total. this DOESNT necessarily mean number of IMAGE FILES as it doesn't count pages split into multiple files. 
+//YOU MUST UPDATE THIS NUMBER EVERY TIME YOU ADD A NEW PAGE or else it wont display the most recent page
+
 
 let pg = Number(findGetParameter("pg")); //make "pg" mean the current page number (this line doesnt work unless I put it here, if you're inexperienced with js dont worry about it)
 
@@ -11,11 +16,11 @@ let pg = Number(findGetParameter("pg")); //make "pg" mean the current page numbe
 ////////////////////////
 
 //REALLY IMPORTANT ONES
-const maxpg = 16; //the current number of pages your comic has in total. this DOESNT necessarily mean number of IMAGE FILES as it doesn't count pages split into multiple files. 
-//YOU MUST UPDATE THIS NUMBER EVERY TIME YOU ADD A NEW PAGE or else it wont display the most recent page
-
+ 
 // COMIC PAGE SETTINGS
 const folder = "img/comics"; //directory of the folder where you keep all the comics
+const videoId = "youtubeVideo";
+const gifPath = "img/comics";
 const image = "EFAR"; //what you'll name all your comic pages
 const imgPart = "." //special character(s) you put after the page number to subdivide pages into multiple image files (ie pg2_1, pg2_2, etc)
 const ext = "png"; //file extension of your comic pages
@@ -49,83 +54,901 @@ if (pg == 0) {pg = maxpg;} //display MOST RECENT COMIC when the webpage is loade
 const pgData = [
     {
         pgNum: 1, //what page number it is
+        title: "Chapter 1 Cover", //the title of the page (leaving this blank will default it to "Page X")
+        date: writeDate(2021, 3, 16), //the date on which the page was posted (mainly for the archive). The date is written using a function called "writeDate", basically just put writeDate and then some parenthesis and, comma separated, the year followed by the month and the day. Don't forget another comma at the end outside the parenthesis!
+        chapter: 1,
+        imageFiles: 1, //how many image files this page is split into
+        altText: "",
+        authorNotes: `
+            <p>TBA</p>
+            `,
+    },
+    {
+        pgNum: 2, //what page number it is
         title: "Chapter 1 Page 01", //the title of the page (leaving this blank will default it to "Page X")
         date: writeDate(2021, 3, 16), //the date on which the page was posted (mainly for the archive). The date is written using a function called "writeDate", basically just put writeDate and then some parenthesis and, comma separated, the year followed by the month and the day. Don't forget another comma at the end outside the parenthesis!
         chapter: 1,
         imageFiles: 3, //how many image files this page is split into
         altText: "",
         authorNotes: `
-            <p>If you want to write an author notes section, this'd be the place to do it.</p>
-            <p>You can even use whatever html tags you want in here to format it, the script called on your html page should spit out anything you type between these backticks.</p>
+            <p>TBA</p>
             `,
     },
     {
-        pgNum: 2,
+        pgNum: 3,
         title: "Chapter 1 Page 02",
         date: writeDate(2021, 3, 17),
         chapter: 1,
         imageFiles: 4,
         altText: "",
         authorNotes: `
-            <p>You can have different author notes for every page.</p>
-            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Mauris vulputate, orci sit amet dignissim eleifend, magna felis malesuada nunc, ut sagittis purus mi ac urna. Fusce ligula urna, varius vel sapien sit amet, vulputate tempor felis. In hac habitasse platea dictumst. Aliquam laoreet volutpat interdum. Vestibulum non libero sit amet leo accumsan porttitor. Vivamus nec porttitor neque. Sed eget mauris quam.</p>
+            <p>TBA</p>
             `,
     },
     {
-        pgNum: 3,
+        pgNum: 4,
         title: "Chapter 1 Page 03",
         date: writeDate(2021, 3, 18),
         chapter: 1,
         imageFiles: 3,
         altText: "",
         authorNotes: `
-            <p>Sed lectus magna, dignissim eu sapien quis, euismod pulvinar diam. In odio massa, auctor blandit dolor id, varius ultricies lacus. Suspendisse sed libero vel leo dictum consectetur. In fringilla elit sit amet placerat varius. Duis vel lacus ante. Orci varius natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Nulla facilisi. Proin eleifend metus eu ex elementum venenatis. Curabitur sodales, ipsum placerat ornare convallis, sem eros convallis felis, vel efficitur erat ante id diam.</p>
+            <p>TBA</p>
             `,
     },
     {
-        pgNum: 4,
+        pgNum: 5,
         title: "Chapter 1 Page 04",
         date: writeDate(2021, 3, 19),
         chapter: 1,
         imageFiles: 4,
         altText: "",
         authorNotes: `
-            <p>Sed lectus magna, dignissim eu sapien quis, euismod pulvinar diam. In odio massa, auctor blandit dolor id, varius ultricies lacus. Suspendisse sed libero vel leo dictum consectetur. In fringilla elit sit amet placerat varius. Duis vel lacus ante. Orci varius natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Nulla facilisi. Proin eleifend metus eu ex elementum venenatis. Curabitur sodales, ipsum placerat ornare convallis, sem eros convallis felis, vel efficitur erat ante id diam.</p>
+            <p>TBA</p>
             `,
     },
     {
-        pgNum: 5,
+        pgNum: 6,
         title: "Chapter 1 Page 05",
         date: writeDate(2021, 3, 20),
         chapter: 1,
         imageFiles: 4,
         altText: "",
         authorNotes: `
-            <p>Sed lectus magna, dignissim eu sapien quis, euismod pulvinar diam. In odio massa, auctor blandit dolor id, varius ultricies lacus. Suspendisse sed libero vel leo dictum consectetur. In fringilla elit sit amet placerat varius. Duis vel lacus ante. Orci varius natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Nulla facilisi. Proin eleifend metus eu ex elementum venenatis. Curabitur sodales, ipsum placerat ornare convallis, sem eros convallis felis, vel efficitur erat ante id diam.</p>
+            <p>TBA</p>
             `,
     },
     {
-        pgNum: 6,
+        pgNum: 7,
         title: `Chapter 1 Page 06`,
         date: writeDate(2021, 3, 21),
         chapter: 1,
         imageFiles: 4,
         altText: "",
         authorNotes: `
-            <p>Sed lectus magna, dignissim eu sapien quis, euismod pulvinar diam. In odio massa, auctor blandit dolor id, varius ultricies lacus. Suspendisse sed libero vel leo dictum consectetur. In fringilla elit sit amet placerat varius. Duis vel lacus ante. Orci varius natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Nulla facilisi. Proin eleifend metus eu ex elementum venenatis. Curabitur sodales, ipsum placerat ornare convallis, sem eros convallis felis, vel efficitur erat ante id diam.</p>
+            <p>TBA</p>
             `,
     },
       {
-        pgNum: 7,
+        pgNum: 8,
         title: `Chapter 1 Page 07`,
         date: writeDate(2021, 3, 21),
         chapter: 1,
         imageFiles: 5,
         altText: "",
         authorNotes: `
-            <p>Sed lectus magna, dignissim eu sapien quis, euismod pulvinar diam. In odio massa, auctor blandit dolor id, varius ultricies lacus. Suspendisse sed libero vel leo dictum consectetur. In fringilla elit sit amet placerat varius. Duis vel lacus ante. Orci varius natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Nulla facilisi. Proin eleifend metus eu ex elementum venenatis. Curabitur sodales, ipsum placerat ornare convallis, sem eros convallis felis, vel efficitur erat ante id diam.</p>
+            <p>TBA</p>
             `,
     },
+    {
+        pgNum: 9,
+        title: `Chapter 1 Page 08`,
+        date: writeDate(2021, 3, 21),
+        chapter: 1,
+        imageFiles: 4,
+        altText: "",
+        authorNotes: `
+            <p>TBA</p>
+            `,
+    },
+    {
+        pgNum: 10,
+        title: `Chapter 1 Page 09`,
+        date: writeDate(2021, 3, 21),
+        chapter: 1,
+        imageFiles: 5,
+        altText: "",
+        authorNotes: `
+            <p>TBA</p>
+            `,
+    },
+        {
+        pgNum: 11,
+        title: `Chapter 1 Page 10`,
+        date: writeDate(2021, 3, 21),
+        chapter: 1,
+        imageFiles: 5,
+        altText: "",
+        authorNotes: `
+           <p>TBA</p>
+            `,
+    },
+        {
+        pgNum: 12,
+        title: `Chapter 1 Page 11`,
+        date: writeDate(2021, 3, 21),
+        chapter: 1,
+        imageFiles: 7,
+        altText: "",
+        authorNotes: `
+            <p>TBA</p>
+            `,
+    },
+        {
+        pgNum: 13,
+        title: `Chapter 1 Page 12`,
+        date: writeDate(2021, 3, 21),
+        chapter: 1,
+        imageFiles: 3,
+        altText: "",
+        authorNotes: `
+           <p>TBA</p>
+            `,
+    },
+        {
+        pgNum: 14,
+        title: `Chapter 1 Page 13`,
+        date: writeDate(2021, 3, 21),
+        chapter: 1,
+        imageFiles: 5,
+        altText: "",
+        authorNotes: `
+            <p>TBA</p>
+            `,
+    },
+        {
+        pgNum: 15,
+        title: `Chapter 1 Page 14 [VIDEO]`,
+        date: writeDate(2021, 3, 21),
+        chapter: 1,
+        imageFiles: 0,
+        videoId: "ajP3rNKVZWw",
+        altText: "",
+        authorNotes: `
+            <p>TBA</p>
+            `,
+    },
+        {
+        pgNum: 16,
+        title: `Chapter 1 Page 15`,
+        date: writeDate(2021, 3, 21),
+        chapter: 1,
+        imageFiles: 6,
+        altText: "",
+        authorNotes: `
+            <p>TBA</p>
+            `,
+    },
+        {
+        pgNum: 17,
+        title: `Chapter 1 Page 16`,
+        date: writeDate(2021, 3, 21),
+        chapter: 1,
+        imageFiles: 5,
+        altText: "",
+        authorNotes: `
+            <p>TBA</p>
+            `,
+    },
+//CHAPTER 2
+        {
+        pgNum: 18,
+        title: `Chapter 2 Cover`,
+        date: writeDate(2021, 3, 21),
+        chapter: 2,
+        imageFiles: 1,
+        altText: "",
+        authorNotes: `
+           <p>TBA</p>
+            `,
+    },
+        {
+        pgNum: 19,
+        title: `Chapter 2 Page 17`,
+        date: writeDate(2021, 3, 21),
+        chapter: 2,
+        imageFiles: 8,
+        altText: "",
+        authorNotes: `
+           <p>TBA</p>
+            `,
+    },
+        {
+        pgNum: 20,
+        title: `Chapter 2 Page 18`,
+        date: writeDate(2021, 3, 21),
+        chapter: 2,
+        imageFiles: 7,
+        altText: "",
+        authorNotes: `
+           <p>TBA</p>
+            `,
+    },
+        {
+        pgNum: 21,
+        title: `Chapter 2 Page 19`,
+        date: writeDate(2021, 3, 21),
+        chapter: 2,
+        imageFiles: 8,
+        altText: "",
+        authorNotes: `
+           <p>TBA</p>
+            `,
+    },
+            {
+        pgNum: 22,
+        title: `Chapter 2 Page 20`,
+        date: writeDate(2021, 3, 21),
+        chapter: 2,
+        imageFiles: 5,
+        altText: "",
+        authorNotes: `
+           <p>TBA</p>
+            `,
+    },
+            {
+        pgNum: 23,
+        title: `Chapter 2 Page 21`,
+        date: writeDate(2021, 3, 21),
+        chapter: 2,
+        imageFiles: 6,
+        altText: "",
+        authorNotes: `
+           <p>TBA</p>
+            `,
+    },
+            {
+        pgNum: 24,
+        title: `Chapter 2 Page 22`,
+        date: writeDate(2021, 3, 21),
+        chapter: 2,
+        imageFiles: 5,
+        altText: "",
+        authorNotes: `
+           <p>TBA</p>
+            `,
+    },
+            {
+        pgNum: 25,
+        title: `Chapter 2 Page 23`,
+        date: writeDate(2021, 3, 21),
+        chapter: 2,
+        imageFiles: 7,
+        altText: "",
+        authorNotes: `
+           <p>TBA</p>
+            `,
+    },
+            {
+        pgNum: 26,
+        title: `Chapter 2 Page 24`,
+        date: writeDate(2021, 3, 21),
+        chapter: 2,
+        imageFiles: 4,
+        altText: "",
+        authorNotes: `
+           <p>TBA</p>
+            `,
+    },
+            {
+        pgNum: 27,
+        title: `Chapter 2 Page 25`,
+        date: writeDate(2021, 3, 21),
+        chapter: 2,
+        imageFiles: 7,
+        altText: "",
+        authorNotes: `
+           <p>TBA</p>
+            `,
+    },
+            {
+        pgNum: 28,
+        title: `Chapter 2 Page 26`,
+        date: writeDate(2021, 3, 21),
+        chapter: 2,
+        imageFiles: 7,
+        altText: "",
+        authorNotes: `
+           <p>TBA</p>
+            `,
+    },
+            {
+        pgNum: 29,
+        title: `Chapter 2 Page 27`,
+        date: writeDate(2021, 3, 21),
+        chapter: 2,
+        imageFiles: 7,
+        altText: "",
+        authorNotes: `
+           <p>TBA</p>
+            `,
+    },
+            {
+        pgNum: 30,
+        title: `Chapter 2 Page 28`,
+        date: writeDate(2021, 3, 21),
+        chapter: 2,
+        imageFiles: 9,
+        altText: "",
+        authorNotes: `
+           <p>TBA</p>
+            `,
+    },
+            {
+        pgNum: 31,
+        title: `Chapter 2 Page 29`,
+        date: writeDate(2021, 3, 21),
+        chapter: 2,
+        imageFiles: 8,
+        altText: "",
+        authorNotes: `
+           <p>TBA</p>
+            `,
+    },
+            {
+        pgNum: 32,
+        title: `Chapter 2 Page 30`,
+        date: writeDate(2021, 3, 21),
+        chapter: 2,
+        imageFiles: 4,
+        altText: "",
+        authorNotes: `
+           <p>TBA</p>
+            `,
+    },
+            {
+        pgNum: 33,
+        title: `Chapter 2 Page 31`,
+        date: writeDate(2021, 3, 21),
+        chapter: 2,
+        imageFiles: 5,
+        altText: "",
+        authorNotes: `
+           <p>TBA</p>
+            `,
+    },
+            {
+        pgNum: 34,
+        title: `Chapter 2 Page 32`,
+        date: writeDate(2021, 3, 21),
+        chapter: 2,
+        imageFiles: 6,
+        altText: "",
+        authorNotes: `
+           <p>TBA</p>
+            `,
+    },
+            {
+        pgNum: 35,
+        title: `Chapter 2 Page 33`,
+        date: writeDate(2021, 3, 21),
+        chapter: 2,
+        imageFiles: 10,
+        altText: "",
+        authorNotes: `
+           <p>TBA</p>
+            `,
+    },
+            {
+        pgNum: 36,
+        title: `Chapter 2 Page 34`,
+        date: writeDate(2021, 3, 21),
+        chapter: 2,
+        imageFiles: 7,
+        altText: "",
+        authorNotes: `
+           <p>TBA</p>
+            `,
+    },
+//CHAPTER 3
+            {
+        pgNum: 37,
+        title: `Chapter 3 Cover`,
+        date: writeDate(2021, 3, 21),
+        chapter: 3,
+        imageFiles: 2,
+        altText: "",
+        authorNotes: `
+           <p>TBA</p>
+            `,
+    },
+            {
+        pgNum: 38,
+        title: `Chapter 3 Page 35`,
+        date: writeDate(2021, 3, 21),
+        chapter: 3,
+        imageFiles: 4,
+        altText: "",
+        authorNotes: `
+           <p>TBA</p>
+            `,
+    },
+            {
+        pgNum: 39,
+        title: `Chapter 3 Page 36`,
+        date: writeDate(2021, 3, 21),
+        chapter: 3,
+        imageFiles: 7,
+        altText: "",
+        authorNotes: `
+           <p>TBA</p>
+            `,
+    },
+            {
+        pgNum: 40,
+        title: `Chapter 3 Page 37`,
+        date: writeDate(2021, 3, 21),
+        chapter: 3,
+        imageFiles: 7,
+        altText: "",
+        authorNotes: `
+           <p>TBA</p>
+            `,
+    },
+                 {
+        pgNum: 41,
+        title: `Chapter 3 Page 38`,
+        date: writeDate(2021, 3, 21),
+        chapter: 3,
+        imageFiles: 11,
+        altText: "",
+        authorNotes: `
+           <p>TBA</p>
+            `,
+    },
+                 {
+        pgNum: 42,
+        title: `Chapter 3 Page 39`,
+        date: writeDate(2021, 3, 21),
+        chapter: 3,
+        imageFiles: 9,
+        altText: "",
+        authorNotes: `
+           <p>TBA</p>
+            `,
+    },
+                 {
+        pgNum: 43,
+        title: `Chapter 3 Page 40`,
+        date: writeDate(2021, 3, 21),
+        chapter: 3,
+        imageFiles: 7,
+        altText: "",
+        authorNotes: `
+           <p>TBA</p>
+            `,
+    },
+                 {
+        pgNum: 44,
+        title: `Chapter 3 Page 41`,
+        date: writeDate(2021, 3, 21),
+        chapter: 3,
+        imageFiles: 11,
+        altText: "",
+        authorNotes: `
+           <p>TBA</p>
+            `,
+    },
+                 {
+        pgNum: 45,
+        title: `Chapter 3 Page 42`,
+        date: writeDate(2021, 3, 21),
+        chapter: 3,
+        imageFiles: 6,
+        altText: "",
+        authorNotes: `
+           <p>TBA</p>
+            `,
+    },
+                 {
+        pgNum: 46,
+        title: `Chapter 3 Page 43`,
+        date: writeDate(2021, 3, 21),
+        chapter: 3,
+        imageFiles: 9,
+        altText: "",
+        authorNotes: `
+           <p>TBA</p>
+            `,
+    },
+                 {
+        pgNum: 47,
+        title: `Chapter 3 Page 44`,
+        date: writeDate(2021, 3, 21),
+        chapter: 3,
+        imageFiles: 10,
+        altText: "",
+        authorNotes: `
+           <p>TBA</p>
+            `,
+    },
+                 {
+        pgNum: 48,
+        title: `Chapter 3 Page 45`,
+        date: writeDate(2021, 3, 21),
+        chapter: 3,
+        imageFiles: 5,
+        altText: "",
+        authorNotes: `
+           <p>TBA</p>
+            `,
+    },
+                 {
+        pgNum: 49,
+        title: `Chapter 3 Page 46a`,
+        date: writeDate(2021, 3, 21),
+        chapter: 3,
+        imageFiles: 0,
+        gifPath: "img/comics/EFAR49.gif",
+        altText: "",
+        authorNotes: `
+           <p>TBA</p>
+            `,
+    },
+                 {
+        pgNum: 50,
+        title: `Chapter 3 Page 46b`,
+        date: writeDate(2021, 3, 21),
+        chapter: 3,
+        imageFiles: 0,
+        gifPath: "img/comics/EFAR50.gif",
+        altText: "",
+        authorNotes: `
+           <p>TBA</p>
+            `,
+    },
+                 {
+        pgNum: 51,
+        title: `Chapter 3 Page 46c`,
+        date: writeDate(2021, 3, 21),
+        chapter: 3,
+        imageFiles: 0,
+        gifPath: "img/comics/EFAR51.gif",
+        altText: "",
+        authorNotes: `
+           <p>TBA</p>
+            `,
+    },
+                 {
+        pgNum: 52,
+        title: `Chapter 3 Page 46d`,
+        date: writeDate(2021, 3, 21),
+        chapter: 3,
+        imageFiles: 0,
+        gifPath: "img/comics/EFAR52.gif",
+        altText: "",
+        authorNotes: `
+           <p>TBA</p>
+            `,
+    },
+                 {
+        pgNum: 53,
+        title: `Chapter 3 Page 46e`,
+        date: writeDate(2021, 3, 21),
+        chapter: 3,
+        imageFiles: 0,
+        gifPath: "img/comics/EFAR53.gif",
+        altText: "",
+        authorNotes: `
+           <p>TBA</p>
+            `,
+    },
+                 {
+        pgNum: 54,
+        title: `Chapter 3 Page 46f`,
+        date: writeDate(2021, 3, 21),
+        chapter: 3,
+        imageFiles: 1,
+        altText: "",
+        authorNotes: `
+           <p>TBA</p>
+            `,
+    },
+                 {
+        pgNum: 55,
+        title: `Chapter 3 Page 47`,
+        date: writeDate(2021, 3, 21),
+        chapter: 3,
+        imageFiles: 3,
+        altText: "",
+        authorNotes: `
+           <p>TBA</p>
+            `,
+    },
+                 {
+        pgNum: 56,
+        title: `Chapter 3 Page 48`,
+        date: writeDate(2021, 3, 21),
+        chapter: 3,
+        imageFiles: 5,
+        altText: "",
+        authorNotes: `
+           <p>TBA</p>
+            `,
+    },
+                 {
+        pgNum: 57,
+        title: `Chapter 3 Page 49`,
+        date: writeDate(2021, 3, 21),
+        chapter: 3,
+        imageFiles: 4,
+        altText: "",
+        authorNotes: `
+           <p>TBA</p>
+            `,
+    },
+                 {
+        pgNum: 58,
+        title: `Chapter 3 Page 50`,
+        date: writeDate(2021, 3, 21),
+        chapter: 3,
+        imageFiles: 6,
+        altText: "",
+        authorNotes: `
+           <p>TBA</p>
+            `,
+    },
+                 {
+        pgNum: 59,
+        title: `Chapter 3 Page 51`,
+        date: writeDate(2021, 3, 21),
+        chapter: 3,
+        imageFiles: 3,
+        altText: "",
+        authorNotes: `
+           <p>TBA</p>
+            `,
+    },
+                 {
+        pgNum: 60,
+        title: `Chapter 3 Page 52`,
+        date: writeDate(2021, 3, 21),
+        chapter: 3,
+        imageFiles: 4,
+        altText: "",
+        authorNotes: `
+           <p>TBA</p>
+            `,
+    },
+                 {
+        pgNum: 61,
+        title: `Chapter 3 Page 53`,
+        date: writeDate(2021, 3, 21),
+        chapter: 3,
+        imageFiles: 7,
+        altText: "",
+        authorNotes: `
+           <p>TBA</p>
+            `,
+    },
+                 {
+        pgNum: 62,
+        title: `Chapter 3 Page 54`,
+        date: writeDate(2021, 3, 21),
+        chapter: 3,
+        imageFiles: 9,
+        altText: "",
+        authorNotes: `
+           <p>TBA</p>
+            `,
+    },
+                 {
+        pgNum: 63,
+        title: `Chapter 3 Page 55`,
+        date: writeDate(2021, 3, 21),
+        chapter: 3,
+        imageFiles: 9,
+        altText: "",
+        authorNotes: `
+           <p>TBA</p>
+            `,
+    },
+                 {
+        pgNum: 64,
+        title: `Chapter 3 Page 56`,
+        date: writeDate(2021, 3, 21),
+        chapter: 3,
+        imageFiles: 6,
+        altText: "",
+        authorNotes: `
+           <p>TBA</p>
+            `,
+    },
+                 {
+        pgNum: 65,
+        title: `Chapter 3 Page 57`,
+        date: writeDate(2021, 3, 21),
+        chapter: 3,
+        imageFiles: 7,
+        altText: "",
+        authorNotes: `
+           <p>TBA</p>
+            `,
+    },
+                 {
+        pgNum: 66,
+        title: `Chapter 3 Page 58`,
+        date: writeDate(2021, 3, 21),
+        chapter: 3,
+        imageFiles: 10,
+        altText: "",
+        authorNotes: `
+           <p>TBA</p>
+            `,
+    },
+                 {
+        pgNum: 67,
+        title: `Chapter 3 Page 59`,
+        date: writeDate(2021, 3, 21),
+        chapter: 3,
+        imageFiles: 7,
+        altText: "",
+        authorNotes: `
+           <p>TBA</p>
+            `,
+    },
+                 {
+        pgNum: 68,
+        title: `Chapter 3 Page 60`,
+        date: writeDate(2021, 3, 21),
+        chapter: 3,
+        imageFiles: 8,
+        altText: "",
+        authorNotes: `
+           <p>TBA</p>
+            `,
+    },
+                 {
+        pgNum: 69,
+        title: `Chapter 3 Page 61`,
+        date: writeDate(2021, 3, 21),
+        chapter: 3,
+        imageFiles: 8,
+        altText: "",
+        authorNotes: `
+           <p>TBA</p>
+            `,
+    },
+                 {
+        pgNum: 70,
+        title: `Chapter 3 Page 62`,
+        date: writeDate(2021, 3, 21),
+        chapter: 3,
+        imageFiles: 8,
+        altText: "",
+        authorNotes: `
+           <p>TBA</p>
+            `,
+    },
+                 {
+        pgNum: 71,
+        title: `Chapter 3 Page 63`,
+        date: writeDate(2021, 3, 21),
+        chapter: 3,
+        imageFiles: 10,
+        altText: "",
+        authorNotes: `
+           <p>TBA</p>
+            `,
+    },
+                 {
+        pgNum: 72,
+        title: `Chapter 3 Page 64`,
+        date: writeDate(2021, 3, 21),
+        chapter: 3,
+        imageFiles: 12,
+        altText: "",
+        authorNotes: `
+           <p>TBA</p>
+            `,
+    },
+                 {
+        pgNum: 73,
+        title: `Chapter 3 Page 65`,
+        date: writeDate(2021, 3, 21),
+        chapter: 3,
+        imageFiles: 8,
+        altText: "",
+        authorNotes: `
+           <p>TBA</p>
+            `,
+    },
+                 {
+        pgNum: 74,
+        title: `Chapter 3 Page 66`,
+        date: writeDate(2021, 3, 21),
+        chapter: 3,
+        imageFiles: 9,
+        altText: "",
+        authorNotes: `
+           <p>TBA</p>
+            `,
+    },
+                 {
+        pgNum: 75,
+        title: `Chapter 3 Page 67`,
+        date: writeDate(2021, 3, 21),
+        chapter: 3,
+        imageFiles: 11,
+        altText: "",
+        authorNotes: `
+           <p>TBA</p>
+            `,
+    },
+                 {
+        pgNum: 76,
+        title: `Chapter 3 Page 68`,
+        date: writeDate(2021, 3, 21),
+        chapter: 3,
+        imageFiles: 10,
+        altText: "",
+        authorNotes: `
+           <p>TBA</p>
+            `,
+    },
+                 {
+        pgNum: 77,
+        title: `Chapter 3 Page 69`,
+        date: writeDate(2021, 3, 21),
+        chapter: 3,
+        imageFiles: 8,
+        altText: "",
+        authorNotes: `
+           <p>TBA</p>
+            `,
+    },                 {
+        pgNum: 78,
+        title: `Chapter 3 Page 70`,
+        date: writeDate(2021, 3, 21),
+        chapter: 3,
+        imageFiles: 8,
+        altText: "",
+        authorNotes: `
+           <p>TBA</p>
+            `,
+    },                 {
+        pgNum: 79,
+        title: `Chapter 3 Page 71 [VIDEO]`,
+        date: writeDate(2021, 3, 21),
+        chapter: 3,
+        imageFiles: 0,
+        altText: "",
+        videoId: "7VfXUeOK-yc",
+        authorNotes: `
+           <p>TBA</p>
+            `,
+    },                 {
+        pgNum: 80,
+        title: `Chapter 3 Page 72`,
+        date: writeDate(2021, 3, 21),
+        chapter: 3,
+        imageFiles: 10,
+        altText: "",
+        authorNotes: `
+           <p>TBA</p>
+            `,
+    },                 {
+        pgNum: 81,
+        title: `Chapter 3 Page 73`,
+        date: writeDate(2021, 3, 21),
+        chapter: 3,
+        imageFiles: 10,
+        altText: "",
+        authorNotes: `
+           <p>TBA</p>
+            `,
+    },
+ 
 ];
 
 //below is a function you dont rly need to mess with but if you're more experienced with js you can

@@ -25,14 +25,18 @@ writeAuthorNotes(".writeAuthorNotes");
 // but it's still commented as extensively as possible anyway just in case
 
 //SHOW COMIC PAGE, with clickable link
-function writePageClickable(div,clickable) {
+function writePageClickable(div, clickable) {
+    let path; // Declare path outside the if block
+
     if (!clickable) {
-        document.querySelector(div).innerHTML = `<div class="comicPage">${writePage()}</div>`; //display comic page without link
+        path = (folder != "" ? folder + "/" : "") + image + pg + "." + ext;
+        document.querySelector(div).innerHTML = `<div class="comicPage">${writePage()}</div>`;
     } else if (pg < maxpg) {
-        //check whether comic is on the last page
-        document.querySelector(div).innerHTML = `<div class="comicPage"><a href="?pg=${pg + 1}${navScrollTo}"/>${writePage()}</a></div>`; //display comic page and make it so that clicking it will lead you to the next page
+        path = (folder != "" ? folder + "/" : "") + image + pg + "." + ext;
+        document.querySelector(div).innerHTML = `<div class="comicPage"><a href="?pg=${pg + 1}${navScrollTo}"/>${writePage()}</a></div>`;
     } else {
-        document.querySelector(div).innerHTML = `<div class="comicPage">${writePage()}</div>`; //display comic page without link
+        path = (folder != "" ? folder + "/" : "") + image + pg + "." + ext;
+        document.querySelector(div).innerHTML = `<div class="comicPage">${writePage()}</div>`;
     }
 }
 
@@ -51,7 +55,7 @@ function writeAuthorNotes(div) { //display author notes
 
 //function used to split pages into multiple images if needed, and add alt text
 function writePage() {
-  let partExtension = ""; //part extension to add to the url if the image is split into multiple parts
+  let partExtension = ""; //part extension to add to the URL if the image is split into multiple parts
   let altText = ""; //variable for alt text
   let path = (folder != "" ? folder + "/" : "") + image + pg + partExtension + "." + ext; //path for your comics made out of variables strung together
   let page = ``;
@@ -61,22 +65,32 @@ function writePage() {
     console.log("page code to insert - " + page);
     console.log("alt text to print - " + altText);
     //
-    page = `<img alt="` + altText + `" title="` + altText + `" src="` + path + `" />`;
+    page = `<img alt="${altText}" title="${altText}" src="${path}" />`;
     return page;
-  } else if (pgData.length >= pg) { //if the array is not blank, and if its at least long enough to have an entry for the current page
+  } else if (pgData.length >= pg) { //if the array is not blank, and if it's at least long enough to have an entry for the current page
 
     altText = pgData[pg - 1].altText; //set alt text to the text defined in the array
 
-    if (pgData[pg-1].imageFiles > 1) { //if theres more than one page segment
-    for (let i = 1; i < pgData[pg-1].imageFiles+1; i++) { //for loop to put all the parts of the image on the webpage
-      partExtension = imgPart + i.toString();
-      path = (folder != "" ? folder + "/" : "") + image + pg + partExtension + "." + ext; //reinit path (there has to be a less dumb way to do this)
-      if (i > 1) {page += `<br/>`} //add line break
-      page += `<img alt="` + altText + `" title="` + altText + `" src="` + path + `" />`; //add page segment
+    if (pgData[pg - 1].videoId) {
+      // Display YouTube video on the specified page
+      page = `<iframe width="560" height="315" src="https://www.youtube.com/embed/${pgData[pg - 1].videoId}" frameborder="0" allowfullscreen></iframe>`;
+    } else if (pgData[pg - 1].imageFiles > 1) { //if there's more than one page segment (e.g., for a multi-part image)
+      for (let i = 1; i <= pgData[pg - 1].imageFiles; i++) { //for loop to put all the parts of the image on the webpage
+        partExtension = imgPart + i.toString();
+        path = (folder != "" ? folder + "/" : "") + image + pg + partExtension + "." + ext; //reinitialize path (there has to be a less dumb way to do this)
+        if (i > 1) {
+          page += `<br/>`; //add line break
+        }
+        page += `<img alt="${altText}" title="${altText}" src="${path}" />`; //add page segment
       }
+    } else if (pgData[pg - 1].gifPath) {
+      // If there's a GIF path specified in your data
+      page = `<img alt="${altText}" title="${altText}" src="${pgData[pg - 1].gifPath}" />`;
     } else {
-      page = `<img alt="` + altText + `" title="` + altText + `" src="` + path + `" />`;
+      // For a single image
+      page = `<img alt="${altText}" title="${altText}" src="${path}" />`;
     }
+
     //debug
     console.log("page code to insert - " + page);
     console.log("alt text to print - " + altText);

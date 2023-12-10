@@ -13,13 +13,11 @@
    // true, //if set to true, each comic will have its own thumbnail image next to it. if a comic doesn't have its own thumbnail, it'll be set to the default thumbnail.
    // false //if set to true, each comic will have a display number
 //);
-writeArchive("chapter1", 1, 15, -1, false,false); //writeArchive is for listing a RANGE of pages, take advantage of this by using headers to divide them into chapters or by month
+writeArchive("chapter1", 1, 17, -1, false,false); //writeArchive is for listing a RANGE of pages, take advantage of this by using headers to divide them into chapters or by month
 
-writeArchive("chapter2", 16, 36, -1, false,false);
+writeArchive("chapter2", 18, 36, -1, false,false);
 
-writeArchive("chapter3", 37, 74, -1, false,false);
-
-writeArchive("chapter4", 75, 100, -1, false,false);
+writeArchive("chapter3", 37, 82, -1, false,false);
 
 //below this point is stuff you don't really need to pay attention to if you're not super familiar with JS 
 
