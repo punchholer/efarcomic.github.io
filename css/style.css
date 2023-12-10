@@ -6,7 +6,7 @@ body, div, main, section, article {
 
 /* universal background color */
 body {
-  background: #08090a url(http://EFAR.thecomicseries.com/files/efarcomifcury2.png) top no-repeat;
+  background: #08090a url("..img/efarbg.png") top no-repeat;
     overflow-x: hidden;
 }
 
@@ -435,7 +435,7 @@ img {
 
  #content-container {
         flex-direction: column;
-    background: url("/img/characters/biotemplatebg.png");
+    background: url("..img/characters/biotemplatebg.png");
         align-items: center;
     }
     
