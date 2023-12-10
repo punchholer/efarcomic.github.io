@@ -23,8 +23,16 @@
      <div id="mobile-menu-icon" class="mobile-menu-icon">&#9776;</div>
     </div>
     <div class="subPage clearfix" align="center">
-        <h1>Homepage</h1>
-        <p> Sure is empty in here lol.</p>
+        <div id="banner-container">
+    <a href="/index.html?pg=1#showComic" class="image-button">
+        <img src="/img/buttons/readfrombeginning.png" alt="Button 1">
+    </a>
+
+
+    <a id="latestPageButton" href="#" class="image-button">
+        <img src="/img/buttons/skiptoend.png" alt="Button 2">
+    </a>
+        </div>
        
     </div>
 
@@ -34,5 +42,35 @@
 <!-- at the end of this page we only call the header and footer scripts, because we don't need use any functions from the other scripts. -->
 <script src="js/comic_header.js" defer></script>
 <script src="js/comic_footer.js" defer></script>
+<script src="js/comic_settings.js" defer></script>
+<script>
+    document.addEventListener('DOMContentLoaded', function () {
+            var headerArea = document.getElementById('headerArea');
+            
+            // Set the href attribute of the second image button to the latest page
+            var latestPageButton = document.getElementById('latestPageButton');
+            var maxpg = 81; // Replace with your actual maximum page number
+            if (latestPageButton) {
+                latestPageButton.href = 'index.html?pg=' + maxpg;
+            }
+        });
+    
+</script>
+<script>
+        
+            // Toggle the 'active' class on headerArea when the mobile icon is clicked
+        document.getElementById('mobile-menu-icon').addEventListener('click', function () {
+                headerArea.classList.toggle('active');
+            });
+
+            // Close the menu when a link is clicked
+            var navLinks = document.querySelectorAll('#nav a');
+            navLinks.forEach(function (link) {
+                link.addEventListener('click', function () {
+                    headerArea.classList.remove('active');
+                });
+            });
+    });
+    </script>
 </body>
 </html>
