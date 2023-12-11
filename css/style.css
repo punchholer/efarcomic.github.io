@@ -7,7 +7,6 @@ body, div, main, section, article {
 /* universal background color */
 body {
   background: #08090a url("../img/efarbg.png");
-    overflow-x: hidden;
 }
 
 
