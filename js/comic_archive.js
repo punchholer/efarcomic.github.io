@@ -67,7 +67,7 @@ function writeArchive(divClass, min, max, reverseOrder, useThumbs,useNums) {
         //make the whole row a clickable link to the corresponding comic
         row.setAttribute("class", `archiveRow`);
 
-        let linkToComic = `${indexPage}?pg=${i + navScrollTo}`;
+        let linkToComic = `read.html?pg=${i + navScrollTo}`;
 
         row.addEventListener("click", () => {
             window.location.href = linkToComic;

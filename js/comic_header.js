@@ -30,7 +30,7 @@ document.querySelector(".writeHeader").innerHTML = `
                 <div id="header"></div>
                 <nav id="nav">
                     <ul>
-                        <li><a href="index.html">HOME</a></li>
+                        <li><a href="index.html">INDEX</a></li>
                         <li><a href="read.html?pg=1#showComic">READ</a></li>
                         <li><a href="archive.html">ARCHIVE</a></li>
                         <li><a href="about.html">ABOUT</a></li>
