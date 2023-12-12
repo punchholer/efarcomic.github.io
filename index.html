@@ -13,8 +13,6 @@
     <link rel="preconnect" href="https://fonts.gstatic.com">
     <!-- Open Sans -->
     <link href="https://fonts.googleapis.com/css2?family=Open+Sans&display=swap" rel="stylesheet">
-    <!-- Font Awesome -->
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css" integrity="sha512-waa67R2WJ4PmFJUHFLkSm8Q0iXC3m63mgIDlfvksOTELuk9JbiF7pfoR8eC4ZczuRrelL9tkAyyZ0ssAJH2sRA==" crossorigin="anonymous" />
 </head>
 <body align="center">
     <div align="center">
@@ -22,28 +20,40 @@
     <div class="writeHeader"></div>
      <div id="mobile-menu-icon" class="mobile-menu-icon">&#9776;</div>
     </div>
+    
+    <!-- body -->
     <div class="subPage clearfix" align="center">
-        <div id="banner-container">
+
+    <div id="banner-container">
     <a href="read.html?pg=1#showComic" class="image-button">
-        <img src="img/buttons/readfrombeginning.png" alt="Button 1">
+        <img src="img/buttons/readfrombeginning.png" alt="Read from the beginning">
     </a>
 
 
     <a id="latestPageButton" href="#" class="image-button">
-        <img src="img/buttons/skiptoend.png" alt="Button 2">
+        <img src="img/buttons/skiptoend.png" alt="Skip to the end">
     </a>
-        </div>
-       
+            
     </div>
-<script src='https://storage.ko-fi.com/cdn/scripts/overlay-widget.js'></script>
-<script>
-  kofiWidgetOverlay.draw('punchyholery', {
-    'type': 'floating-chat',
-    'floating-chat.donateButton.text': 'Support me',
-    'floating-chat.donateButton.background-color': '#00b9fe',
-    'floating-chat.donateButton.text-color': '#fff'
-  });
-</script>
+    
+    
+    <!-- Update log -->    
+    <div id="news-title"><h1>NEWS AND UPDATE LOG</h1></div>
+    <div id ="news-container">
+            <div class="news-entry">
+                <h3>Website Launch!</h3>
+                <p>Log Date: 12/12/23</p>
+                <p>Welcome to the launch of the new website for Efarcomic! There's a bunch of new features (and bugs) that are added here compared to the old comicfury page, so enjoy your stay!</p>
+            </div>
+        </div>
+
+    <a href="https://ko-fi.com/punchyholery" class="kofi-button">
+        <img src="img/buttons/kofi_button_blue.png" alt="Donate to Ko-Fi">
+    </a>
+    </div>
+        
+    </div>
+
     <!-- footer -->
     <div class="writeFooter"></div>
 
@@ -51,19 +61,6 @@
 <script src="js/comic_header.js" defer></script>
 <script src="js/comic_footer.js" defer></script>
 <script src="js/comic_settings.js" defer></script>
-<script>
-    document.addEventListener('DOMContentLoaded', function () {
-            var headerArea = document.getElementById('headerArea');
-            
-            // Set the href attribute of the second image button to the latest page
-            var latestPageButton = document.getElementById('latestPageButton');
-            var maxpg = 81; // Replace with your actual maximum page number
-            if (latestPageButton) {
-                latestPageButton.href = 'read.html?pg=' + maxpg;
-            }
-        });
-    
-</script>
 <script>
         
             // Toggle the 'active' class on headerArea when the mobile icon is clicked
@@ -78,7 +75,31 @@
                     headerArea.classList.remove('active');
                 });
             });
-    });
+    </script>
+
+    <script>
+        document.addEventListener('DOMContentLoaded', function () {
+            var headerArea = document.getElementById('headerArea');
+
+            // Set the href attribute of the second image button to the latest page
+            var latestPageButton = document.getElementById('latestPageButton');
+            if (latestPageButton) {
+                latestPageButton.href = 'read.html?pg=' + maxpg;
+            }
+
+            // Toggle the 'active' class on headerArea when the mobile icon is clicked
+            document.getElementById('mobile-menu-icon').addEventListener('click', function () {
+                headerArea.classList.toggle('active');
+            });
+
+            // Close the menu when a link is clicked
+            var navLinks = document.querySelectorAll('#nav a');
+            navLinks.forEach(function (link) {
+                link.addEventListener('click', function () {
+                    headerArea.classList.remove('active');
+                });
+            });
+        });
     </script>
 </body>
 </html>

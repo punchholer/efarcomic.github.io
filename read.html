@@ -8,11 +8,14 @@
     <link href="css/style.css" rel="stylesheet" type="text/css" media="all">
     <!-- fonts -->
     <link rel="preconnect" href="https://fonts.gstatic.com">
-     <!-- Font Awesome -->
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css" integrity="sha512-waa67R2WJ4PmFJUHFLkSm8Q0iXC3m63mgIDlfvksOTELuk9JbiF7pfoR8eC4ZczuRrelL9tkAyyZ0ssAJH2sRA==" crossorigin="anonymous" />
-  </head>
   <body>
-
+<div class="popup" id="popup">
+    <div class="popup-content">
+        <img src="img/disclaimer.png">
+        <p>This webcomic contains:<p><strong>Violence and Permanent Death</strong>,</p><p><strong>Body Horror</strong>,</p><p><strong>Physical and Mental Trauma,</strong></p><p><strong>Glitch Effects and Moving Images.</strong></p>
+        <button onclick="openReadPage()">Continue to Read</button>
+    </div>
+</div>
   <!-- most of the elements on these pages are defined in the js files as functions, then we tell these functions where to show up on the page by placing empty divs and naming those divs the name of the js functions. check the js files to edit these elements in more detail.-->
 
   <div align="center">
@@ -22,8 +25,6 @@
 
     <!-- make sure that if you want to turn on automatically scrolling to the top of the comic when you load a new page, keep the id of this div and the variable "navScrollTo" in showcomic.js the same-->
     <div id="showComic">
-        
-        
     <!-- write the title of the page. -->
     <div id="pageTitle">
     <!-- write page title -->
@@ -118,7 +119,42 @@
             populateDropdown(maxPages);
         });
         </script>
+<script>
+document.addEventListener('DOMContentLoaded', function () {
+    // Check if the user has seen the popup before
+    if (!hasSeenPopup()) {
+        // Show the popup if not seen
+        showPopup();
+    }
+});
 
+function hasSeenPopup() {
+    // Check if a "popupSeen" cookie exists
+    return document.cookie.split(';').some(cookie => cookie.trim().startsWith('popupSeen='));
+}
+
+function setPopupSeenCookie() {
+    // Set a cookie to track that the popup has been seen
+    document.cookie = 'popupSeen=true; expires=Fri, 31 Dec 9999 23:59:59 GMT; path=/';
+}
+
+function showPopup() {
+    document.getElementById('popup').style.display = 'block';
+}
+
+function openReadPage() {
+    // Toggle the visibility of the popup instead of redirecting
+    document.getElementById('popup').style.display = 'none';
+    
+    // Set a cookie to remember that the popup has been seen
+    setPopupSeenCookie();
+
+    // If you want to scroll to the specified element on the page
+    // (assuming you have an element with the id 'showComic')
+    document.getElementById('showComic').scrollIntoView({ behavior: 'smooth' });
+}
+
+</script>
 
 
   </body>
