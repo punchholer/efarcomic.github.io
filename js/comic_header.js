@@ -35,7 +35,7 @@ document.querySelector(".writeHeader").innerHTML = `
                         <li><a href="archive.html">ARCHIVE</a></li>
                         <li><a href="about.html">ABOUT</a></li>
                         <li><a href="characters.html">CHARACTERS</a></li>
-                        <li><a href="https://punchholer.github.io/efarcomic.github.io/rss">RSS</a></li>
+                        <li><a href="https://punchholer.github.io/efarcomic.github.io/rss.xml>RSS</a></li>
                     </ul>
                 </nav>
             </div>
