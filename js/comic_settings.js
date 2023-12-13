@@ -55,7 +55,7 @@ const pgData = [
     {
         pgNum: 1, //what page number it is
         title: "Chapter 1 Cover", //the title of the page (leaving this blank will default it to "Page X")
-        date: writeDate(2021, 3, 16), //the date on which the page was posted (mainly for the archive). The date is written using a function called "writeDate", basically just put writeDate and then some parenthesis and, comma separated, the year followed by the month and the day. Don't forget another comma at the end outside the parenthesis!
+        date: writeDate(2017, 9, 5), //the date on which the page was posted (mainly for the archive). The date is written using a function called "writeDate", basically just put writeDate and then some parenthesis and, comma separated, the year followed by the month and the day. Don't forget another comma at the end outside the parenthesis!
         chapter: 1,
         imageFiles: 1, //how many image files this page is split into
         altText: "",
@@ -66,7 +66,7 @@ const pgData = [
     {
         pgNum: 2, //what page number it is
         title: "Chapter 1 Page 01", //the title of the page (leaving this blank will default it to "Page X")
-        date: writeDate(2021, 3, 16), //the date on which the page was posted (mainly for the archive). The date is written using a function called "writeDate", basically just put writeDate and then some parenthesis and, comma separated, the year followed by the month and the day. Don't forget another comma at the end outside the parenthesis!
+        date: writeDate(2017, 9, 5), //the date on which the page was posted (mainly for the archive). The date is written using a function called "writeDate", basically just put writeDate and then some parenthesis and, comma separated, the year followed by the month and the day. Don't forget another comma at the end outside the parenthesis!
         chapter: 1,
         imageFiles: 3, //how many image files this page is split into
         altText: "",
@@ -77,7 +77,7 @@ const pgData = [
     {
         pgNum: 3,
         title: "Chapter 1 Page 02",
-        date: writeDate(2021, 3, 17),
+        date: writeDate(2021, 9, 7),
         chapter: 1,
         imageFiles: 4,
         altText: "",
@@ -88,7 +88,7 @@ const pgData = [
     {
         pgNum: 4,
         title: "Chapter 1 Page 03",
-        date: writeDate(2021, 3, 18),
+        date: writeDate(2021, 9, 7),
         chapter: 1,
         imageFiles: 3,
         altText: "",
@@ -99,7 +99,7 @@ const pgData = [
     {
         pgNum: 5,
         title: "Chapter 1 Page 04",
-        date: writeDate(2021, 3, 19),
+        date: writeDate(2017, 9, 20),
         chapter: 1,
         imageFiles: 4,
         altText: "",
@@ -110,7 +110,7 @@ const pgData = [
     {
         pgNum: 6,
         title: "Chapter 1 Page 05",
-        date: writeDate(2021, 3, 20),
+        date: writeDate(2017, 9, 28),
         chapter: 1,
         imageFiles: 4,
         altText: "",
@@ -121,7 +121,7 @@ const pgData = [
     {
         pgNum: 7,
         title: `Chapter 1 Page 06`,
-        date: writeDate(2021, 3, 21),
+        date: writeDate(2017, 10, 5),
         chapter: 1,
         imageFiles: 4,
         altText: "",
@@ -132,7 +132,7 @@ const pgData = [
       {
         pgNum: 8,
         title: `Chapter 1 Page 07`,
-        date: writeDate(2021, 3, 21),
+        date: writeDate(2017, 10, 13),
         chapter: 1,
         imageFiles: 5,
         altText: "",
@@ -143,7 +143,7 @@ const pgData = [
     {
         pgNum: 9,
         title: `Chapter 1 Page 08`,
-        date: writeDate(2021, 3, 21),
+        date: writeDate(2017, 10, 22),
         chapter: 1,
         imageFiles: 4,
         altText: "",
@@ -154,7 +154,7 @@ const pgData = [
     {
         pgNum: 10,
         title: `Chapter 1 Page 09`,
-        date: writeDate(2021, 3, 21),
+        date: writeDate(2017, 11, 5),
         chapter: 1,
         imageFiles: 5,
         altText: "",
@@ -165,7 +165,7 @@ const pgData = [
         {
         pgNum: 11,
         title: `Chapter 1 Page 10`,
-        date: writeDate(2021, 3, 21),
+        date: writeDate(2017, 11, 12),
         chapter: 1,
         imageFiles: 5,
         altText: "",
@@ -176,7 +176,7 @@ const pgData = [
         {
         pgNum: 12,
         title: `Chapter 1 Page 11`,
-        date: writeDate(2021, 3, 21),
+        date: writeDate(2017, 11, 19),
         chapter: 1,
         imageFiles: 7,
         altText: "",
@@ -187,7 +187,7 @@ const pgData = [
         {
         pgNum: 13,
         title: `Chapter 1 Page 12`,
-        date: writeDate(2021, 3, 21),
+        date: writeDate(2017, 12, 2),
         chapter: 1,
         imageFiles: 3,
         altText: "",
@@ -198,7 +198,7 @@ const pgData = [
         {
         pgNum: 14,
         title: `Chapter 1 Page 13`,
-        date: writeDate(2021, 3, 21),
+        date: writeDate(2017, 12, 10),
         chapter: 1,
         imageFiles: 5,
         altText: "",
@@ -209,7 +209,7 @@ const pgData = [
         {
         pgNum: 15,
         title: `Chapter 1 Page 14 [VIDEO]`,
-        date: writeDate(2021, 3, 21),
+        date: writeDate(2018, 1, 7),
         chapter: 1,
         imageFiles: 0,
         videoId: "ajP3rNKVZWw",
@@ -221,7 +221,7 @@ const pgData = [
         {
         pgNum: 16,
         title: `Chapter 1 Page 15`,
-        date: writeDate(2021, 3, 21),
+        date: writeDate(2018, 1, 17),
         chapter: 1,
         imageFiles: 6,
         altText: "",
@@ -232,7 +232,7 @@ const pgData = [
         {
         pgNum: 17,
         title: `Chapter 1 Page 16`,
-        date: writeDate(2021, 3, 21),
+        date: writeDate(2018, 1, 31),
         chapter: 1,
         imageFiles: 5,
         altText: "",
@@ -244,7 +244,7 @@ const pgData = [
         {
         pgNum: 18,
         title: `Chapter 2 Cover`,
-        date: writeDate(2021, 3, 21),
+        date: writeDate(2018, 2, 4),
         chapter: 2,
         imageFiles: 1,
         altText: "",
@@ -255,7 +255,7 @@ const pgData = [
         {
         pgNum: 19,
         title: `Chapter 2 Page 17`,
-        date: writeDate(2021, 3, 21),
+        date: writeDate(2018, 3, 1),
         chapter: 2,
         imageFiles: 8,
         altText: "",
@@ -266,7 +266,7 @@ const pgData = [
         {
         pgNum: 20,
         title: `Chapter 2 Page 18`,
-        date: writeDate(2021, 3, 21),
+        date: writeDate(2018, 3, 18),
         chapter: 2,
         imageFiles: 7,
         altText: "",
@@ -277,7 +277,7 @@ const pgData = [
         {
         pgNum: 21,
         title: `Chapter 2 Page 19`,
-        date: writeDate(2021, 3, 21),
+        date: writeDate(2018, 4, 2),
         chapter: 2,
         imageFiles: 8,
         altText: "",
@@ -288,7 +288,7 @@ const pgData = [
             {
         pgNum: 22,
         title: `Chapter 2 Page 20`,
-        date: writeDate(2021, 3, 21),
+        date: writeDate(2018, 4, 23),
         chapter: 2,
         imageFiles: 5,
         altText: "",
@@ -299,7 +299,7 @@ const pgData = [
             {
         pgNum: 23,
         title: `Chapter 2 Page 21`,
-        date: writeDate(2021, 3, 21),
+        date: writeDate(2018, 4, 30),
         chapter: 2,
         imageFiles: 6,
         altText: "",
@@ -310,7 +310,7 @@ const pgData = [
             {
         pgNum: 24,
         title: `Chapter 2 Page 22`,
-        date: writeDate(2021, 3, 21),
+        date: writeDate(2018, 5, 14),
         chapter: 2,
         imageFiles: 5,
         altText: "",
@@ -321,7 +321,7 @@ const pgData = [
             {
         pgNum: 25,
         title: `Chapter 2 Page 23`,
-        date: writeDate(2021, 3, 21),
+        date: writeDate(2018, 5, 28),
         chapter: 2,
         imageFiles: 7,
         altText: "",
@@ -332,7 +332,7 @@ const pgData = [
             {
         pgNum: 26,
         title: `Chapter 2 Page 24`,
-        date: writeDate(2021, 3, 21),
+        date: writeDate(2018, 6, 11),
         chapter: 2,
         imageFiles: 4,
         altText: "",
@@ -343,7 +343,7 @@ const pgData = [
             {
         pgNum: 27,
         title: `Chapter 2 Page 25`,
-        date: writeDate(2021, 3, 21),
+        date: writeDate(2018, 6, 25),
         chapter: 2,
         imageFiles: 7,
         altText: "",
@@ -354,7 +354,7 @@ const pgData = [
             {
         pgNum: 28,
         title: `Chapter 2 Page 26`,
-        date: writeDate(2021, 3, 21),
+        date: writeDate(2018, 7, 13),
         chapter: 2,
         imageFiles: 7,
         altText: "",
@@ -365,7 +365,7 @@ const pgData = [
             {
         pgNum: 29,
         title: `Chapter 2 Page 27`,
-        date: writeDate(2021, 3, 21),
+        date: writeDate(2018, 8, 13),
         chapter: 2,
         imageFiles: 7,
         altText: "",
@@ -376,7 +376,7 @@ const pgData = [
             {
         pgNum: 30,
         title: `Chapter 2 Page 28`,
-        date: writeDate(2021, 3, 21),
+        date: writeDate(2018, 8, 27),
         chapter: 2,
         imageFiles: 9,
         altText: "",
@@ -387,7 +387,7 @@ const pgData = [
             {
         pgNum: 31,
         title: `Chapter 2 Page 29`,
-        date: writeDate(2021, 3, 21),
+        date: writeDate(2019, 1, 18),
         chapter: 2,
         imageFiles: 8,
         altText: "",
@@ -398,7 +398,7 @@ const pgData = [
             {
         pgNum: 32,
         title: `Chapter 2 Page 30`,
-        date: writeDate(2021, 3, 21),
+        date: writeDate(2019, 4, 28),
         chapter: 2,
         imageFiles: 4,
         altText: "",
@@ -409,7 +409,7 @@ const pgData = [
             {
         pgNum: 33,
         title: `Chapter 2 Page 31`,
-        date: writeDate(2021, 3, 21),
+        date: writeDate(2019, 5, 6),
         chapter: 2,
         imageFiles: 5,
         altText: "",
@@ -420,7 +420,7 @@ const pgData = [
             {
         pgNum: 34,
         title: `Chapter 2 Page 32`,
-        date: writeDate(2021, 3, 21),
+        date: writeDate(2019, 5, 27),
         chapter: 2,
         imageFiles: 6,
         altText: "",
@@ -431,7 +431,7 @@ const pgData = [
             {
         pgNum: 35,
         title: `Chapter 2 Page 33`,
-        date: writeDate(2021, 3, 21),
+        date: writeDate(2019, 6, 30),
         chapter: 2,
         imageFiles: 10,
         altText: "",
@@ -442,7 +442,7 @@ const pgData = [
             {
         pgNum: 36,
         title: `Chapter 2 Page 34`,
-        date: writeDate(2021, 3, 21),
+        date: writeDate(2019, 7, 18),
         chapter: 2,
         imageFiles: 7,
         altText: "",
@@ -454,7 +454,7 @@ const pgData = [
             {
         pgNum: 37,
         title: `Chapter 3 Cover`,
-        date: writeDate(2021, 3, 21),
+        date: writeDate(2019, 8, 19),
         chapter: 3,
         imageFiles: 2,
         altText: "",
@@ -465,7 +465,7 @@ const pgData = [
             {
         pgNum: 38,
         title: `Chapter 3 Page 35`,
-        date: writeDate(2021, 3, 21),
+        date: writeDate(2019, 10, 20),
         chapter: 3,
         imageFiles: 4,
         altText: "",
@@ -476,7 +476,7 @@ const pgData = [
             {
         pgNum: 39,
         title: `Chapter 3 Page 36`,
-        date: writeDate(2021, 3, 21),
+        date: writeDate(2019, 12, 11),
         chapter: 3,
         imageFiles: 7,
         altText: "",
@@ -487,7 +487,7 @@ const pgData = [
             {
         pgNum: 40,
         title: `Chapter 3 Page 37`,
-        date: writeDate(2021, 3, 21),
+        date: writeDate(2020, 5, 28),
         chapter: 3,
         imageFiles: 7,
         altText: "",
@@ -498,7 +498,7 @@ const pgData = [
                  {
         pgNum: 41,
         title: `Chapter 3 Page 38`,
-        date: writeDate(2021, 3, 21),
+        date: writeDate(2020, 8, 27),
         chapter: 3,
         imageFiles: 11,
         altText: "",
@@ -509,7 +509,7 @@ const pgData = [
                  {
         pgNum: 42,
         title: `Chapter 3 Page 39`,
-        date: writeDate(2021, 3, 21),
+        date: writeDate(2020, 9, 5),
         chapter: 3,
         imageFiles: 9,
         altText: "",
@@ -520,7 +520,7 @@ const pgData = [
                  {
         pgNum: 43,
         title: `Chapter 3 Page 40`,
-        date: writeDate(2021, 3, 21),
+        date: writeDate(2020, 9, 20),
         chapter: 3,
         imageFiles: 7,
         altText: "",
@@ -531,7 +531,7 @@ const pgData = [
                  {
         pgNum: 44,
         title: `Chapter 3 Page 41`,
-        date: writeDate(2021, 3, 21),
+        date: writeDate(2020, 10, 11),
         chapter: 3,
         imageFiles: 11,
         altText: "",
@@ -542,7 +542,7 @@ const pgData = [
                  {
         pgNum: 45,
         title: `Chapter 3 Page 42`,
-        date: writeDate(2021, 3, 21),
+        date: writeDate(2020, 11, 7),
         chapter: 3,
         imageFiles: 6,
         altText: "",
@@ -553,7 +553,7 @@ const pgData = [
                  {
         pgNum: 46,
         title: `Chapter 3 Page 43`,
-        date: writeDate(2021, 3, 21),
+        date: writeDate(2021, 1, 2),
         chapter: 3,
         imageFiles: 9,
         altText: "",
@@ -564,7 +564,7 @@ const pgData = [
                  {
         pgNum: 47,
         title: `Chapter 3 Page 44`,
-        date: writeDate(2021, 3, 21),
+        date: writeDate(2021, 2, 7),
         chapter: 3,
         imageFiles: 10,
         altText: "",
@@ -575,7 +575,7 @@ const pgData = [
                  {
         pgNum: 48,
         title: `Chapter 3 Page 45`,
-        date: writeDate(2021, 3, 21),
+        date: writeDate(2021, 3, 1),
         chapter: 3,
         imageFiles: 5,
         altText: "",
@@ -586,7 +586,7 @@ const pgData = [
                  {
         pgNum: 49,
         title: `Chapter 3 Page 46a`,
-        date: writeDate(2021, 3, 21),
+        date: writeDate(2021, 5, 3),
         chapter: 3,
         imageFiles: 0,
         gifPath: "img/comics/EFAR49.gif",
@@ -598,7 +598,7 @@ const pgData = [
                  {
         pgNum: 50,
         title: `Chapter 3 Page 46b`,
-        date: writeDate(2021, 3, 21),
+        date: writeDate(2021, 5, 3),
         chapter: 3,
         imageFiles: 0,
         gifPath: "img/comics/EFAR50.gif",
@@ -610,7 +610,7 @@ const pgData = [
                  {
         pgNum: 51,
         title: `Chapter 3 Page 46c`,
-        date: writeDate(2021, 3, 21),
+        date: writeDate(2021, 5, 3),
         chapter: 3,
         imageFiles: 0,
         gifPath: "img/comics/EFAR51.gif",
@@ -622,7 +622,7 @@ const pgData = [
                  {
         pgNum: 52,
         title: `Chapter 3 Page 46d`,
-        date: writeDate(2021, 3, 21),
+        date: writeDate(2021, 5, 3),
         chapter: 3,
         imageFiles: 0,
         gifPath: "img/comics/EFAR52.gif",
@@ -634,7 +634,7 @@ const pgData = [
                  {
         pgNum: 53,
         title: `Chapter 3 Page 46e`,
-        date: writeDate(2021, 3, 21),
+        date: writeDate(2021, 5, 3),
         chapter: 3,
         imageFiles: 0,
         gifPath: "img/comics/EFAR53.gif",
@@ -646,7 +646,7 @@ const pgData = [
                  {
         pgNum: 54,
         title: `Chapter 3 Page 46f`,
-        date: writeDate(2021, 3, 21),
+        date: writeDate(2021, 5, 3),
         chapter: 3,
         imageFiles: 1,
         altText: "",
@@ -657,7 +657,7 @@ const pgData = [
                  {
         pgNum: 55,
         title: `Chapter 3 Page 47`,
-        date: writeDate(2021, 3, 21),
+        date: writeDate(2021, 5, 24),
         chapter: 3,
         imageFiles: 3,
         altText: "",
@@ -668,7 +668,7 @@ const pgData = [
                  {
         pgNum: 56,
         title: `Chapter 3 Page 48`,
-        date: writeDate(2021, 3, 21),
+        date: writeDate(2021, 6, 28),
         chapter: 3,
         imageFiles: 5,
         altText: "",
@@ -679,7 +679,7 @@ const pgData = [
                  {
         pgNum: 57,
         title: `Chapter 3 Page 49`,
-        date: writeDate(2021, 3, 21),
+        date: writeDate(2021, 8, 1),
         chapter: 3,
         imageFiles: 4,
         altText: "",
@@ -690,7 +690,7 @@ const pgData = [
                  {
         pgNum: 58,
         title: `Chapter 3 Page 50`,
-        date: writeDate(2021, 3, 21),
+        date: writeDate(2021, 9, 19),
         chapter: 3,
         imageFiles: 6,
         altText: "",
@@ -701,7 +701,7 @@ const pgData = [
                  {
         pgNum: 59,
         title: `Chapter 3 Page 51`,
-        date: writeDate(2021, 3, 21),
+        date: writeDate(2022, 2, 6),
         chapter: 3,
         imageFiles: 3,
         altText: "",
@@ -712,7 +712,7 @@ const pgData = [
                  {
         pgNum: 60,
         title: `Chapter 3 Page 52`,
-        date: writeDate(2021, 3, 21),
+        date: writeDate(2022, 4, 2),
         chapter: 3,
         imageFiles: 4,
         altText: "",
@@ -723,7 +723,7 @@ const pgData = [
                  {
         pgNum: 61,
         title: `Chapter 3 Page 53`,
-        date: writeDate(2021, 3, 21),
+        date: writeDate(2022, 11, 3),
         chapter: 3,
         imageFiles: 7,
         altText: "",
@@ -734,7 +734,7 @@ const pgData = [
                  {
         pgNum: 62,
         title: `Chapter 3 Page 54`,
-        date: writeDate(2021, 3, 21),
+        date: writeDate(2022, 12, 11),
         chapter: 3,
         imageFiles: 9,
         altText: "",
@@ -745,7 +745,7 @@ const pgData = [
                  {
         pgNum: 63,
         title: `Chapter 3 Page 55`,
-        date: writeDate(2021, 3, 21),
+        date: writeDate(2022, 12, 26),
         chapter: 3,
         imageFiles: 9,
         altText: "",
@@ -756,7 +756,7 @@ const pgData = [
                  {
         pgNum: 64,
         title: `Chapter 3 Page 56`,
-        date: writeDate(2021, 3, 21),
+        date: writeDate(2023, 1, 8),
         chapter: 3,
         imageFiles: 6,
         altText: "",
@@ -767,7 +767,7 @@ const pgData = [
                  {
         pgNum: 65,
         title: `Chapter 3 Page 57`,
-        date: writeDate(2021, 3, 21),
+        date: writeDate(2023, 1, 21),
         chapter: 3,
         imageFiles: 7,
         altText: "",
@@ -778,7 +778,7 @@ const pgData = [
                  {
         pgNum: 66,
         title: `Chapter 3 Page 58`,
-        date: writeDate(2021, 3, 21),
+        date: writeDate(2023, 2, 5),
         chapter: 3,
         imageFiles: 10,
         altText: "",
@@ -789,7 +789,7 @@ const pgData = [
                  {
         pgNum: 67,
         title: `Chapter 3 Page 59`,
-        date: writeDate(2021, 3, 21),
+        date: writeDate(2023, 2, 19),
         chapter: 3,
         imageFiles: 7,
         altText: "",
@@ -800,7 +800,7 @@ const pgData = [
                  {
         pgNum: 68,
         title: `Chapter 3 Page 60`,
-        date: writeDate(2021, 3, 21),
+        date: writeDate(2023, 3, 5),
         chapter: 3,
         imageFiles: 8,
         altText: "",
@@ -811,7 +811,7 @@ const pgData = [
                  {
         pgNum: 69,
         title: `Chapter 3 Page 61`,
-        date: writeDate(2021, 3, 21),
+        date: writeDate(2023, 3, 19),
         chapter: 3,
         imageFiles: 8,
         altText: "",
@@ -822,7 +822,7 @@ const pgData = [
                  {
         pgNum: 70,
         title: `Chapter 3 Page 62`,
-        date: writeDate(2021, 3, 21),
+        date: writeDate(2023, 4, 2),
         chapter: 3,
         imageFiles: 8,
         altText: "",
@@ -833,7 +833,7 @@ const pgData = [
                  {
         pgNum: 71,
         title: `Chapter 3 Page 63`,
-        date: writeDate(2021, 3, 21),
+        date: writeDate(2023, 4, 16),
         chapter: 3,
         imageFiles: 10,
         altText: "",
@@ -844,7 +844,7 @@ const pgData = [
                  {
         pgNum: 72,
         title: `Chapter 3 Page 64`,
-        date: writeDate(2021, 3, 21),
+        date: writeDate(2023, 4, 30),
         chapter: 3,
         imageFiles: 12,
         altText: "",
@@ -855,7 +855,7 @@ const pgData = [
                  {
         pgNum: 73,
         title: `Chapter 3 Page 65`,
-        date: writeDate(2021, 3, 21),
+        date: writeDate(2023, 5, 14),
         chapter: 3,
         imageFiles: 8,
         altText: "",
@@ -866,7 +866,7 @@ const pgData = [
                  {
         pgNum: 74,
         title: `Chapter 3 Page 66`,
-        date: writeDate(2021, 3, 21),
+        date: writeDate(2023, 5, 28),
         chapter: 3,
         imageFiles: 9,
         altText: "",
@@ -877,7 +877,7 @@ const pgData = [
                  {
         pgNum: 75,
         title: `Chapter 3 Page 67`,
-        date: writeDate(2021, 3, 21),
+        date: writeDate(2023, 6, 11),
         chapter: 3,
         imageFiles: 11,
         altText: "",
@@ -888,7 +888,7 @@ const pgData = [
                  {
         pgNum: 76,
         title: `Chapter 3 Page 68`,
-        date: writeDate(2021, 3, 21),
+        date: writeDate(2023, 6, 26),
         chapter: 3,
         imageFiles: 10,
         altText: "",
@@ -899,7 +899,7 @@ const pgData = [
                  {
         pgNum: 77,
         title: `Chapter 3 Page 69`,
-        date: writeDate(2021, 3, 21),
+        date: writeDate(2023, 7, 24),
         chapter: 3,
         imageFiles: 8,
         altText: "",
@@ -909,7 +909,7 @@ const pgData = [
     },                 {
         pgNum: 78,
         title: `Chapter 3 Page 70`,
-        date: writeDate(2021, 3, 21),
+        date: writeDate(2023, 8, 28),
         chapter: 3,
         imageFiles: 8,
         altText: "",
@@ -919,7 +919,7 @@ const pgData = [
     },                 {
         pgNum: 79,
         title: `Chapter 3 Page 71 [VIDEO]`,
-        date: writeDate(2021, 3, 21),
+        date: writeDate(2023, 10, 31),
         chapter: 3,
         imageFiles: 0,
         altText: "",
@@ -930,7 +930,7 @@ const pgData = [
     },                 {
         pgNum: 80,
         title: `Chapter 3 Page 72`,
-        date: writeDate(2021, 3, 21),
+        date: writeDate(2023, 11, 13),
         chapter: 3,
         imageFiles: 10,
         altText: "",
@@ -940,7 +940,7 @@ const pgData = [
     },                 {
         pgNum: 81,
         title: `Chapter 3 Page 73`,
-        date: writeDate(2021, 3, 21),
+        date: writeDate(2023, 11, 27),
         chapter: 3,
         imageFiles: 10,
         altText: "",
