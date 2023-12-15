@@ -11,8 +11,10 @@
     <!-- RSS items for each page -->
     <item>
       <title>Cover Page</title>
-      <link>https://punchholer.github.io/efarcomic.github.io/read.html?pg=1</link>
-      <description>Chapter 1: Cover Page</description>
+      <link>https://punchholer.github.io/efarcomic.github.io/read.html?pg=1</link> 
+        <description>
+        <img src="https://punchholer.github.io/efarcomic.github.io/img/comics/EFAR1.png"/>
+        </description>
       <pubDate>05 Sep 2017</pubDate>
       <guid>https://punchholer.github.io/efarcomic.github.io/read.html?pg=1</guid>
     </item>
@@ -20,7 +22,9 @@
     <item>
       <title>Chapter 1: Page 1</title>
       <link>https://punchholer.github.io/efarcomic.github.io/read.html?pg=2</link>
-      <description>Chapter 1: Page 1</description>
+        <description>
+        <img src="https://punchholer.github.io/efarcomic.github.io/img/comics/EFAR2.1.png"/>
+        </description>
       <pubDate>05 Sep 2017</pubDate>
       <guid>https://punchholer.github.io/efarcomic.github.io/read.html?pg=2</guid>
     </item>
