@@ -1,10 +1,10 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<rss version="2.0">
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>Escape From Abject Reality</title>
     <link>https://efarcomic.com/</link>
     <description>((Based on object shows on YouTube, specifically BFDI and Inanimate Insanity.)) 12 objects are kidnapped to take part in a dangerous ‘reality show'. They have to constantly avoid lethal obstacles that the sadistic host, Snake Oil had in store for them. Meanwhile, secrets lurk at every corner, and could be the key to their way out.</description>
-    <atom:link href="https://efarcomic.com/rss.xml" rel="self" type="application/rss+xml"/>
+    <atom:link href="https://efarcomic.com" rel="self" type="application/rss+xml"/>
 
     <!-- Add more metadata as needed -->
 
@@ -12,13 +12,7 @@
     <item>
       <title>Chapter 3 Page 70</title>
       <link>https://efarcomic.com/read.html?pg=78</link>
-      <description>
-        <![CDATA[
-          <p><a href="https://efarcomic.com/read.html?pg=78"><img src="https://efarcomic.com/img/comics/EFAR78.1.png" alt="Chapter 3 Page 70" /></a></p>
-        ]]>
-      </description>
-      <pubDate>Mon, 28 Aug 2023 00:00:00 SGT</pubDate>
-      <guid>https://punchholer.github.io/efarcomic.github.io/read.html?pg=1</guid>
+      <description></description>
     </item>
 
     <!-- Add more items for each page -->
