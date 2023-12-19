@@ -1,6 +1,5 @@
 <!DOCTYPE html>
 <html lang="en">
-<html>
   <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
@@ -18,10 +17,7 @@
 
     <!-- make sure that if you want to turn on automatically scrolling to the top of the comic when you load a new page, keep the id of this div and the variable "navScrollTo" in showcomic.js the same-->
     <div id="showComic">
-    <div id="disclaimer">
-        <span id='close' onclick='closeDisclaimer(); return false;'><h2>x</h2></span>
-        <img src="img/disclaimer.png" alt="Disclaimer"><p>DISCLAIMER: This webcomic is psychological horror and contains themes that some viewers might find disturbing. Certain pages contain .gif images (46a-f) which contains flashing images and colors. Press X to close.</p>
-        </div>
+    
     <!-- write the title of the page. -->
     <div id="pageTitle">
     <!-- write page title -->
@@ -36,11 +32,15 @@
     <select id="page-dropdown"></select>
     </div>
     </div>    
+    <div id="disclaimer">
+        <img src="img/disclaimer.png" alt="Disclaimer"><p>Javascript needs to be enabled to view this comic. This webcomic is psychological horror and contains themes that some viewers might find disturbing. Certain pages contain .gif images (46a-f) which contains flashing images and colors.</p>
+    </div>
   <div id="authorNotes">
     <h2>Author Notes</h2>
     <!-- write the author notes for the current page-->
     <div class="writeAuthorNotes"></div>
   </div>
+
         
 <!-- begin wwww.htmlcommentbox.com -->
  <div id="HCB_comment_box"><a href="http://www.htmlcommentbox.com">Comment Form</a> is loading comments...</div>
@@ -123,32 +123,7 @@
             populateDropdown(maxPages);
         });
         </script>
-      <script>
-              // Function to close the disclaimer and set a cookie to remember the state
-        function closeDisclaimer() {
-            document.getElementById('disclaimer').remove();
 
-            // Set a cookie to remember that the disclaimer has been closed
-            document.cookie = 'disclaimerClosed=true; expires=Fri, 31 Dec 9999 23:59:59 GMT; path=/';
-        }
-
-        // Function to check if the disclaimer should be displayed based on the cookie
-        function checkDisclaimer() {
-            const disclaimer = document.getElementById('disclaimer');
-
-            // Check if the disclaimer cookie is set
-            const disclaimerClosed = document.cookie.split(';').some((item) => item.trim().startsWith('disclaimerClosed='));
-
-            // If the disclaimer cookie is set, remove the disclaimer
-            if (disclaimerClosed) {
-                disclaimer.remove();
-            }
-        }
-
-        // Call the function to check the disclaimer status when the DOM is loaded
-        document.addEventListener('DOMContentLoaded', checkDisclaimer);
-
-      </script>
 
   </body>
 </html>
