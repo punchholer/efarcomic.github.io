@@ -77,7 +77,7 @@ const pgData = [
     {
         pgNum: 3,
         title: "Chapter 1 Page 02",
-        date: writeDate(2017, 9, 7),
+        date: writeDate(2021, 9, 7),
         chapter: 1,
         imageFiles: 4,
         altText: "",
@@ -88,7 +88,7 @@ const pgData = [
     {
         pgNum: 4,
         title: "Chapter 1 Page 03",
-        date: writeDate(2017, 9, 7),
+        date: writeDate(2021, 9, 7),
         chapter: 1,
         imageFiles: 3,
         altText: "",
@@ -852,7 +852,8 @@ const pgData = [
            <p>TBA</p>
             `,
     },
-                 {
+                 
+    {
         pgNum: 73,
         title: `Chapter 3 Page 65`,
         date: writeDate(2023, 5, 14),
@@ -863,7 +864,9 @@ const pgData = [
            <p>TBA</p>
             `,
     },
-                 {
+                 
+    
+    {
         pgNum: 74,
         title: `Chapter 3 Page 66`,
         date: writeDate(2023, 5, 28),
@@ -874,7 +877,9 @@ const pgData = [
            <p>TBA</p>
             `,
     },
-                 {
+                 
+    
+    {
         pgNum: 75,
         title: `Chapter 3 Page 67`,
         date: writeDate(2023, 6, 11),
@@ -885,7 +890,9 @@ const pgData = [
            <p>TBA</p>
             `,
     },
-                 {
+                 
+    
+    {
         pgNum: 76,
         title: `Chapter 3 Page 68`,
         date: writeDate(2023, 6, 26),
@@ -896,7 +903,9 @@ const pgData = [
            <p>TBA</p>
             `,
     },
-                 {
+                 
+    
+    {
         pgNum: 77,
         title: `Chapter 3 Page 69`,
         date: writeDate(2023, 7, 24),
@@ -906,7 +915,9 @@ const pgData = [
         authorNotes: `
            <p>TBA</p>
             `,
-    },                 {
+    },                 
+    
+    {
         pgNum: 78,
         title: `Chapter 3 Page 70`,
         date: writeDate(2023, 8, 28),
@@ -916,7 +927,9 @@ const pgData = [
         authorNotes: `
            <p>TBA</p>
             `,
-    },                 {
+    },                 
+    
+    {
         pgNum: 79,
         title: `Chapter 3 Page 71 [VIDEO]`,
         date: writeDate(2023, 10, 31),
@@ -927,7 +940,9 @@ const pgData = [
         authorNotes: `
            <p>TBA</p>
             `,
-    },                 {
+    },                 
+    
+    {
         pgNum: 80,
         title: `Chapter 3 Page 72`,
         date: writeDate(2023, 11, 13),
@@ -937,12 +952,26 @@ const pgData = [
         authorNotes: `
            <p>TBA</p>
             `,
-    },                 {
+    },                 
+    
+    {
         pgNum: 81,
         title: `Chapter 3 Page 73`,
         date: writeDate(2023, 11, 27),
         chapter: 3,
         imageFiles: 10,
+        altText: "",
+        authorNotes: `
+           <p>TBA</p>
+            `,
+    },
+    
+    {
+        pgNum: 82,
+        title: `Chapter 3 Page 74`,
+        date: writeDate(2023, 12, 18),
+        chapter: 3,
+        imageFiles: 11,
         altText: "",
         authorNotes: `
            <p>TBA</p>
