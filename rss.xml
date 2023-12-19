@@ -1,32 +1,22 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
-    <atom:link href="https://punchholer.github.io/efarcomic.github.io/rss.xml" rel="self" type="application/rss+xml"/>
+    <atom:link href="https:/efarcomic.com/rss.xml" rel="self" type="application/rss+xml"/>
     <title>Escape From Abject Reality</title>
     <description>((Based on object shows on YouTube, specifically BFDI and Inanimate Insanity.)) 12 objects are kidnapped to take part in a dangerous ‘reality show'. They have to constantly avoid lethal obstacles that the sadistic host, Snake Oil had in store for them. Meanwhile, secrets lurk at every corner, and could be the key to their way out.</description>
-    <link>https://punchholer.github.io/efarcomic.github.io/</link>
+    <link>https://efarcomic.com/</link>
 
     <!-- Add more metadata as needed -->
 
     <!-- RSS items for each page -->
     <item>
-      <title>Cover Page</title>
-      <link>https://punchholer.github.io/efarcomic.github.io/read.html?pg=1</link> 
+      <title>Chapter 3 Page 70</title>
+      <link>https://efarcomic.com/read.html?pg=78</link> 
         <description>
-        <img src="https://punchholer.github.io/efarcomic.github.io/img/comics/EFAR1.png"/>
+        <img src="https://efarcomic.com/img/comics/EFAR78.1.png">
         </description>
-      <pubDate>05 Sep 2017</pubDate>
+      <pubDate>Mon, 28 Aug 2023 00:00:00 SGT</pubDate>
       <guid>https://punchholer.github.io/efarcomic.github.io/read.html?pg=1</guid>
-    </item>
-
-    <item>
-      <title>Chapter 1: Page 1</title>
-      <link>https://punchholer.github.io/efarcomic.github.io/read.html?pg=2</link>
-        <description>
-        <img src="https://punchholer.github.io/efarcomic.github.io/img/comics/EFAR2.1.png"/>
-        </description>
-      <pubDate>05 Sep 2017</pubDate>
-      <guid>https://punchholer.github.io/efarcomic.github.io/read.html?pg=2</guid>
     </item>
 
     <!-- Add more items for each page -->
