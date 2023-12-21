@@ -7,13 +7,15 @@ function changeCharacter(characterData) {
     const statusElement = document.getElementById('status');
     const revealButton = document.getElementById('reveal-button');
 
-        if (characterData.characterName === 'The Bucket'|| characterData.characterName === 'Foamy') {
+    if (characterData.characterName === 'The Bucket' || characterData.characterName === 'Foamy') {
         statusElement.style.opacity = 0.1; // Set opacity to 0 for status
     } else {
         // For other characters, show all elements
         statusElement.style.opacity = 1; // Set opacity to 1 for status
     }
-    
+
+
+
     // Create a new image element
     const newImage = document.createElement('img');
     newImage.src = `img/characters/profile/${characterData.imageFilename}`;
@@ -32,27 +34,9 @@ function changeCharacter(characterData) {
     // Reset the status and button
     statusElement.style.display = 'none';
     revealButton.style.display = 'inline-block';
-    revealButton.onclick = function() {
+    revealButton.onclick = function () {
         revealStatus();
     };
-}
-
-// Function to reveal the status
-function revealStatus() {
-    const statusElement = document.getElementById('status');
-    const revealButton = document.getElementById('reveal-button');
-
-    statusElement.style.display = 'inline-block';
-    revealButton.style.display = 'none';
-}
-
-// Function to reveal the status
-function revealStatus() {
-    const statusElement = document.getElementById('status');
-    const revealButton = document.getElementById('reveal-button');
-
-    statusElement.style.display = 'inline-block';
-    revealButton.style.display = 'none';
 }
 
 // Function to reveal the status
@@ -69,8 +53,8 @@ const characters = [
     {
         characterName: 'Amulet',
         imageFilename: 'Amulet.png',
-        details: 
-        `
+        details:
+            `
             <div class="attribute">
                 <p><strong>Intellect:</strong></p>
                 <img src="img/characters/biocircles/amu_int.png" alt="Intellect">
@@ -90,8 +74,8 @@ const characters = [
     {
         characterName: 'Badgey',
         imageFilename: 'Badgey.png',
-        details: 
-        `
+        details:
+            `
             <div class="attribute">
                 <p><strong>Intellect:</strong></p>
                 <img src="img/characters/biocircles/bad_int.png" alt="Intellect">
@@ -108,11 +92,11 @@ const characters = [
         description: '<p><strong>Object type:</strong> Circular Pin Badge</p><p><strong>Description:</strong></p><p>Badgey is kind and sincere, willing to listen to what others have to say. He doesn‘t brag often, and would be glad to quietly stay on the sidelines and help others. However, Badgey lacks in self esteem. While he can be somewhat inquisitive on other’s motives, he would rarely question them due to not believing in his own convictions enough.</p>',
         status: '<strong>Status:</strong> Alive'
     },
-   {
+    {
         characterName: 'Basket',
         imageFilename: 'Basket.png',
-        details: 
-        `
+        details:
+            `
             <div class="attribute">
                 <p><strong>Intellect:</strong></p>
                 <img src="img/characters/biocircles/bas_int.png" alt="Intellect">
@@ -127,13 +111,13 @@ const characters = [
             </div>
         `,
         description: '<p><strong>Object type:</strong> Wastepaper Basket</p><p><strong>Description:</strong></p><p>A proud jokester, Basket tells dry jokes at the expense of everyone he meets. He is often unaware of how his words can hurt others, which could lead to disastrous results on his side. He rarely looks where he leaps. Therefore, the prideful Basket is often burdened from the consequences of his past mistakes that he deeply regrets.</p>',
-       status: '<strong>Status:</strong> Alive'
+        status: '<strong>Status:</strong> Alive'
     },
-     {
+    {
         characterName: 'Clove',
         imageFilename: 'Clove.png',
-        details: 
-       `
+        details:
+            `
             <div class="attribute">
                 <p><strong>Intellect:</strong></p>
                 <img src="img/characters/biocircles/clo_int.png" alt="Intellect">
@@ -150,19 +134,19 @@ const characters = [
         description: '<p><strong>Object type:</strong> Flower Bud of <em>S. Aromaticum</em></p><p><strong>Description:</strong></p><p>Clove speaks her mind without a filter. She may not be fully capable of understanding the true horrors of Abject Reality, but she is empathetic and can easily read the environment around her. Aware of her own diminutive size, but she appears confident about it. Perceptive and kind, she is often the unintentional mediator between her friends.</p>',
         status: '<strong>Status:</strong> Alive'
     },
-     {
+    {
         characterName: 'Foamy',
         imageFilename: 'Foamy.png',
-        details: 
-         ``,
+        details:
+            ``,
         description: '<p><strong>Object type:</strong> Styrofoam Block</p><p><strong>Description:</strong></p><p>Styrofoam is sorry for what he had done.</p><p>As I rightfully should.</p>',
-         status: '<strong>Status:</strong> Wxsstc'
+        status: '<strong>Status:</strong> Wxsstc'
     },
     {
         characterName: 'Jeans',
         imageFilename: 'Jeans.png',
-        details: 
-        `
+        details:
+            `
             <div class="attribute">
                 <p><strong>Intellect:</strong></p>
                 <img src="img/characters/biocircles/jea_int.png" alt="Intellect">
@@ -182,8 +166,8 @@ const characters = [
     {
         characterName: 'Pinky',
         imageFilename: 'Pinky.png',
-        details: 
-        `
+        details:
+            `
             <div class="attribute">
                 <p><strong>Intellect:</strong></p>
                 <img src="img/characters/biocircles/pin_int.png" alt="Intellect">
@@ -203,8 +187,8 @@ const characters = [
     {
         characterName: 'Silica',
         imageFilename: 'Silica.png',
-        details: 
-        `
+        details:
+            `
             <div class="attribute">
                 <p><strong>Intellect:</strong></p>
                 <img src="img/characters/biocircles/sil_int.png" alt="Intellect">
@@ -224,8 +208,8 @@ const characters = [
     {
         characterName: 'Squiggly',
         imageFilename: 'Squiggly.png',
-        details: 
-       `
+        details:
+            `
             <div class="attribute">
                 <p><strong>Intellect:</strong></p>
                 <img src="img/characters/biocircles/squ_int.png" alt="Intellect">
@@ -242,11 +226,11 @@ const characters = [
         description: '<p><strong>Object type:</strong> S shaped block</p><p><strong>Description:</strong></p><p>Squiggly is the older twin, but he is more anxious than his younger brother, Z. His other name is known as ‘Rhodes’. Without his brother, he feels that he became a half of a whole. He tries his best to care about the safety of his friends and is confident about questioning the ambiguous nature of Abject Reality, even if he appears paranoid about everything wrong that could happen.</p>',
         status: '<strong>Status:</strong> Alive'
     },
-     {
+    {
         characterName: 'Swabs',
         imageFilename: 'Swabs.png',
-        details: 
-         `
+        details:
+            `
             <div class="attribute">
                 <p><strong>Intellect:</strong></p>
                 <img src="img/characters/biocircles/swa_int.png" alt="Intellect">
@@ -261,13 +245,13 @@ const characters = [
             </div>
         `,
         description: '<p><strong>Object type:</strong> Cotton Bud</p><p><strong>Description:</strong></p><p>Swabs is calm and collected and gets along with almost everyone fairly well as a pacifist. She dislikes people fighting with each other and tries her best to prevent them. She is curious about how Abject Reality works, and would be the one to seek information about it. She bottles up her own negative emotions, which leads to mild signs of aggression in her actions.</p>',
-         status: '<strong>Status:</strong> Alive'
+        status: '<strong>Status:</strong> Alive'
     },
-     {
+    {
         characterName: 'Wet Wipes',
         imageFilename: 'Wipes.png',
-        details: 
-         `
+        details:
+            `
             <div class="attribute">
                 <p><strong>Intellect:</strong></p>
                 <img src="img/characters/biocircles/wip_int.png" alt="Intellect">
@@ -282,13 +266,13 @@ const characters = [
             </div>
         `,
         description: '<p><strong>Object type:</strong> Wet Tissues</p><p><strong>Description:</strong></p><p>Wet Wipes is serious and gloomy. A true wet blanket, she is in no mood for Basket’s jokes. She is often pessimistic about blind optimism due to her believing that she’s just going to be a hindrance to their hope. Her dour facade slips off when she is left with her own emotions to introspect on, due to her desiring companionship and approval, of all things.</p>',
-         status: '<strong>Status:</strong> Deceased'
+        status: '<strong>Status:</strong> Deceased'
     },
- {
+    {
         characterName: 'Z/Zwiggly',
         imageFilename: 'Z.png',
-        details: 
-     `
+        details:
+            `
             <div class="attribute">
                 <p><strong>Intellect:</strong></p>
                 <img src="img/characters/biocircles/z_int.png" alt="Intellect">
@@ -308,24 +292,24 @@ const characters = [
     {
         characterName: 'Snake Oil',
         imageFilename: 'Snake.png',
-        details: 
-        ``,
+        details:
+            ``,
         description: '<p><strong>Object type:</strong> <em>Snake Oil</em></p><p><strong>Description:</strong></p><p>Suspected to have seized the holographic and reality bending controls of Abject Reality, and has a sadistic and impersonable attitude.</p>',
         status: '<strong>Status:</strong> In Hiding'
     },
     {
         characterName: 'Mirror',
         imageFilename: 'Mirror.png',
-        details: 
-        ``,
+        details:
+            ``,
         description: '<p><strong>Object type:</strong> Framed Mirror</p><p><strong>Description:</strong></p><p>Mirror was loving and kind to everyone she meets. She always had a penchant of making everyone look the best they’ve ever been, which was why she was so fascinated by fashion and makeup. One moment, she was in the studio away from home, and the next day, she was gone. There have been several attempts for a full recovery, but none of them managed to bring her back to her old self.</p>',
         status: '<strong>Status:</strong> Deceased'
     },
     {
         characterName: 'The Bucket',
         imageFilename: 'TheBucket.png',
-        details: 
-        ``,
+        details:
+            ``,
         description: '<p><strong>Object type:</strong> The liquid inside of it (?)</p><p><strong>Description:</strong></p><p>Not much is known about this object, other than the fact that it appeared in Abject Reality and currently in the hands of someone else. This object is made up of hundreds of voices from an alternate dimension, and peculiarly, defies the laws of physics. Further testing is required.</p>',
         status: '<strong>Status:</strong> Fifteen Letters Back'
     },
@@ -336,10 +320,16 @@ function initializeButtons() {
     const buttonContainer = document.getElementById('button-container');
 
     characters.forEach(character => {
-        const button = document.createElement('button');
-        button.textContent = character.characterName;
-        button.addEventListener('click', () => changeCharacter(character));
-        buttonContainer.appendChild(button);
+        // Create an image element for the button
+        const buttonImage = document.createElement('img');
+        buttonImage.src = `img/characters/thumbnails/${character.imageFilename}`; // Adjust the path accordingly
+        buttonImage.alt = character.characterName;
+
+        // Add a click event listener to change the character when the button is clicked
+        buttonImage.addEventListener('click', () => changeCharacter(character));
+
+        // Append the image button to the container
+        buttonContainer.appendChild(buttonImage);
     });
 
     // Set initial character when the page loads
@@ -348,3 +338,5 @@ function initializeButtons() {
 
 // Initialize the buttons when the page loads
 document.addEventListener('DOMContentLoaded', initializeButtons);
+
+

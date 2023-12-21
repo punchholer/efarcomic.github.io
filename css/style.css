@@ -84,7 +84,7 @@ img {
   padding: 10px;
 }
 
-.subPage:not(.archivePage) {
+.subPage:not(.archivePage, .aboutPage) {
   text-align: center;
   padding: 15px;
 }
@@ -494,7 +494,7 @@ img {
 
 /* Characters Page */
 #button-container {
-  margin: 20px;
+  margin: 10px;
 }
 
 #content-container {
@@ -588,7 +588,6 @@ img {
   margin-top: 10px;
   /* Adjust margin as needed */
   cursor: pointer;
-  margin: 0px;
 }
 
 #reveal-button:hover {
@@ -679,6 +678,13 @@ button:hover {
   font-weight: bold;
   color: #fff;
 }
+
+/* ABOUT PAGE */
+#aboutPage {
+  text-align: left;
+  padding: 15px;
+}
+
 
 /* FOOTER */
 footer {
