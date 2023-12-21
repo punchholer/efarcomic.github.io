@@ -632,53 +632,6 @@ img {
   }
 }
 
-.cipherContainer {
-  background-color: #1B1B1B;
-  padding: 20px;
-  border-radius: 5px;
-  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
-}
-
-h1 {
-  text-align: center;
-  color: #fff;
-}
-
-label {
-  display: block;
-  margin-bottom: 8px;
-  color: #fff;
-}
-
-input {
-  width: 100%;
-  padding: 8px;
-  margin-bottom: 16px;
-  box-sizing: border-box;
-}
-
-button {
-  padding: 10px;
-  background-color: #000;
-  outline: 3px solid #FFCD79;
-  color: #FFCD79;
-  border: none;
-  border-radius: 4px;
-  font-family: 'lucida grande', 'lucida sans unicode', 'verdana', sans-serif;
-  cursor: pointer;
-  margin: 15px;
-}
-
-button:hover {
-  background-color: #0056b3;
-}
-
-#result {
-  margin-top: 16px;
-  font-weight: bold;
-  color: #fff;
-}
-
 /* ABOUT PAGE */
 #aboutPage {
   text-align: left;
