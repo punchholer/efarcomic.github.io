@@ -61,7 +61,7 @@ footer,
 #authorNotes,
 .archiveTable {
   font-family: 'lucida grande', 'lucida sans unicode', 'verdana', sans-serif;
-  font-size: 15px;
+  font-size: 16px;
   color: #ffffff;
 }
 
@@ -84,7 +84,7 @@ img {
   padding: 10px;
 }
 
-.subPage:not(.archivePage, .aboutPage) {
+.subPage:not(.archivePage) {
   text-align: center;
   padding: 15px;
 }
@@ -635,6 +635,15 @@ img {
 /* ABOUT PAGE */
 #aboutPage {
   text-align: left;
+  padding: 15px;
+}
+
+#FAQ_Qn {
+  background-color: #1B1B1B;
+  outline: 3px solid #3D3D3D;
+  font-family: 'lucida grande', 'lucida sans unicode', 'verdana', sans-serif;
+  font-size: 16px;
+  color: #ffffff;
   padding: 15px;
 }
 
