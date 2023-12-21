@@ -110,10 +110,9 @@ img {
   /* Initially hide the mobile menu icon */
   cursor: pointer;
   font-size: 24px;
-  padding: 10px;
   position: absolute;
   top: 10px;
-  right: 10px;
+  right: 25px;
   color: #fff;
   background-color: #1B1B1B;
   outline: 3px solid #3D3D3D;
@@ -203,8 +202,9 @@ img {
     display: block;
   }
 
-  .desktop-nav li a:hover {
+  .desktop-nav li:hover {
     background-color: #4e4e4e;
+    outline: 3px solid #fff;
     /* Adjust the background color on hover */
   }
 }
