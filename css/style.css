@@ -50,7 +50,8 @@ h1,
 h2,
 h3,
 h4,
-h5 {
+h5,
+li {
   font-family: 'lucida grande', 'lucida sans unicode', 'verdana', sans-serif;
   color: #ffffff;
 }
@@ -130,12 +131,6 @@ img {
     transition: transform 0.3s ease;
     /* Show the mobile menu icon */
   }
-
-  .mobile-menu-icon.rotate {
-    transform: rotate(90deg);
-    /* You can adjust the degree of rotation as needed */
-  }
-
 
   #nav {
     position: fixed;
