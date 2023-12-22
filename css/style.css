@@ -67,6 +67,19 @@ footer,
   line-height: 1.5em;
 }
 
+a:link {
+  color: #E4A754;
+  background-color: transparent;
+  text-decoration: none;
+}
+
+a:visited {
+  color: #DA5437;
+  background-color: transparent;
+  text-decoration: none;
+}
+
+
 img {
   max-width: 100%;
   height: auto;
