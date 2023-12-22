@@ -6,15 +6,51 @@ function changeCharacter(characterData) {
     const descriptionElement = document.getElementById('description');
     const statusElement = document.getElementById('status');
     const revealButton = document.getElementById('reveal-button');
+    const cipherDecoderContainer = document.getElementById('cipher-decoder-container');
 
-    if (characterData.characterName === 'The Bucket' || characterData.characterName === 'Foamy') {
-        statusElement.style.opacity = 0.1; // Set opacity to 0 for status
-    } else {
-        // For other characters, show all elements
-        statusElement.style.opacity = 1; // Set opacity to 1 for status
+    // Remove existing cipher decoder
+    if (cipherDecoderContainer) {
+        cipherDecoderContainer.parentNode.removeChild(cipherDecoderContainer);
     }
+    // Check if the current character is 'The Bucket' or 'Foamy'
+    if (characterData.characterName === 'The Bucket' || characterData.characterName === 'Foamy' || characterData.characterName === 'Snake Oil') {
+        // Set opacity to 0.1 for status
+        statusElement.style.opacity = 0.1;
 
+        // Create the decoder container for 'The Bucket' only
+        if (characterData.characterName === 'The Bucket') {
+            // Create the decoder container
+            const decoderContainer = document.createElement('div');
+            decoderContainer.id = 'cipher-decoder-container';
 
+            // Add content to the decoder container (e.g., a form)
+            decoderContainer.innerHTML = `
+                <form id="decoder-form">
+                    <h2>Bucket decoder</h2>
+                    <input type="text" id="cipher-text" name="cipher-text" required>
+                    <button type="button" onclick="decodeCipher()">Decode</button>
+                    <p id="decoded-text"></p>
+                </form>
+            `;
+
+            // Append the decoder container between content-container and footer
+            const contentContainer = document.getElementById('content-container');
+            contentContainer.parentNode.insertBefore(decoderContainer, document.getElementById('footer'));
+
+            // Hide the reveal button for 'The Bucket'
+            revealButton.style.display = 'none';
+        }
+    } else {
+        // For other characters, set opacity to 1 for status
+        statusElement.style.opacity = 1;
+
+        // Reset the status and button
+        statusElement.style.display = 'none';
+        revealButton.style.display = 'inline-block';
+        revealButton.onclick = function () {
+            revealStatus();
+        };
+    }
 
     // Create a new image element
     const newImage = document.createElement('img');
@@ -47,6 +83,57 @@ function revealStatus() {
     statusElement.style.display = 'inline-block';
     revealButton.style.display = 'none';
 }
+
+// Function to decode the cipher text
+function decodeCipher() {
+    const cipherTextElement = document.getElementById('cipher-text');
+    const decodedTextElement = document.getElementById('decoded-text');
+
+    // Get the input values
+    const cipherText = cipherTextElement.value;
+    const shift = 15; // Set your desired shift value here, or you can get it from user input
+
+    // Decode the cipher text using your caesarDecode function
+    const decodedText = caesarDecode(cipherText, shift);
+
+    // Display the result
+    decodedTextElement.textContent = `Decoded Text: ${decodedText}`;
+}
+
+// Example Caesar cipher decoding function
+function caesarDecode(text, shift) {
+    return text.replace(/[a-zA-Z]/g, function (char) {
+        const isUpperCase = char === char.toUpperCase();
+        const offset = isUpperCase ? 'A'.charCodeAt(0) : 'a'.charCodeAt(0);
+        const decodedChar = String.fromCharCode((char.charCodeAt(0) - offset - shift + 26) % 26 + offset);
+        return isUpperCase ? decodedChar.toUpperCase() : decodedChar;
+    });
+}
+
+// Function to initialize the buttons
+function initializeButtons() {
+    const buttonContainer = document.getElementById('button-container');
+
+    characters.forEach(character => {
+        // Create an image element for the button
+        const buttonImage = document.createElement('img');
+        buttonImage.src = `img/characters/thumbnails/${character.imageFilename}`; // Adjust the path accordingly
+        buttonImage.alt = character.characterName;
+
+        // Add a click event listener to change the character when the button is clicked
+        buttonImage.addEventListener('click', () => changeCharacter(character));
+
+        // Append the image button to the container
+        buttonContainer.appendChild(buttonImage);
+    });
+
+    // Set initial character when the page loads
+    changeCharacter(characters[0]); // You can set a different initial character if needed
+}
+
+// Initialize the buttons when the page loads
+document.addEventListener('DOMContentLoaded', initializeButtons);
+
 
 // Example data for characters
 const characters = [
@@ -295,7 +382,7 @@ const characters = [
         details:
             ``,
         description: '<p><strong>Object type:</strong> <em>Snake Oil</em></p><p><strong>Description:</strong></p><p>Suspected to have seized the holographic and reality bending controls of Abject Reality, and has a sadistic and impersonable attitude.</p>',
-        status: '<strong>Status:</strong> In Hiding'
+        status: '<strong>Status:</strong> Jcstgvgdjcs'
     },
     {
         characterName: 'Mirror',
@@ -311,7 +398,7 @@ const characters = [
         details:
             ``,
         description: '<p><strong>Object type:</strong> The liquid inside of it (?)</p><p><strong>Description:</strong></p><p>Not much is known about this object, other than the fact that it appeared in Abject Reality and currently in the hands of someone else. This object is made up of hundreds of voices from an alternate dimension, and peculiarly, defies the laws of physics. Further testing is required.</p>',
-        status: '<strong>Status:</strong> Fifteen Letters Back'
+        status: '<strong>Status:</strong> Fifteen Letters'
     },
 ];
 
