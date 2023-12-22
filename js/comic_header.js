@@ -6,7 +6,6 @@ document.addEventListener('DOMContentLoaded', function () {
   // Toggle the 'active' class on headerArea when the mobile icon is clicked
   mobileMenuIcon.addEventListener('click', function () {
     headerArea.classList.toggle('active');
-    mobileMenuIcon.classList.toggle('rotate'); // Add this line to toggle the rotation class
   });
 
   // Close the menu when a link is clicked
