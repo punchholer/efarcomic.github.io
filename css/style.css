@@ -241,7 +241,7 @@ img {
 }
 
 #news-title h1 {
-  padding: 15px;
+  padding: 10px;
   margin-bottom: 0px;
 }
 
@@ -706,6 +706,13 @@ img {
     position: relative;
     left: 0px;
   }
+}
+
+/* FancyBox */
+
+.fancybox__caption {
+  font-family: 'lucida grande', 'lucida sans unicode', 'verdana', sans-serif;
+  font-size: 16px;
 }
 
 /* ABOUT PAGE */

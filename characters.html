@@ -22,6 +22,9 @@
     <link rel="preconnect" href="https://fonts.gstatic.com">
     <!-- Open Sans -->
     <link href="https://fonts.googleapis.com/css2?family=Open+Sans&display=swap" rel="stylesheet">
+    <!-- Fancybox -->
+    <script src="https://cdn.jsdelivr.net/npm/@fancyapps/ui@5.0/dist/fancybox/fancybox.umd.js"></script>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fancyapps/ui@5.0/dist/fancybox/fancybox.css" />
 </head>
 
 <body align="center">
@@ -63,6 +66,20 @@
     </div>
     <div class="subPage clearfix" align="center">
         <h1>Character References</h1>
+        <p>Click on the image to view previous character sheets.</p>
+        <a href="img/characters/references/3.png" data-fancybox="references"
+            data-caption="The current character reference sheet I use, but there will be a new one soon...">
+            <img src="img/characters/references/3.png" width="600px" height="100%" />
+        </a>
+
+        <a href="img/characters/references/2.png" data-fancybox="references"
+            data-caption="The reference sheet I used for most of chapter 2, circa 2018-2019.">
+        </a>
+
+        <a href="img/characters/references/1.png" data-fancybox="references"
+            data-caption="The very first reference sheet, this comic has come a long way since 2017!">
+        </a>
+    </div>
     </div>
 
     </div>
@@ -74,6 +91,13 @@
     <script src="js/comic_header.js" defer></script>
     <script src="js/comic_decoder.js" defer></script>
     <script src="js/comic_footer.js" defer></script>
+    <script src="js/fancybox.js" defer></script>
+
+    <script>
+        Fancybox.bind('[data-fancybox="references"]', {
+            groupAll: true,
+        });
+    </script>
 
 
 </body>

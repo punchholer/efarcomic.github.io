@@ -1,5 +1,5 @@
 {
   "dependencies": {
-    "lightbox2": "^2.11.4"
+    "@fancyapps/fancybox": "^3.5.7"
   }
 }
