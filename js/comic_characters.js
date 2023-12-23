@@ -40,6 +40,13 @@ function changeCharacter(characterData) {
             // Hide the reveal button for 'The Bucket'
             revealButton.style.display = 'none';
         }
+        // Remove the 'pressed' class from all buttons
+        const allButtons = document.querySelectorAll('#button-container img');
+        allButtons.forEach(button => button.classList.remove('pressed'));
+
+        // Add the 'pressed' class to the clicked button
+        const pressedButton = document.querySelector(`#button-container img[alt="${characterData.characterName}"]`);
+        pressedButton.classList.add('pressed');
     } else {
         // For other characters, set opacity to 1 for status
         statusElement.style.opacity = 1;
@@ -50,6 +57,13 @@ function changeCharacter(characterData) {
         revealButton.onclick = function () {
             revealStatus();
         };
+
+        const allButtons = document.querySelectorAll('#button-container img');
+        allButtons.forEach(button => button.classList.remove('pressed'));
+
+        // Add the 'pressed' class to the clicked button
+        const pressedButton = document.querySelector(`#button-container img[alt="${characterData.characterName}"]`);
+        pressedButton.classList.add('pressed');
     }
 
     // Create a new image element
@@ -108,6 +122,35 @@ function caesarDecode(text, shift) {
         const decodedChar = String.fromCharCode((char.charCodeAt(0) - offset - shift + 26) % 26 + offset);
         return isUpperCase ? decodedChar.toUpperCase() : decodedChar;
     });
+}
+
+
+//Function to initialize character buttons
+function initializeButtons() {
+    const buttonContainer = document.getElementById('button-container');
+
+    characters.forEach(character => {
+        // Create a container div for each button to control spacing
+        const buttonWrapper = document.createElement('div');
+        buttonWrapper.style.marginRight = '5px'; // Set the desired spacing
+
+        // Create an image element for the button
+        const buttonImage = document.createElement('img');
+        buttonImage.src = `img/characters/thumbnails/${character.imageFilename}`;
+        buttonImage.alt = character.characterName;
+
+        buttonImage.addEventListener('click', () => {
+            changeCharacter(character);
+            // Optionally, you can prevent the button from being clicked again
+            buttonImage.removeEventListener('click', arguments.callee);
+        });
+
+        // Append the image button to the container
+        buttonContainer.appendChild(buttonImage);
+    });
+
+    // Set initial character when the page loads
+    changeCharacter(characters[0]); // You can set a different initial character if needed
 }
 
 // Function to initialize the buttons
@@ -401,29 +444,5 @@ const characters = [
         status: '<strong>Status:</strong> Fifteen Letters'
     },
 ];
-
-// Function to initialize the buttons
-function initializeButtons() {
-    const buttonContainer = document.getElementById('button-container');
-
-    characters.forEach(character => {
-        // Create an image element for the button
-        const buttonImage = document.createElement('img');
-        buttonImage.src = `img/characters/thumbnails/${character.imageFilename}`; // Adjust the path accordingly
-        buttonImage.alt = character.characterName;
-
-        // Add a click event listener to change the character when the button is clicked
-        buttonImage.addEventListener('click', () => changeCharacter(character));
-
-        // Append the image button to the container
-        buttonContainer.appendChild(buttonImage);
-    });
-
-    // Set initial character when the page loads
-    changeCharacter(characters[0]); // You can set a different initial character if needed
-}
-
-// Initialize the buttons when the page loads
-document.addEventListener('DOMContentLoaded', initializeButtons);
 
 

@@ -9,7 +9,7 @@ document.querySelector(".writeFooter").innerHTML = `
             <a href="https://www.youtube.com/channel/UCq02sauux-1yqpIly8wI7Nw"><img src="img/icons/youtube-icon.png" alt="Youtube"></a>
             <!-- Add more social media icons as needed -->   
     </div>
-            <p>© 2017 - 2024 Punch-Holer | Powered by <a href="https://rarebit.neocities.org">Rarebit</a></p>
+            <p>© 2017 - 2024 Punch-Holer | Powered by <a href="https://rarebit.neocities.org">Rarebit</a> | This website uses <a href="https://www.goatcounter.com/">GoatCounter</a></p>
     </div>
     </footer>
 `;

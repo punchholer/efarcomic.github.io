@@ -93,7 +93,7 @@ img {
   width: 900px;
   max-width: 98%;
   background-color: #1B1B1B;
-  outline: 3px solid #3D3D3D;
+  outline: 2px solid #3D3D3D;
   margin: auto;
   margin-bottom: 10px;
   padding: 10px;
@@ -133,7 +133,7 @@ img {
   right: 20px;
   color: #fff;
   background-color: #1B1B1B;
-  outline: 3px solid #3D3D3D;
+  outline: 2px solid #FFCD79;
 }
 
 
@@ -141,7 +141,6 @@ img {
 @media only screen and (max-width: 600px) {
   .mobile-menu-icon {
     display: block;
-    transition: transform 0.3s ease;
     /* Show the mobile menu icon */
   }
 
@@ -209,9 +208,10 @@ img {
 
   .desktop-nav li {
     background-color: #1b1b1b;
-    outline: 3px solid #3d3d3d;
+    outline: 2px solid #3d3d3d;
     padding: 15px;
     text-align: center;
+    margin: 15px;
   }
 
   .desktop-nav li a {
@@ -233,7 +233,7 @@ img {
 
 #news-title {
   background-color: #232424;
-  outline: 3px solid #565959;
+  outline: 2px solid #FFCD79;
   width: 600px;
   max-width: 98%;
   text-align: center;
@@ -247,7 +247,7 @@ img {
 
 #news-container {
   background-color: #313333;
-  outline: 3px solid #565959;
+  outline: 2px solid #FFCD79;
   max-height: 300px;
   /* Adjust the max height as needed */
   overflow-y: auto;
@@ -355,7 +355,7 @@ img {
 /* style author notes */
 #authorNotes {
   background-color: #1B1B1B;
-  outline: 3px solid #3D3D3D;
+  outline: 2px solid #3D3D3D;
   padding: 15px;
   width: 900px;
   max-width: 98%;
@@ -391,7 +391,7 @@ img {
 
 #HCB_comment_box {
   background-color: #1B1B1B;
-  outline: 3px solid #3D3D3D;
+  outline: 2px solid #3D3D3D;
   padding: 15px;
   width: 900px;
   max-width: 98%;
@@ -409,7 +409,7 @@ img {
   display: flex;
   align-items: center;
   background-color: #000;
-  outline: 3px solid #FFCD79;
+  outline: 2px solid #FFCD79;
   color: #FFCD79;
   padding: 5px;
   width: 900px;
@@ -511,8 +511,20 @@ img {
 }
 
 /* Characters Page */
-#button-container {
-  margin: 10px;
+
+#button-container img {
+  margin: 5px;
+  transition: transform 0.1s ease-in-out;
+}
+
+#button-container img:hover {
+  transform: scale(1.1);
+  /* Adjust the scale factor as needed */
+}
+
+#button-container img.pressed {
+  transform: scale(1.1);
+  /* You can adjust the scale factor as needed */
 }
 
 #content-container {
@@ -556,7 +568,7 @@ img {
   order: 2;
   /* Set the order to 2 to appear second in the flex container */
   background-color: rgba(27, 27, 27, 0);
-  outline: 3px solid #8B0000;
+  outline: 2px solid #8B0000;
   outline-style: dashed;
   padding: 10px;
   text-align: left;
@@ -647,7 +659,7 @@ img {
 /* Style for the decode button */
 #decoder-form button {
   padding: 8px 12px;
-  outline: 3px solid #E4A754;
+  outline: 2px solid #E4A754;
   background-color: #000;
   /* Green background color */
   color: #fff;
@@ -704,7 +716,7 @@ img {
 
 #aboutFaq {
   background-color: #1B1B1B;
-  outline: 3px solid #3D3D3D;
+  outline: 2px solid #3D3D3D;
   font-family: 'lucida grande', 'lucida sans unicode', 'verdana', sans-serif;
   font-size: 16px;
   color: #ffffff;
