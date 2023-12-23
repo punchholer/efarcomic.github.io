@@ -47,13 +47,18 @@ header img:hover {
 #showComic,
 header,
 h1,
-h2,
+h2 {
+  font-family: 'lucida grande', 'lucida sans unicode', 'verdana', sans-serif;
+  color: #FFCD79;
+}
+
+
 h3,
 h4,
 h5,
 li {
   font-family: 'lucida grande', 'lucida sans unicode', 'verdana', sans-serif;
-  color: #ffffff;
+  color: #FFCD79;
 }
 
 /* body font */
@@ -99,9 +104,9 @@ img {
   padding: 10px;
 }
 
-.subPage:not(.archivePage) {
-  text-align: center;
-  padding: 15px;
+.subPage:not(.archivePage, .characterPage, .indexPage) {
+  text-align: left;
+  padding: 30px;
 }
 
 /* for pictures displayed to the left */
@@ -208,7 +213,7 @@ img {
 
   .desktop-nav li {
     background-color: #1b1b1b;
-    outline: 2px solid #3d3d3d;
+    outline: 2px solid #FFCD79;
     padding: 15px;
     text-align: center;
     margin: 15px;
@@ -718,7 +723,6 @@ img {
 /* ABOUT PAGE */
 #aboutPage {
   text-align: left;
-  padding: 15px;
 }
 
 #aboutFaq {
