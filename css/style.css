@@ -734,6 +734,76 @@ img {
   padding: 15px;
 }
 
+/* Diary Page */
+body {
+  font-family: Arial, sans-serif;
+  line-height: 1.6;
+  margin: 0;
+  padding: 0;
+}
+
+.diary {
+  border-radius: 15px;
+  background: url("../img/diarybg.png") no-repeat;
+  height: 800px;
+  /* Adjust the max height as needed */
+  overflow-y: auto;
+  /* Enable vertical scrollbar when content overflows */
+  padding: 15px;
+  width: 650px;
+  max-width: 98%;
+  text-align: left;
+  width: 80%;
+  margin: 0 auto;
+  padding: 20px;
+}
+
+.diary p {
+  padding-left: 30px;
+  color: #000;
+  font-size: 20px;
+  line-height: 2em;
+}
+
+.page {
+  display: none;
+  page-break-after: always;
+}
+
+.page.active {
+  display: block;
+}
+
+.pagination {
+  align-content: center;
+  margin-top: 20px;
+  text-align: center;
+}
+
+.pagination button {
+  padding: 10px;
+  margin: 5px;
+  cursor: pointer;
+}
+
+.archive {
+  margin-top: 20px;
+  display: flex;
+  justify-content: center;
+}
+
+.archive-number {
+  padding: 10px;
+  margin: 5px;
+  cursor: pointer;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+}
+
+.archive-number.active {
+  background-color: #007BFF;
+  color: #fff;
+}
 
 /* FOOTER */
 footer {

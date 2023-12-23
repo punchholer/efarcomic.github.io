@@ -1,0 +1,116 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv='cache-control' content='no-cache'>
+    <meta http-equiv='expires' content='0'>
+    <meta http-equiv='pragma' content='no-cache'>
+    <meta name="description"
+        content="An object show webcomic where twelve objects are kidnapped to take part in a dangerous reality show. They have to constantly avoid lethal obstacles that the
+  sadistic host, Snake Oil had in store for them. Meanwhile, secrets lurk at every corner, and could be the key to their way out. ">
+    <meta name="author" content="Punch-Holer">
+    <title>Escape From Abject Reality | About</title>
+    <link rel="icon" href="img/favicon 32x32.png" type="image/x-icon">
+
+    <!-- style -->
+    <link href="css/style.css" rel="stylesheet" type="text/css" media="all">
+
+    <!-- fonts -->
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <!-- Open Sans -->
+    <link href="https://fonts.googleapis.com/css2?family=Open+Sans&display=swap" rel="stylesheet">
+</head>
+
+<body>
+    <!-- header -->
+    <div align="center">
+        <div class="writeHeader"></div>
+        <div id="mobile-menu-icon" class="mobile-menu-icon">&#9776;</div>
+
+        <div class="subPage clearfix">
+            <center>
+                <h1>???'s Diary</h1>
+            </center>
+            <div class="diary">
+                <div class="page active">
+                    <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been
+                        the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley
+                        of type and scrambled it to make a type specimen book. It has survived not only five centuries,
+                        but also the leap into electronic typesetting, remaining essentially unchanged. It was
+                        popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages,
+                        and more recently with desktop publishing software like Aldus PageMaker including versions of
+                        Lorem Ipsum.</p>
+                </div>
+
+                <div class="page">
+                    <p>This is content for page 2.</p>
+                </div>
+
+                <div class="page">
+                    <p>This is content for page 3.</p>
+                </div>
+            </div>
+
+            <div class="pagination">
+                <button onclick="changePage(-1)">Previous</button>
+                <button onclick="changePage(1)">Next</button>
+            </div>
+
+            <div class="archive" id="archiveContainer"></div>
+        </div>
+
+        <!-- footer -->
+        <div class="writeFooter"></div>
+
+        <!-- at the end of this page we only call the header and footer scripts, because we don't need use any functions from the other scripts. -->
+        <script src="js/comic_header.js" defer></script>
+        <script src="js/comic_footer.js" defer></script>
+        <script data-goatcounter="https://efarcomic.goatcounter.com/count" async src="//gc.zgo.at/count.js"></script>
+
+        <script>
+            let currentPage = 0;
+            const pages = document.querySelectorAll('.page');
+            const archiveContainer = document.getElementById('archiveContainer');
+
+            function changePage(delta) {
+                currentPage += delta;
+                if (currentPage < 0) {
+                    currentPage = 0;
+                } else if (currentPage >= pages.length) {
+                    currentPage = pages.length - 1;
+                }
+
+                updatePagination();
+                updateArchive();
+            }
+
+            function updatePagination() {
+                pages.forEach((page, index) => {
+                    page.classList.toggle('active', index === currentPage);
+                });
+            }
+
+            function updateArchive() {
+                archiveContainer.innerHTML = '';
+                pages.forEach((page, index) => {
+                    const archiveNumber = document.createElement('div');
+                    archiveNumber.classList.add('archive-number');
+                    archiveNumber.textContent = index + 1;
+                    archiveNumber.addEventListener('click', () => changePage(index - currentPage));
+                    if (index === currentPage) {
+                        archiveNumber.classList.add('active');
+                    }
+                    archiveContainer.appendChild(archiveNumber);
+                });
+            }
+
+            // Initialize the archive
+            updateArchive();
+        </script>
+
+</body>
+
+</html>
