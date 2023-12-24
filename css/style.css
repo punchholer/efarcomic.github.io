@@ -43,6 +43,11 @@ header img:hover {
 
 /*FONTS*/
 
+@font-face {
+  font-family: 'HandwritingCR-2';
+  src: url("../fonts/HandwritingCR-2.ttf") format('truetype');
+}
+
 /* header font */
 #showComic,
 header,
@@ -542,7 +547,7 @@ img {
   /* Align items at the start (top) of the cross axis */
   flex-direction: row;
   /* Arrange items in a row */
-  padding: 20px;
+  padding: 15px;
 }
 
 #left-column {
@@ -585,7 +590,7 @@ img {
   /* Adjust the margin as needed */
   margin-right: auto;
   /* Align with the left column */
-  height: 408px;
+  height: 425px;
   box-sizing: border-box;
   word-wrap: break-word;
   margin-top: 20px;
@@ -752,19 +757,19 @@ body {
   overflow-y: auto;
   /* Enable vertical scrollbar when content overflows */
   padding: 15px;
-  width: 650px;
+  max-width: 600px;
   max-width: 98%;
   text-align: left;
-  width: 80%;
   margin: 0 auto;
   padding: 20px;
 }
 
 .diary p {
-  padding-left: 30px;
+  font-family: 'HandwritingCR-2';
+  padding-left: 15px;
   color: #000;
-  font-size: 20px;
-  line-height: 2em;
+  font-size: 23px;
+  line-height: 1.5em;
 }
 
 .page {
@@ -783,9 +788,13 @@ body {
 }
 
 .pagination button {
+  border-radius: 5px;
   padding: 10px;
   margin: 5px;
   cursor: pointer;
+  outline: 2px solid #FFCD79;
+  background-color: #000;
+
 }
 
 .archive {
@@ -798,13 +807,25 @@ body {
   padding: 10px;
   margin: 5px;
   cursor: pointer;
-  border: 1px solid #ccc;
+  border: 1px solid #fff;
+  color: #fff;
   border-radius: 5px;
 }
 
 .archive-number.active {
-  background-color: #007BFF;
-  color: #fff;
+  background-color: #000;
+  color: #FFCD79;
+  outline: 2px solid #FFCD79;
+
+}
+
+@media only screen and (max-width: 600px) {
+  .diary p {
+    padding-left: 0px;
+    color: #000;
+    font-size: 16px;
+    line-height: 1.5em;
+  }
 }
 
 /* FOOTER */
