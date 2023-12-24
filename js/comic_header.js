@@ -24,19 +24,19 @@ document.addEventListener('DOMContentLoaded', function () {
 
 document.querySelector(".writeHeader").innerHTML = `
     <header align="center">
-        <a href="index.html"><img src="./img/logo.png" alt="" /></a> 
+        <a href="index"><img src="./img/logo.png" alt="" /></a> 
 
         <div id="container">
             <div id="headerArea" class="desktop-nav">
                 <div id="header"></div>
                 <nav id="nav">
                     <ul>
-                        <li><a href="index.html">INDEX</a></li>
-                        <li><a href="read.html?pg=1#showComic">READ</a></li>
-                        <li><a href="archive.html">ARCHIVE</a></li>
-                        <li><a href="about.html">ABOUT</a></li>
-                        <li><a href="characters.html">CHARACTERS</a></li>
-                        <li><a href="explore.html">EXPLORE</a></li>
+                        <li><a href="index">INDEX</a></li>
+                        <li><a href="read?pg=1#showComic">READ</a></li>
+                        <li><a href="archive">ARCHIVE</a></li>
+                        <li><a href="about">ABOUT</a></li>
+                        <li><a href="characters">CHARACTERS</a></li>
+                        <li><a href="explore">EXPLORE</a></li>
                     </ul>
                 </nav>
             </div>
