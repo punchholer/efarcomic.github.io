@@ -159,6 +159,7 @@ img {
     background-color: #1B1B1B;
     padding-top: 60px;
     transition: left 0.3s ease;
+    z-index: 2;
   }
 
   #headerArea.active #nav {
@@ -520,6 +521,7 @@ img {
 #button-container img {
   margin: 5px;
   transition: transform 0.1s ease-in-out;
+  z-index: 1;
 }
 
 #button-container img:hover {
