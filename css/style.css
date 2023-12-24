@@ -722,6 +722,25 @@ img {
 
 /* FancyBox */
 
+.fancybox-container {
+  max-width: 100%;
+  max-height: 100%;
+}
+
+/* Optional: Add styles to center the content within the Fancybox container */
+.fancybox-content {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 100%;
+}
+
+/* Optional: Add styles to limit the size of the image within the Fancybox container */
+.fancybox-image {
+  max-width: 100%;
+  max-height: 100%;
+}
+
 .fancybox__caption {
   font-family: 'lucida grande', 'lucida sans unicode', 'verdana', sans-serif;
   font-size: 16px;
@@ -825,6 +844,41 @@ body {
     color: #000;
     font-size: 16px;
     line-height: 1.5em;
+  }
+}
+
+/* GALLERY */
+.row {
+  display: flex;
+  flex-wrap: wrap;
+  padding: 0 4px;
+}
+
+.column {
+  flex: 25%;
+  max-width: 25%;
+  padding: 0 4px;
+}
+
+.column img {
+  margin-top: 8px;
+  vertical-align: middle;
+  width: 100%;
+}
+
+/* Responsive layout - makes a two column-layout instead of four columns */
+@media screen and (max-width: 800px) {
+  .column {
+    flex: 50%;
+    max-width: 50%;
+  }
+}
+
+/* Responsive layout - makes the two columns stack on top of each other instead of next to each other */
+@media screen and (max-width: 600px) {
+  .column {
+    flex: 100%;
+    max-width: 100%;
   }
 }
 
