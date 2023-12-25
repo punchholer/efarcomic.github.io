@@ -1,5 +1,6 @@
 {
   "dependencies": {
-    "@fancyapps/fancybox": "^3.5.7"
+    "@fancyapps/fancybox": "^3.5.7",
+    "freezeframe": "^5.0.2"
   }
 }

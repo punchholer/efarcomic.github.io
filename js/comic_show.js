@@ -15,7 +15,7 @@ console.log(pg)
 
 writePageTitle(".writePageTitle", true, " - "); //write title of page. true/false
 
-writePageClickable(".writePageClickable",true); //show the current page. to toggle whether pages can be clicked to move to the next one, set this to true or false.
+writePageClickable(".writePageClickable", true); //show the current page. to toggle whether pages can be clicked to move to the next one, set this to true or false.
 
 writeAuthorNotes(".writeAuthorNotes");
 
@@ -26,30 +26,30 @@ writeAuthorNotes(".writeAuthorNotes");
 
 //SHOW COMIC PAGE, with clickable link
 function writePageClickable(div, clickable) {
-    let path; // Declare path outside the if block
+  let path; // Declare path outside the if block
 
-    if (!clickable) {
-        path = (folder != "" ? folder + "/" : "") + image + pg + "." + ext;
-        document.querySelector(div).innerHTML = `<div class="comicPage">${writePage()}</div>`;
-    } else if (pg < maxpg) {
-        path = (folder != "" ? folder + "/" : "") + image + pg + "." + ext;
-        document.querySelector(div).innerHTML = `<div class="comicPage"><a href="?pg=${pg + 1}${navScrollTo}"/>${writePage()}</a></div>`;
-    } else {
-        path = (folder != "" ? folder + "/" : "") + image + pg + "." + ext;
-        document.querySelector(div).innerHTML = `<div class="comicPage">${writePage()}</div>`;
-    }
+  if (!clickable) {
+    path = (folder != "" ? folder + "/" : "") + image + pg + "." + ext;
+    document.querySelector(div).innerHTML = `<div class="comicPage">${writePage()}</div>`;
+  } else if (pg < maxpg) {
+    path = (folder != "" ? folder + "/" : "") + image + pg + "." + ext;
+    document.querySelector(div).innerHTML = `<div class="comicPage"><a href="?pg=${pg + 1}${navScrollTo}"/>${writePage()}</a></div>`;
+  } else {
+    path = (folder != "" ? folder + "/" : "") + image + pg + "." + ext;
+    document.querySelector(div).innerHTML = `<div class="comicPage">${writePage()}</div>`;
+  }
 }
 
-function writePageTitle(div,toggleNum, char) {
+function writePageTitle(div, toggleNum, char) {
   if (pgData.length >= pg) {
     //display title of current page
-    document.querySelector(div).innerHTML = `<h3>${pgData[pg - 1].title}</h3>`+`<p>${pgData[pg - 1].date}</p>`;
-    }
+    document.querySelector(div).innerHTML = `<h3>${pgData[pg - 1].title}</h3>` + `<p>${pgData[pg - 1].date}</p>`;
   }
+}
 
 function writeAuthorNotes(div) { //display author notes
   if (pgData.length >= pg) {
-    return document.querySelector(div).innerHTML = `${pgData[pg-1].authorNotes}`
+    return document.querySelector(div).innerHTML = `${pgData[pg - 1].authorNotes}`
   }
 }
 
@@ -103,13 +103,13 @@ function writePage() {
 console.log("array blank/not long enough? " + (pgData.length < pg));
 console.log("array length - " + pgData.length);
 console.log("current page - " + pg);
-console.log("number of page segments - " + pgData[pg-1].imageFiles);
+console.log("number of page segments - " + pgData[pg - 1].imageFiles);
 console.log("alt text - " + `"` + pgData[pg - 1].altText + `"`);
 
 console.log("nav text - " + navText);
 console.log("nav image file extension - " + navExt);
 
-function imgOrText(setImg,navTextSet) { //function that writes the indicated nav button as either an image or text
+function imgOrText(setImg, navTextSet) { //function that writes the indicated nav button as either an image or text
 
   if (setImg) { //if its an image
     return `<img src="` + navFolder + `/nav_` + navText[navTextSet].toLowerCase() + `.` + navExt + `" alt="` + navText[navTextSet] + `" />`;
@@ -119,9 +119,9 @@ function imgOrText(setImg,navTextSet) { //function that writes the indicated nav
 }
 
 function writeNav(imageToggle) {
-    let writeNavDiv = document.querySelectorAll(".writeNav");
-    writeNavDiv.forEach(function(element) {
-      element.innerHTML = `<div class="comicNav">
+  let writeNavDiv = document.querySelectorAll(".writeNav");
+  writeNavDiv.forEach(function (element) {
+    element.innerHTML = `<div class="comicNav">
         ${firstButton()}
         ${divider()}
         ${prevButton()}
@@ -130,86 +130,88 @@ function writeNav(imageToggle) {
         ${divider()}
         ${lastButton()}
         </div>
-        `;})
+        `;
+  })
 
-     function firstButton() {
-        //FIRST BUTTON
-        if (pg > 1) {
-            //wait until page 2 to make button active
-            return `<a href="?pg=` + 1 + navScrollTo + `"/>` + imgOrText(imageToggle, 0) + `</a>`;
-        } else {
-            if (!imageToggle) {
-                return imgOrText(imageToggle, 0);
-            } else {
-                return `<img src="img/comicnav/nav_firstgrey.png"/>`;
-            }
-        }
+  function firstButton() {
+    //FIRST BUTTON
+    if (pg > 1) {
+      //wait until page 2 to make button active
+      return `<a href="?pg=` + 1 + navScrollTo + `"/>` + imgOrText(imageToggle, 0) + `</a>`;
+    } else {
+      if (!imageToggle) {
+        return imgOrText(imageToggle, 0);
+      } else {
+        return `<img src="img/comicnav/nav_firstgrey.png"/>`;
+      }
     }
+  }
 
-    function divider() {
-        //divider
-        if (!imageToggle) {
-            return ` | `;
-        }
-        return ``;
+  function divider() {
+    //divider
+    if (!imageToggle) {
+      return ` | `;
     }
+    return ``;
+  }
 
-    function prevButton() {
-        //PREV BUTTON
-        if (pg > 1) {
-            //wait until page 2 to make button active
-            return `<a href="?pg=` + (pg - 1) + navScrollTo + `"/>` + imgOrText(imageToggle, 1) + `</a>`;
-        } else {
-            if (!imageToggle) {
-                return imgOrText(imageToggle, 1);
-            } else {
-                return `<img src="img/comicnav/nav_previousgrey.png"/>`;
-            }
-        }
+  function prevButton() {
+    //PREV BUTTON
+    if (pg > 1) {
+      //wait until page 2 to make button active
+      return `<a href="?pg=` + (pg - 1) + navScrollTo + `"/>` + imgOrText(imageToggle, 1) + `</a>`;
+    } else {
+      if (!imageToggle) {
+        return imgOrText(imageToggle, 1);
+      } else {
+        return `<img src="img/comicnav/nav_previousgrey.png"/>`;
+      }
     }
+  }
 
-    function nextButton() {
-        //NEXT BUTTON
-        if (pg < maxpg) {
-            //only make active if not on the last page
-            return `<a href="?pg=` + (pg + 1) + navScrollTo + `"/>` + imgOrText(imageToggle, 2) + `</a>`;
-        } else {
-            if (!imageToggle) {
-                return imgOrText(imageToggle, 2);
-            } else {
-                return `<img src="img/comicnav/nav_nextgrey.png"/>`;
-            }
-        }
+  function nextButton() {
+    //NEXT BUTTON
+    if (pg < maxpg) {
+      //only make active if not on the last page
+      return `<a href="?pg=` + (pg + 1) + navScrollTo + `"/>` + imgOrText(imageToggle, 2) + `</a>`;
+    } else {
+      if (!imageToggle) {
+        return imgOrText(imageToggle, 2);
+      } else {
+        return `<img src="img/comicnav/nav_nextgrey.png"/>`;
+      }
     }
+  }
 
-    function lastButton() {
-        //LAST BUTTON
-        if (pg < maxpg) {
-            //only make active if not on last page
-            return `<a href="?pg=` + maxpg + navScrollTo + `"/>` + imgOrText(imageToggle, 3) + `</a>`;
-        } else {
-            if (!imageToggle) {
-                return imgOrText(imageToggle, 3);
-            } else {
-                return `<img src="img/comicnav/nav_lastgrey.png"/>`;
-            }
-        }
+  function lastButton() {
+    //LAST BUTTON
+    if (pg < maxpg) {
+      //only make active if not on last page
+      return `<a href="?pg=` + maxpg + navScrollTo + `"/>` + imgOrText(imageToggle, 3) + `</a>`;
+    } else {
+      if (!imageToggle) {
+        return imgOrText(imageToggle, 3);
+      } else {
+        return `<img src="img/comicnav/nav_lastgrey.png"/>`;
+      }
     }
+  }
 }
 
 //KEYBOARD NAVIGATION
 function keyNav() {
   document.addEventListener("keydown", (e) => {
-  if ((e.key == 'ArrowRight' || e.key.toLowerCase() == 'd') && pg < maxpg) { //right arrow or D goes to next page
-    window.location.href = "?pg=" + (pg + 1) + navScrollTo;
-  } else if ((e.key == "ArrowLeft" || e.key.toLowerCase() == "a") && pg > 1) { //left arrow or A goes to previous page
-    window.location.href = "?pg=" + (pg - 1) + navScrollTo;
-  } else if (e.key.toLowerCase() == "w") { //W scrolls up
-    window.scrollBy({ top: -30 });
-  } else if (e.key.toLowerCase() == "s") { //S scrolls down
-    window.scrollBy({ top: 30 });
-  }
+    if ((e.key == 'ArrowRight' || e.key.toLowerCase() == 'd') && pg < maxpg) { //right arrow or D goes to next page
+      window.location.href = "?pg=" + (pg + 1) + navScrollTo;
+    } else if ((e.key == "ArrowLeft" || e.key.toLowerCase() == "a") && pg > 1) { //left arrow or A goes to previous page
+      window.location.href = "?pg=" + (pg - 1) + navScrollTo;
+    } else if (e.key.toLowerCase() == "w") { //W scrolls up
+      window.scrollBy({ top: -30 });
+    } else if (e.key.toLowerCase() == "s") { //S scrolls down
+      window.scrollBy({ top: 30 });
+    }
 
 
 
-});};
+  });
+};

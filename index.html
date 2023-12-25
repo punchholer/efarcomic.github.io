@@ -24,7 +24,7 @@
     <link href="https://fonts.googleapis.com/css2?family=Open+Sans&display=swap" rel="stylesheet">
 </head>
 
-<body align="center">
+<body onload="new Freezeframe();" align="center">
     <div align="center">
         <!-- header -->
         <div class="writeHeader"></div>
@@ -33,7 +33,7 @@
 
     <!-- body -->
     <div class="indexPage subPage" align="center">
-
+        <img class="freezeframe" src="img/watcher.gif">
         <div id="banner-container">
             <a href="read.html?pg=1#showComic" class="image-button">
                 <img src="img/buttons/readfrombeginning.png" alt="Read from the beginning">
@@ -123,6 +123,7 @@
             });
         });
     </script>
+    <script src="https://unpkg.com/freezeframe/dist/freezeframe.min.js"></script>
     <script data-goatcounter="https://efarcomic.goatcounter.com/count" async src="//gc.zgo.at/count.js"></script>
 </body>
 
