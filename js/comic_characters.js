@@ -290,7 +290,7 @@ const characters = [
                 <img src="img/characters/biocircles/jea_will.png" alt="Willpower">
             </div>
         `,
-        description: '<p><strong>Object type:</strong> Denim Jeans</p><p><strong>Description:</strong></p><p>Jeans is notably tall and the most athletic. She rushes into action, without too much hesitation. To everyone else, she appears infallible. Kind, yet fiercely protective against the dangers, she is empatheticand encourages everyone to fight even when everyone, including herself, are at their lowest point.</p>',
+        description: '<p><strong>Object type:</strong> Denim Jeans</p><p><strong>Description:</strong></p><p>Jeans is notably tall and the most athletic. She rushes into action, without too much hesitation. To everyone else, she appears infallible. Kind, yet fiercely protective against the dangers, she is empathetic and encourages everyone to fight even when everyone, including herself, are at their lowest point.</p>',
         status: '<strong>Status:</strong> Deceased'
     },
     {

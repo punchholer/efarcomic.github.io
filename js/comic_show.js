@@ -1,12 +1,5 @@
 //comic_show.js was created by geno7, with much needed assistance from Dannarchy
 
-//this is the script that actually displays the comics, nav and comic title on the page. 
-
-//below are what's called some "function calls", each one is responsible for making an element of the page. to get something to actually show up on the page, all you'd need to do is make a div with a class that has the same name as the function call. i.e. writeNav shows comic navigation, to show it on a page youd use <div class="writeNav"></div> wherever you want it to be. You can even put multiple divs with that same class name and it'll display multiple instances of the navigation.
-
-//a couple of the function calls have toggles too.
-
-
 
 writeNav(true); //show navigation for comic pages. to toggle either images or text for nav, set this to true or false.
 
@@ -86,6 +79,7 @@ function writePage() {
     } else if (pgData[pg - 1].gifPath) {
       // If there's a GIF path specified in your data
       page = `<img alt="${altText}" title="${altText}" src="${pgData[pg - 1].gifPath}" />`;
+
     } else {
       // For a single image
       page = `<img alt="${altText}" title="${altText}" src="${path}" />`;
