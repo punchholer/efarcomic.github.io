@@ -37,6 +37,7 @@ document.querySelector(".writeHeader").innerHTML = `
                         <li><a href="about">ABOUT</a></li>
                         <li><a href="characters">CHARACTERS</a></li>
                         <li><a href="explore">EXPLORE</a></li>
+                        <li><a href="https://www.redbubble.com/people/Punchyholery/shop?asc=u">SHOP</a></li>
                     </ul>
                 </nav>
             </div>
