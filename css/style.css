@@ -275,13 +275,24 @@ img {
   outline: 2px solid #FFCD79;
   width: 800px;
   max-width: 98%;
-  text-align: center;
-  margin: auto;
+  display: flex;
+  justify-content: center;
+  align-content: space-evenly;
 }
 
-#news-title h1 {
-  padding: 10px;
-  margin-bottom: 0px;
+#swinkyimg img {
+  max-width: 100%;
+  height: auto;
+}
+
+#swaggyimg img {
+  max-width: 100%;
+  height: auto;
+}
+
+#news-title h2 {
+  padding-left: 15px;
+  padding-right: 15px;
 }
 
 #news-container {
