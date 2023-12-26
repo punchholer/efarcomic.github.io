@@ -107,7 +107,17 @@ img {
   margin: auto;
   margin-bottom: 10px;
   padding: 10px;
+  --dotSize: 0.15rem;
+  --bgSize: .5rem;
+  --bgPosition: calc(var(--bgSize) / 2);
+
+  background-image: radial-gradient(circle at center,
+      black var(--dotSize),
+      transparent 0), radial-gradient(circle at center, black var(--dotSize), transparent 0);
+  background-size: var(--bgSize) var(--bgSize);
+  background-position: 0 0, var(--bgPosition) var(--bgPosition);
 }
+
 
 .subPage:not(.archivePage, .characterPage, .indexPage) {
   text-align: left;
@@ -245,7 +255,7 @@ img {
 #news-title {
   background-color: #232424;
   outline: 2px solid #FFCD79;
-  width: 600px;
+  width: 800px;
   max-width: 98%;
   text-align: center;
   margin: auto;
@@ -264,7 +274,7 @@ img {
   overflow-y: auto;
   /* Enable vertical scrollbar when content overflows */
   padding: 15px;
-  width: 600px;
+  width: 800px;
   max-width: 98%;
   text-align: left;
   margin: auto;
@@ -281,6 +291,12 @@ img {
 .news-entry:last-child {
   border-bottom: none;
   /* Remove border for the last entry */
+}
+
+#extras-container {
+  justify-content: space-evenly;
+  display: flex;
+  flex-wrap: wrap;
 }
 
 .image-button img {
