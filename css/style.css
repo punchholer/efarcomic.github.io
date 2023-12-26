@@ -48,12 +48,24 @@ header img:hover {
   src: url("../fonts/HandwritingCR-2.ttf") format('truetype');
 }
 
+@font-face {
+  font-family: "easvhs";
+  src: url('../fonts/easvhs.ttf') format('truetype');
+}
+
+@font-face {
+  font-family: "Pixellari";
+  src: url('../fonts/Pixellari.ttf') format('truetype');
+}
+
 /* header font */
 #showComic,
 header,
 h1,
 h2 {
-  font-family: 'lucida grande', 'lucida sans unicode', 'verdana', sans-serif;
+  font-family: 'easvhs';
+  letter-spacing: .1rem;
+  kerning: auto;
   color: #FFCD79;
 }
 
@@ -62,7 +74,9 @@ h3,
 h4,
 h5,
 li {
-  font-family: 'lucida grande', 'lucida sans unicode', 'verdana', sans-serif;
+  font-family: 'easvhs';
+  letter-spacing: .1rem;
+  kerning: auto;
   color: #FFCD79;
 }
 
@@ -233,6 +247,10 @@ img {
     padding: 15px;
     text-align: center;
     margin: 15px;
+    font-family: 'easvhs';
+    letter-spacing: .2rem;
+    kerning: auto;
+    color: #FFCD79;
   }
 
   .desktop-nav li a {
