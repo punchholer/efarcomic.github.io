@@ -98,7 +98,7 @@ const pgData = [
     },
     {
         pgNum: 5,
-        title: "Chapter 1 Page 04",
+        title: "Chapter 1 Page 04*",
         date: writeDate(2017, 9, 20),
         chapter: 1,
         imageFiles: 4,
@@ -120,7 +120,7 @@ const pgData = [
     },
     {
         pgNum: 7,
-        title: `Chapter 1 Page 06`,
+        title: `Chapter 1 Page 06*`,
         date: writeDate(2017, 10, 5),
         chapter: 1,
         imageFiles: 4,
@@ -164,7 +164,7 @@ const pgData = [
     },
     {
         pgNum: 11,
-        title: `Chapter 1 Page 10`,
+        title: `Chapter 1 Page 10*`,
         date: writeDate(2017, 11, 12),
         chapter: 1,
         imageFiles: 5,
@@ -254,7 +254,7 @@ const pgData = [
     },
     {
         pgNum: 19,
-        title: `Chapter 2 Page 17`,
+        title: `Chapter 2 Page 17*`,
         date: writeDate(2018, 3, 1),
         chapter: 2,
         imageFiles: 8,
@@ -265,7 +265,7 @@ const pgData = [
     },
     {
         pgNum: 20,
-        title: `Chapter 2 Page 18`,
+        title: `Chapter 2 Page 18*`,
         date: writeDate(2018, 3, 18),
         chapter: 2,
         imageFiles: 7,
@@ -375,7 +375,7 @@ const pgData = [
     },
     {
         pgNum: 30,
-        title: `Chapter 2 Page 28`,
+        title: `Chapter 2 Page 28*`,
         date: writeDate(2018, 8, 27),
         chapter: 2,
         imageFiles: 9,
@@ -419,7 +419,7 @@ const pgData = [
     },
     {
         pgNum: 34,
-        title: `Chapter 2 Page 32`,
+        title: `Chapter 2 Page 32*`,
         date: writeDate(2019, 5, 27),
         chapter: 2,
         imageFiles: 6,
@@ -519,7 +519,7 @@ const pgData = [
     },
     {
         pgNum: 43,
-        title: `Chapter 3 Page 40`,
+        title: `Chapter 3 Page 40*`,
         date: writeDate(2020, 9, 20),
         chapter: 3,
         imageFiles: 7,
@@ -574,7 +574,7 @@ const pgData = [
     },
     {
         pgNum: 48,
-        title: `Chapter 3 Page 45`,
+        title: `Chapter 3 Page 45*`,
         date: writeDate(2021, 3, 1),
         chapter: 3,
         imageFiles: 5,
@@ -881,7 +881,7 @@ const pgData = [
 
     {
         pgNum: 75,
-        title: `Chapter 3 Page 67`,
+        title: `Chapter 3 Page 67*`,
         date: writeDate(2023, 6, 11),
         chapter: 3,
         imageFiles: 11,
@@ -944,7 +944,7 @@ const pgData = [
 
     {
         pgNum: 80,
-        title: `Chapter 3 Page 72`,
+        title: `Chapter 3 Page 72*`,
         date: writeDate(2023, 11, 13),
         chapter: 3,
         imageFiles: 10,
