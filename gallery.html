@@ -39,10 +39,10 @@
     <div class="subPage clearfix" align="center">
 
         <h1>Gallery</h1>
-        <p>A gallery for art, miscellaneous comics, and animations.</p>
-        <img src="img/undeconstruction.png" alt="Page under construction!" />
-        <h1>Artwork</h1>
-        <p>Personal artwork that I mave made for EFARcomic for Objectober 2021</p>
+        <p>A gallery for art, miscellaneous comics, and animations that are EFAR related.</p>
+        <br>
+        <h2>Artwork</h2>
+        <p>Artwork that I created for Objectober 2021</p>
         <hr>
         <a href="img/gallery/artwork/oct01.PNG" data-fancybox="objectober">
             <img src="img/gallery/artwork/oct01.PNG" height="50px" width="20%" />
@@ -74,13 +74,15 @@
         <a href="img/gallery/artwork/oct10.PNG" data-fancybox="objectober">
             <img src="img/gallery/artwork/oct10.PNG" height="50px" width="20%" />
         </a>
-
-        <!--<h1>Animations</h1>
-        <a href="video-a.mp4" data-fancybox="gallery">
-            <img src="thumbnail-a.jpeg" />
-        </a>-->
-
-        <h1>Minicomics</h1>
+        <br>
+        <h2>Animations</h2>
+        <p>Excluding the animated pages within the comic itself.</p>
+        <hr>
+        <a href="https://www.youtube.com/watch?v=Tm2oH-956L4" data-fancybox="animations">
+            <img src="img/gallery/artwork/video1.png" height="50px" width="30%" />
+        </a>
+        <br>
+        <h2>Minicomics</h2>
         <p>Click on the image to view the comic and slide to read.</p>
         <hr>
         <h3>Basket Destroys Badgey The Movie</h3>
@@ -190,6 +192,10 @@
 
         });
 
+        Fancybox.bind('[data-fancybox="animations"]', {
+            groupAll: true,
+        });
+
         Fancybox.bind('[data-fancybox="altefar"]', {
             groupAll: true,
 
@@ -212,6 +218,8 @@
         Fancybox.bind('[data-fancybox="badgey"]', {
             groupAll: true,
         });
+
+
 
 
     </script>
