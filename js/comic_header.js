@@ -24,7 +24,7 @@ document.addEventListener('DOMContentLoaded', function () {
 
 document.querySelector(".writeHeader").innerHTML = `
     <header align="center">
-        <a href="index"><img src="./img/logo.png" alt="" /></a> 
+        <a href="index"><img src="./img/logo.png" alt="logo" /></a> 
 
         <div id="container">
             <div id="headerArea" class="desktop-nav">

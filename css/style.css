@@ -46,16 +46,19 @@ header img:hover {
 @font-face {
   font-family: 'HandwritingCR-2';
   src: url("../fonts/HandwritingCR-2.ttf") format('truetype');
+  font-display: swap;
 }
 
 @font-face {
   font-family: "easvhs";
   src: url('../fonts/easvhs.ttf') format('truetype');
+  font-display: swap;
 }
 
 @font-face {
   font-family: "Pixellari";
   src: url('../fonts/Pixellari.ttf') format('truetype');
+  font-display: swap;
 }
 
 /* header font */
@@ -119,7 +122,6 @@ img {
   background-color: #1B1B1B;
   outline: 2px solid #3D3D3D;
   margin: auto;
-  margin-bottom: 10px;
   padding: 10px;
   --dotSize: 0.15rem;
   --bgSize: .5rem;
