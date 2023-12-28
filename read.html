@@ -3,139 +3,138 @@
 
 <head>
   <meta charset="UTF-8">
-  <meta http-equiv='cache-control' content='no-cache'>
-  <meta http-equiv='expires' content='0'>
-  <meta http-equiv='pragma' content='no-cache'>
-  <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <meta name="description"
     content="An object show webcomic where twelve objects are kidnapped to take part in a dangerous reality show. They have to constantly avoid lethal obstacles that the
   sadistic host, Snake Oil had in store for them. Meanwhile, secrets lurk at every corner, and could be the key to their way out. ">
   <title>Escape From Abject Reality | Read</title>
-  <link rel="icon" href="img/favicon 32x32.png" type="image/x-icon">
+  <link rel="icon" href="img/favicon32.png" type="image/x-icon">
   <link href="css/style.css" rel="stylesheet" type="text/css" media="all">
   <!-- fonts -->
   <link rel="preconnect" href="https://fonts.gstatic.com">
 
 <body>
   <!-- most of the elements on these pages are defined in the js files as functions, then we tell these functions where to show up on the page by placing empty divs and naming those divs the name of the js functions. check the js files to edit these elements in more detail.-->
+  <!-- header that has the logo image and top page navigation. don't forget to put this on every page -->
+  <div class="writeHeader"></div>
+  <div id="mobile-menu-icon" class="mobile-menu-icon">&#9776;</div>
 
-  <div align="center">
-    <!-- header that has the logo image and top page navigation. don't forget to put this on every page -->
-    <div class="writeHeader"></div>
-    <div id="mobile-menu-icon" class="mobile-menu-icon">&#9776;</div>
+  <!-- make sure that if you want to turn on automatically scrolling to the top of the comic when you load a new page, keep the id of this div and the variable "navScrollTo" in showcomic.js the same-->
+  <div id="showComic">
 
-    <!-- make sure that if you want to turn on automatically scrolling to the top of the comic when you load a new page, keep the id of this div and the variable "navScrollTo" in showcomic.js the same-->
-    <div id="showComic">
-
-      <!-- write the title of the page. -->
-      <div id="pageTitle">
-        <!-- write page title -->
-        <div class="writePageTitle"></div>
-      </div>
-      <!-- write the current page of your comic -->
-      <div class="writePageClickable"></div>
-      <!-- write bottom navigation -->
-      <div class="writeNav"></div>
-
-      <div>
-        <select id="page-dropdown"></select>
-      </div>
+    <!-- write the title of the page. -->
+    <div id="pageTitle">
+      <!-- write page title -->
+      <div class="writePageTitle"></div>
     </div>
-    <div id="disclaimer">
-      <img src="img/disclaimer.png" alt="Disclaimer">
-      <p>Javascript needs to be enabled to view this comic. This webcomic is psychological horror and contains themes
-        that some viewers might find disturbing. Certain pages contain .gif images (46a-f) which contains flashing
-        images and colors.</p>
+    <!-- write the current page of your comic -->
+    <div class="writePageClickable"></div>
+    <!-- write bottom navigation -->
+    <div class="writeNav"></div>
+
+    <div>
+      <select id="page-dropdown"></select>
     </div>
-    <div id="authorNotes">
-      <h2>Author Notes</h2>
-      <!-- write the author notes for the current page-->
-      <div class="writeAuthorNotes"></div>
-    </div>
-    
-<!-- begin wwww.htmlcommentbox.com -->
- <div id="HCB_comment_box"><a href="http://www.htmlcommentbox.com">Comment Form</a> is loading comments...</div>
- <link rel="stylesheet" type="text/css" href="https://www.htmlcommentbox.com/static/skins/bootstrap/twitter-bootstrap.css?v=0" />
- <script type="text/javascript" id="hcb"> /*<!--*/ if(!window.hcb_user){hcb_user={};} (function(){var s=document.createElement("script"), l=hcb_user.PAGE || (""+window.location).replace(/'/g,"%27"), h="https://www.htmlcommentbox.com";s.setAttribute("type","text/javascript");s.setAttribute("src", h+"/jread?page="+encodeURIComponent(l).replace("+","%2B")+"&mod=%241%24wq1rdBcg%249WOcOa3Kh90LnPrW1VTwT."+"&opts=16798&num=10&ts=1703525792176");if (typeof s!="undefined") document.getElementsByTagName("head")[0].appendChild(s);})(); /*-->*/ </script>
-<!-- end www.htmlcommentbox.com -->
+  </div>
+  <div id="disclaimer">
+    <img src="img/disclaimer.png" alt="Disclaimer">
+    <p>Javascript needs to be enabled to view this comic. This webcomic is psychological horror and contains themes
+      that some viewers might find disturbing. Certain pages contain .gif images (46a-f) which contains flashing
+      images and colors.</p>
+  </div>
+  <div id="authorNotes">
+    <h2>Author Notes</h2>
+    <!-- write the author notes for the current page-->
+    <div class="writeAuthorNotes"></div>
+  </div>
 
-    <!-- footer that has a link back to rarebit, and ideally has copyright info and stuff. again, don't forget to put this on every page-->
-    <div class="writeFooter"></div>
+  <!-- begin wwww.htmlcommentbox.com -->
+  <div id="HCB_comment_box"><a href="http://www.htmlcommentbox.com">
+      Comment Form</a> is loading comments...</div>
+  <link rel="stylesheet" type="text/css"
+    href="https://www.htmlcommentbox.com/static/skins/bootstrap/twitter-bootstrap.css?v=0" />
+  <script type="text/javascript"
+    id="hcb"> /*<!--*/ i f(!window.hcb_use ) {hcb_use r  ={  ;} (functio n )  {va  s  =document.createElement("script")  l  =hcb_user.PAGE || (" "  +window.location).replace(/'/  ,"%27")  h  ="https://www.htmlcommentbox.com  ;s.setAttribute("type  ,"text/javascript"  ;s.setAttribute("src"  h  +"/jread?page= "  +encodeURIComponent(l).replace("+  ,"%2B )  +"&mod=%241%24wq1rdBcg%249WOcOa3Kh90LnPrW1VTwT. "  +"&opts=16798&num=10&ts=1703785240327"  ;if (typeo  s!  ="undefined") document.getElementsByTagName("head")[0].appendChild(s  ;} )(); /*-->  */ </script>
+  <!-- end www.htmlcommentbox.com -->
 
-    <!-- really important- every js script is called here, be sure to always put them just before the closing body tag, use a defer attribute, and call them in this specific order.-->
-    <script src="js/comic_settings.js" defer></script>
-    <script src="js/comic_show.js" defer></script>
-    <script src="js/comic_header.js" defer></script>
-    <script src="js/comic_footer.js" defer></script>
-    <script>
-      // Function to handle dropdown menu change
-      function handleDropdownChange() {
-        const selectedPage = document.getElementById('page-dropdown').value;
+  <!-- footer that has a link back to rarebit, and ideally has copyright info and stuff. again, don't forget to put this on every page-->
+  <div class="writeFooter"></div>
 
-        if (selectedPage === 'random') {
-          // Generate a random page number between 1 and maxpg
-          const randomPage = Math.floor(Math.random() * maxpg) + 1;
-          window.location.href = `read.html?pg=${randomPage}#showComic`;
-        } else {
-          window.location.href = `read.html?pg=${selectedPage}#showComic`;
-        }
+  <!-- really important- every js script is called here, be sure to always put them just before the closing body tag, use a defer attribute, and call them in this specific order.-->
+  <script src="js/comic_settings.js" defer></script>
+  <script src="js/comic_show.js" defer></script>
+  <script src="js/comic_header.js" defer></script>
+  <script src="js/comic_footer.js" defer></script>
+  <script>
+    // Function to handle dropdown menu change
+    function handleDropdownChange() {
+      const selectedPage = document.getElementById('page-dropdown').value;
+
+      if (selectedPage === 'random') {
+        // Generate a random page number between 1 and maxpg
+        const randomPage = Math.floor(Math.random() * maxpg) + 1;
+        window.location.href = `read.html?pg=${randomPage}#showComic`;
+      } else {
+        window.location.href = `read.html?pg=${selectedPage}#showComic`;
       }
+    }
 
-      // Function to populate the dropdown menu with all pages
-      function populateDropdown(maxPages) {
-        const dropdown = document.getElementById('page-dropdown');
+    // Function to populate the dropdown menu with all pages
+    function populateDropdown(maxPages) {
+      const dropdown = document.getElementById('page-dropdown');
 
-        // Clear existing options
-        dropdown.innerHTML = '';
+      // Clear existing options
+      dropdown.innerHTML = '';
 
-        let currentChapter = null;
+      let currentChapter = null;
 
-        const randomOption = document.createElement('option');
-        randomOption.value = 'random';
-        randomOption.text = 'Random Page';
-        dropdown.appendChild(randomOption);
+      const randomOption = document.createElement('option');
+      randomOption.value = 'random';
+      randomOption.text = 'Random Page';
+      dropdown.appendChild(randomOption);
 
-        for (let i = 1; i <= maxPages; i++) {
-          const option = document.createElement('option');
+      for (let i = 1; i <= maxPages; i++) {
+        const option = document.createElement('option');
 
-          // Check if there is chapter information for the current page
-          if (pgData.length >= i && pgData[i - 1].chapter) {
-            // If the chapter changes, create a new optgroup
-            if (pgData[i - 1].chapter !== currentChapter) {
-              currentChapter = pgData[i - 1].chapter;
-              const optgroup = document.createElement('optgroup');
-              optgroup.label = `Chapter ${currentChapter}`;
-              dropdown.appendChild(optgroup);
-            }
-            option.value = i;
-            option.text = `${pgData[i - 1].title}`;
-          } else {
-            // If there is no chapter information, use a default label
-            option.value = i;
-            option.text = `Page ${i}`;
+        // Check if there is chapter information for the current page
+        if (pgData.length >= i && pgData[i - 1].chapter) {
+          // If the chapter changes, create a new optgroup
+          if (pgData[i - 1].chapter !== currentChapter) {
+            currentChapter = pgData[i - 1].chapter;
+            const optgroup = document.createElement('optgroup');
+            optgroup.label = `Chapter ${currentChapter}`;
+            dropdown.appendChild(optgroup);
           }
-
-          dropdown.appendChild(option);
+          option.value = i;
+          option.text = `${pgData[i - 1].title}`;
+        } else {
+          // If there is no chapter information, use a default label
+          option.value = i;
+          option.text = `Page ${i}`;
         }
 
-        // Set the selected option to the current page
-        dropdown.value = pg;
-
-        // Set an event listener for dropdown change
-        dropdown.addEventListener('change', handleDropdownChange);
+        dropdown.appendChild(option);
       }
 
-      // Call the function to populate the dropdown when the DOM is loaded
-      document.addEventListener('DOMContentLoaded', function () {
-        // Assuming you have a variable maxpg that represents the total number of pages
-        const maxPages = maxpg; // Replace with the actual variable name or value
+      // Set the selected option to the current page
+      dropdown.value = pg;
 
-        // Call the function to populate the dropdown with all pages
-        populateDropdown(maxPages);
-      });
-    </script>
+      // Set an event listener for dropdown change
+      dropdown.addEventListener('change', handleDropdownChange);
+    }
 
-    <script data-goatcounter="https://efarcomic.goatcounter.com/count" async src="//gc.zgo.at/count.js"></script>
+    // Call the function to populate the dropdown when the DOM is loaded
+    document.addEventListener('DOMContentLoaded', function () {
+      // Assuming you have a variable maxpg that represents the total number of pages
+      const maxPages = maxpg; // Replace with the actual variable name or value
+
+      // Call the function to populate the dropdown with all pages
+      populateDropdown(maxPages);
+    });
+  </script>
+
+  <script data-goatcounter="https://efarcomic.goatcounter.com/count" async src="//gc.zgo.at/count.js"></script>
 
 
 </body>
