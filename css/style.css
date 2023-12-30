@@ -490,11 +490,11 @@ img {
   background-color: #000;
   outline: 2px solid #FFCD79;
   color: #FFCD79;
-  padding: 5px;
-  width: 900px;
+  padding: 15px;
   max-width: 98%;
-  text-align: left;
-  margin: 20px;
+  margin: auto;
+  max-width: 900px;
+  text-align: center;
 
 }
 
@@ -530,9 +530,17 @@ img {
     max-width: 98%;
     padding: 10px;
     width: 100%;
-    margin: 0px;
+    margin: auto;
     margin-bottom: 20px;
   }
+
+  #showComic {
+    align-items: center;
+    max-width: 98%;
+    margin: auto;
+  }
+
+
 
 
 
