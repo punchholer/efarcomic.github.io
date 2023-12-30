@@ -130,7 +130,6 @@ img {
   --dotSize: 0.15rem;
   --bgSize: .5rem;
   --bgPosition: calc(var(--bgSize) / 2);
-  text-align: center;
   align-content: center;
 
   background-image: radial-gradient(circle at center,
@@ -141,7 +140,7 @@ img {
 }
 
 
-.subPage:not(.archivePage, .characterPage, .indexPage, .diaryPage) {
+.subPage:not(.characterPage, .indexPage, .diaryPage) {
   text-align: left;
   padding: 30px;
 }
@@ -549,8 +548,11 @@ img {
 /* ARCHIVE PAGE */
 
 /* style table in which archive is displayed */
+
 .archiveTable {
   width: 90%;
+  margin: auto;
+  /* Center the table */
   border-collapse: collapse;
 }
 
