@@ -282,6 +282,10 @@ img {
   align-content: center;
 }
 
+#welcome-container {
+  text-align: center;
+}
+
 #news-title {
   background-color: #232424;
   outline: 2px solid #FFCD79;
@@ -351,7 +355,17 @@ img {
   width: 300px;
   /* Adjust the width of the image */
   height: auto;
-  padding: 15px
+  padding: 15px;
+  justify-content: center;
+  display: flex;
+  flex-wrap: wrap;
+  margin: auto;
+}
+
+#banner-container {
+  justify-content: space-evenly;
+  display: flex;
+  flex-wrap: wrap;
 }
 
 /* style nav button images */
@@ -839,6 +853,12 @@ img {
 }
 
 /* Diary Page */
+
+#diary-header {
+  text-align: center;
+  margin: 0 auto;
+}
+
 body {
   font-family: Arial, sans-serif;
   line-height: 1.6;
