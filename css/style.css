@@ -617,7 +617,7 @@ img {
 
 #button-container img {
   margin: 5px;
-  transition: transform 0.1s ease-in-out;
+  transition: transform 0.05s ease-in-out;
   z-index: 1;
 }
 
@@ -677,17 +677,13 @@ img {
   padding: 10px;
   text-align: left;
   width: 60%;
-  /* Adjust the width as needed */
   margin-top: auto;
-  /* Adjust the margin as needed */
   margin-right: auto;
-  /* Align with the left column */
   height: 425px;
   box-sizing: border-box;
   word-wrap: break-word;
   margin-top: 20px;
   position: relative;
-  /* Set position to relative for absolute positioning */
 }
 
 #character-description p {
@@ -943,6 +939,66 @@ body {
     line-height: 1.5em;
   }
 }
+
+/* MAP */
+#locationHeader {
+  text-align: center;
+}
+
+#location-container {
+  background-color: #1B1B1B;
+  outline: 2px solid #3D3D3D;
+  margin: auto;
+  padding: 15px;
+}
+
+.locationArchive {
+  display: flex;
+  flex-wrap: wrap;
+  /* Allow the items to wrap to the next line */
+  justify-content: flex-start;
+  /* Adjust as needed, e.g., flex-start, center, space-between */
+  margin-top: 15px;
+  margin-bottom: 15px;
+}
+
+.archive-text {
+  flex: 0 0 calc(25% - 10px);
+  margin: 5px;
+  padding: 10px;
+  background-color: #1B1B1B;
+  color: #fff;
+  border: 1px solid #ccc;
+  cursor: pointer;
+}
+
+
+.archive-text.active {
+  color: #FFCD79;
+  border: 2px solid #FFCD79;
+}
+
+#paginationLocation {
+  align-content: center;
+  margin-top: 20px;
+  margin-bottom: 20px;
+  text-align: center;
+}
+
+#paginationLocation button {
+  border-radius: 5px;
+  padding: 10px;
+  margin: 5px;
+  cursor: pointer;
+}
+
+@media screen and (max-width: 600px) {
+  .archive-text {
+    flex: 0 0 calc(50% - 10px);
+    /* Adjust for larger screens, three buttons per row */
+  }
+}
+
 
 /* GALLERY */
 .row {
