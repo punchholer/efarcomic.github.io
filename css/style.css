@@ -1080,3 +1080,1082 @@ html,
 body {
   margin: 0;
 }
+
+body,
+div,
+main,
+section,
+article {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+/* universal background color */
+body {
+  background: #08090a url("../img/efarbg.png") top no-repeat;
+  overflow-x: hidden;
+}
+
+
+/* header image */
+header {
+  margin: auto;
+  text-align: center;
+}
+
+header img {
+  align-self: center;
+  margin: auto;
+  padding: 20px;
+  max-width: 50%;
+  transition: transform .4s;
+  display: block;
+}
+
+header img:hover {
+  -ms-transform: scale(1.1);
+  /* IE 9 */
+  -webkit-transform: scale(1.1);
+  /* Safari 3-8 */
+  transform: scale(1.1);
+}
+
+/* clearfix hack to prevent image overflow. check out the W3Schools page on it. */
+.clearfix::after {
+  content: "";
+  clear: both;
+  display: table;
+}
+
+/*FONTS*/
+
+@font-face {
+  font-family: 'HandwritingCR-2';
+  src: url("../fonts/HandwritingCR-2.ttf") format('truetype');
+  font-display: swap;
+}
+
+@font-face {
+  font-family: "easvhs";
+  src: url('../fonts/easvhs.ttf') format('truetype');
+  font-display: swap;
+}
+
+@font-face {
+  font-family: "Pixellari";
+  src: url('../fonts/Pixellari.ttf') format('truetype');
+  font-display: swap;
+}
+
+/* header font */
+#showComic,
+header,
+h1,
+h2 {
+  font-family: 'easvhs';
+  letter-spacing: .1rem;
+  kerning: auto;
+  color: #FFCD79;
+}
+
+
+h3,
+h4,
+h5,
+li {
+  font-family: 'easvhs';
+  letter-spacing: .1rem;
+  kerning: auto;
+  color: #FFCD79;
+}
+
+/* body font */
+.subPage p,
+footer,
+#authorNotes,
+.archiveTable {
+  font-family: 'lucida grande', 'lucida sans unicode', 'verdana', sans-serif;
+  font-size: 16px;
+  color: #ffffff;
+  line-height: 1.5em;
+}
+
+a:link {
+  color: #E4A754;
+  background-color: transparent;
+  text-decoration: none;
+}
+
+a:visited {
+  color: #DA5437;
+  background-color: transparent;
+  text-decoration: none;
+}
+
+
+img {
+  max-width: 100%;
+  height: auto;
+}
+
+/* STYLING FOR SUBPAGES (about, characters, etc) */
+
+/*general*/
+
+.subPage {
+  width: 900px;
+  max-width: 98%;
+  background-color: #1B1B1B;
+  outline: 2px solid #3D3D3D;
+  margin: auto;
+  padding: 10px;
+  --dotSize: 0.15rem;
+  --bgSize: .5rem;
+  --bgPosition: calc(var(--bgSize) / 2);
+  align-content: center;
+
+  background-image: radial-gradient(circle at center,
+      black var(--dotSize),
+      transparent 0), radial-gradient(circle at center, black var(--dotSize), transparent 0);
+  background-size: var(--bgSize) var(--bgSize);
+  background-position: 0 0, var(--bgPosition) var(--bgPosition);
+}
+
+
+.subPage:not(.characterPage, .indexPage, .diaryPage) {
+  text-align: left;
+  padding: 30px;
+}
+
+/* for pictures displayed to the left */
+.leftPic {
+  clear: left;
+  float: right;
+  margin-left: 20px;
+}
+
+/* for pictures displayed to the left */
+.rightPic {
+  clear: right;
+  float: left;
+  margin-left: 20px;
+}
+
+/* Navigation for Desktop */
+
+.mobile-menu-icon {
+  display: none;
+  /* Initially hide the mobile menu icon */
+  cursor: pointer;
+  font-size: 24px;
+  position: absolute;
+  width: 45px;
+  height: 45px;
+  top: 20px;
+  right: 20px;
+  color: #fff;
+  background-color: #1B1B1B;
+  outline: 2px solid #FFCD79;
+  text-align: center;
+  padding-top: 4px;
+}
+
+
+/* Navigation for mobile devices */
+@media only screen and (max-width: 600px) {
+  .mobile-menu-icon {
+    display: block;
+    /* Show the mobile menu icon */
+  }
+
+  #nav {
+    position: fixed;
+    top: 0;
+    left: -250px;
+    /* Initially hide the menu off-screen to the left */
+    width: 250px;
+    height: 100%;
+    background-color: #1B1B1B;
+    padding-top: 60px;
+    transition: left 0.3s ease;
+    z-index: 2;
+  }
+
+  #headerArea.active #nav {
+    left: 0;
+    /* Slide the menu in when the headerArea has the 'active' class */
+  }
+
+  #nav ul {
+    list-style-type: none;
+    padding: 0;
+  }
+
+  #nav li {
+    padding: 15px;
+    text-align: center;
+  }
+
+  #nav li a {
+    color: #FFFFFF;
+    font-weight: 800;
+    text-decoration: none;
+  }
+
+  #nav li a:hover {
+    color: #a49cba;
+    text-decoration: underline;
+  }
+
+  #nav li {
+    margin: 10px 0;
+  }
+}
+
+/* Desktop styling using media query */
+@media only screen and (min-width: 601px) {
+  .desktop-nav {
+    position: relative;
+    /* Change to relative positioning */
+    width: 600px;
+    /* Adjust the width as needed */
+    margin: auto;
+    /* Center the navigation */
+    z-index: 1000;
+  }
+
+  .desktop-nav ul {
+    list-style-type: none;
+    padding: 0;
+    display: flex;
+    justify-content: space-around;
+  }
+
+  .desktop-nav li {
+    background-color: #1b1b1b;
+    outline: 2px solid #FFCD79;
+    padding: 15px;
+    text-align: center;
+    margin: 15px;
+    font-family: 'easvhs';
+    letter-spacing: .2rem;
+    kerning: auto;
+    color: #FFCD79;
+  }
+
+  .desktop-nav li a {
+    color: #FFFFFF;
+    font-weight: 900;
+    text-decoration: none;
+    display: block;
+  }
+
+  .desktop-nav li:hover {
+    background-color: #4e4e4e;
+    outline: 3px solid #fff;
+    /* Adjust the background color on hover */
+  }
+}
+
+
+/* INDEX PAGE */
+
+#subPage:is(.indexPage) {
+  align-content: center;
+}
+
+#welcome-container {
+  text-align: center;
+}
+
+#news-title {
+  background-color: #232424;
+  outline: 2px solid #FFCD79;
+  width: 800px;
+  max-width: 98%;
+  display: flex;
+  justify-content: center;
+  margin: auto;
+  align-content: space-evenly;
+}
+
+#swinkyimg img {
+  max-width: 100%;
+  height: auto;
+}
+
+#swaggyimg img {
+  max-width: 100%;
+  height: auto;
+}
+
+#news-title h2 {
+  padding-left: 15px;
+  padding-right: 15px;
+}
+
+#news-container {
+  background-color: #313333;
+  outline: 2px solid #FFCD79;
+  max-height: 300px;
+  /* Adjust the max height as needed */
+  overflow-y: auto;
+  /* Enable vertical scrollbar when content overflows */
+  padding: 15px;
+  width: 800px;
+  max-width: 98%;
+  text-align: left;
+  margin: auto;
+  margin-bottom: 15px;
+}
+
+
+.news-entry {
+  border-bottom: 1px solid #ddd;
+  /* Optional: Add a border between entries for styling */
+  margin-bottom: 10px;
+}
+
+.news-entry:last-child {
+  border-bottom: none;
+  /* Remove border for the last entry */
+}
+
+#extras-container {
+  justify-content: space-evenly;
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.image-button img {
+  width: 600px;
+  /* Adjust the width of the image */
+  height: auto;
+}
+
+.kofi-button img {
+  width: 300px;
+  /* Adjust the width of the image */
+  height: auto;
+  padding: 15px;
+  justify-content: center;
+  display: flex;
+  flex-wrap: wrap;
+  margin: auto;
+}
+
+#banner-container {
+  justify-content: space-evenly;
+  display: flex;
+  flex-wrap: wrap;
+}
+
+/* style nav button images */
+
+#showComic {
+  width: 900px;
+  max-width: 98%;
+  margin: auto;
+  align-content: center;
+}
+
+#pageTitle {
+  background: rgba(50, 50, 70, 0.6);
+  margin: auto;
+  margin-bottom: 20px;
+  padding: 10px;
+  padding-top: 1px;
+  width: 800px;
+  max-width: 98%;
+  text-align: left;
+}
+
+#showComic {
+  margin: auto;
+  max-width: 800px;
+  padding: 20px;
+  text-align: center;
+}
+
+#pageTitle p {
+  line-height: 3px
+}
+
+
+.comicNav {
+  display: flex;
+  flex-wrap: nowrap;
+  align-items: center;
+  justify-content: center;
+  padding: 15px 0px;
+  margin: auto;
+}
+
+.comicNav a.disabled {
+  opacity: 0.5;
+  /* Adjust the opacity to your preference for the disabled state */
+  pointer-events: none;
+  /* Disable pointer events for a visually disabled button */
+  text-decoration: none;
+  /* Remove underline for disabled links */
+  cursor: not-allowed;
+  /* Change cursor to indicate not-allowed */
+  color: inherit;
+  /* Inherit the text color of the parent */
+}
+
+/* Optionally, add a transition for a smooth visual effect */
+.comicNav a {
+  transition: opacity 0.3s ease;
+}
+
+.comicNav a:hover {
+  opacity: 0.8;
+  /* Adjust the hover opacity to your preference */
+}
+
+.comicNav img {
+  width: 50px;
+  max-width: 98%;
+  padding: 10px;
+}
+
+/* style comic page image */
+.comicPage img {
+  width: 600px;
+  max-width: 98%;
+}
+
+/* style author notes */
+#authorNotes {
+  background-color: #1B1B1B;
+  outline: 2px solid #3D3D3D;
+  padding: 15px;
+  width: 900px;
+  max-width: 98%;
+  text-align: left;
+  margin: auto;
+  margin-top: 20px;
+}
+
+/* Style the dropdown container */
+#page-dropdown {
+  padding: 10px;
+  font-size: 14px;
+  margin: auto;
+  margin-bottom: 10px;
+}
+
+/* Style the dropdown options */
+#page-dropdown option {
+  font-size: 14px;
+  background-color: #fff;
+  /* Background color of each option */
+  color: #333;
+  /* Text color of each option */
+}
+
+/* Style the optgroup labels */
+#page-dropdown optgroup {
+  font-weight: bold;
+  background-color: #ddd;
+  /* Background color of each optgroup label */
+  color: #3e3e3e
+}
+
+#disqus_thread {
+  background-color: #1B1B1B;
+  outline: 2px solid #3D3D3D;
+  padding: 15px;
+  width: 900px;
+  max-width: 98%;
+  text-align: left;
+  margin: auto;
+  margin-top: 20px;
+  color: #fff;
+}
+
+#disclaimer {
+  display: flex;
+  align-items: center;
+  background-color: #000;
+  outline: 2px solid #FFCD79;
+  color: #FFCD79;
+  padding: 15px;
+  max-width: 98%;
+  margin: auto;
+  max-width: 900px;
+  text-align: center;
+
+}
+
+#disclaimer img {
+  color: #FFCD79;
+  max-width: 98%;
+  padding: 5px;
+  float: left;
+}
+
+#disclaimer p {
+  font-family: 'lucida grande', 'lucida sans unicode', 'verdana', sans-serif;
+  font-size: 15px;
+  color: #FFCD79;
+}
+
+@media screen and (max-width: 600px) {
+
+  /* Adjust styles for smaller screens */
+  iframe {
+    /* Example: Set the width to 100% for responsiveness */
+    width: 100%;
+  }
+
+  #disclaimer img {
+    margin: 0;
+  }
+
+  #disclaimer {
+    display: flex;
+    align-items: center;
+    color: #FFCD79;
+    max-width: 98%;
+    padding: 10px;
+    width: 100%;
+    margin: auto;
+    margin-bottom: 20px;
+  }
+
+  #showComic {
+    align-items: center;
+    max-width: 98%;
+    margin: auto;
+  }
+
+
+
+
+
+}
+
+/* ARCHIVE PAGE */
+
+/* style table in which archive is displayed */
+
+.archiveTable {
+  width: 90%;
+  margin: auto;
+  /* Center the table */
+  border-collapse: collapse;
+}
+
+/* style archive table cells */
+.archiveTable td {
+  padding: 3px;
+  vertical-align: center;
+}
+
+/* style table cell in which page title is displayed */
+.archiveCellTitle:not(.leftAlignTableText) {
+  max-width: 300px;
+  text-align: center;
+}
+
+.archiveCellDate {
+  text-align: right;
+  min-width: 120px;
+}
+
+.archiveCellNum {
+  text-align: center;
+  min-width: 30px;
+}
+
+/* style the thumbnails on the archive page */
+.archiveCellThumb {
+  width: 500px;
+  max-width: 60px;
+}
+
+.archiveCellThumb img {
+  max-width: 100%;
+}
+
+/* for left aligning the text in a table cell */
+.leftAlignTableText td {
+  text-align: left;
+}
+
+/* highlight a table row and make pointer into hand when moused over */
+.archiveRow:hover {
+  background-color: #DA5437;
+  cursor: pointer;
+}
+
+/* Characters Page */
+
+#button-container img {
+  margin: 5px;
+  transition: transform 0.05s ease-in-out;
+  z-index: 1;
+}
+
+#button-container img:hover {
+  transform: scale(1.1);
+  /* Adjust the scale factor as needed */
+}
+
+#button-container img.pressed {
+  transform: scale(1.1);
+  /* You can adjust the scale factor as needed */
+}
+
+#content-container {
+  margin: 10px;
+  background: url("../img/characters/biotemplatebg.png") no-repeat;
+  display: flex;
+  align-items: flex-start;
+  /* Align items at the start (top) of the cross axis */
+  flex-direction: row;
+  /* Arrange items in a row */
+  padding: 15px;
+}
+
+#left-column {
+  order: 1;
+  width: 30%;
+}
+
+
+#character-details {
+  font-family: 'Courier', monospace;
+  background-color: rgba(27, 27, 27, 0);
+  padding-left: 15px;
+  text-align: left;
+}
+
+.attribute {
+  display: flex;
+  align-items: center;
+  gap: 5px;
+}
+
+#character-details p {
+  color: #000000;
+  font-family: 'Courier', monospace;
+  font-size: 18px;
+  line-height: .0;
+}
+
+#character-description {
+  order: 2;
+  /* Set the order to 2 to appear second in the flex container */
+  background-color: rgba(27, 27, 27, 0);
+  outline: 2px solid #8B0000;
+  outline-style: dashed;
+  padding: 10px;
+  text-align: left;
+  width: 60%;
+  margin-top: auto;
+  margin-right: auto;
+  height: 425px;
+  box-sizing: border-box;
+  word-wrap: break-word;
+  margin-top: 20px;
+  position: relative;
+}
+
+#character-description p {
+  color: #000000;
+  font-family: 'Courier', monospace;
+  font-size: 18px;
+  line-height: 1.3;
+}
+
+#character-status {
+  position: absolute;
+  bottom: 3px;
+  left: 10px;
+  text-align: left;
+  background-color: rgba(27, 27, 27, 0);
+  color: #000000;
+  font-family: 'Courier', monospace;
+  font-size: 18px;
+  margin-bottom: 10px;
+}
+
+#reveal-button {
+  background-color: black;
+  color: white;
+  padding: 10px 20px;
+  /* Adjust padding as needed */
+  border: none;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 16px;
+  /* Adjust font size as needed */
+  margin-top: 10px;
+  /* Adjust margin as needed */
+  cursor: pointer;
+}
+
+#reveal-button:hover {
+  background-color: darkslategray;
+  /* Change color on hover if desired */
+}
+
+#character-name {
+  color: #000000;
+  margin: 10px;
+  font-family: 'Courier', monospace;
+  font-size: 35px;
+}
+
+/*Cipher Stuff*/
+
+#cipher-decoder-container {
+  background-color: #1B1B1B;
+  padding: 15px;
+  width: 900px;
+  max-width: 98%;
+  text-align: left;
+  margin: auto;
+  margin-top: 20px;
+}
+
+/* Style for the decoder form */
+#decoder-form {
+  text-align: center;
+  /* Center align the form elements */
+}
+
+/* Style for the cipher text input */
+#cipher-text {
+  padding: 5px;
+  margin-right: 10px;
+}
+
+/* Style for the decode button */
+#decoder-form button {
+  padding: 8px 12px;
+  outline: 2px solid #E4A754;
+  background-color: #000;
+  /* Green background color */
+  color: #fff;
+  /* White text color */
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+}
+
+/* Style for the decoded text paragraph */
+#decoded-text {
+  margin-top: 10px;
+  font-weight: bold;
+  color: #fff;
+  /* Dark text color */
+}
+
+
+
+@media screen and (max-width: 600px) {
+
+  #content-container {
+    flex-direction: column;
+    background: url("../img/characters/biotemplatebg.png");
+    align-items: center;
+  }
+
+  #left-column,
+  #image-container,
+  #character-description,
+  #character-status {
+    width: 100%;
+    margin: 0;
+    /* Remove margins for mobile */
+  }
+
+  #character-description {
+    margin-top: 25px;
+    height: auto;
+    /* Adjust height for mobile */
+  }
+
+  #character-status {
+    position: relative;
+    left: 0px;
+  }
+}
+
+/* FancyBox */
+
+.fancybox-container {
+  max-width: 100%;
+  max-height: 100%;
+}
+
+/* Optional: Add styles to center the content within the Fancybox container */
+.fancybox-content {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 100%;
+}
+
+/* Optional: Add styles to limit the size of the image within the Fancybox container */
+.fancybox-image {
+  max-width: 100%;
+  max-height: 100%;
+}
+
+.fancybox__caption {
+  font-family: 'lucida grande', 'lucida sans unicode', 'verdana', sans-serif;
+  font-size: 16px;
+}
+
+/* ABOUT PAGE */
+#aboutPage {
+  text-align: left;
+}
+
+#aboutFaq {
+  background-color: #1B1B1B;
+  outline: 2px solid #3D3D3D;
+  font-family: 'lucida grande', 'lucida sans unicode', 'verdana', sans-serif;
+  font-size: 16px;
+  color: #ffffff;
+  padding: 15px;
+}
+
+/* Diary Page */
+
+#diary-header {
+  text-align: center;
+  margin: 0 auto;
+}
+
+body {
+  font-family: Arial, sans-serif;
+  line-height: 1.6;
+  margin: 0;
+  padding: 0;
+}
+
+.diary {
+  margin: 20px;
+  border-radius: 15px;
+  background: url("../img/diary/diarybg.png") no-repeat;
+  height: 800px;
+  /* Adjust the max height as needed */
+  overflow-y: auto;
+  /* Enable vertical scrollbar when content overflows */
+  padding: 15px;
+  max-width: 600px;
+  max-width: 98%;
+  text-align: left;
+}
+
+.diary p {
+  font-family: 'HandwritingCR-2';
+  padding-left: 15px;
+  color: #000;
+  font-size: 23px;
+  line-height: 1.5em;
+}
+
+.page {
+  display: none;
+  page-break-after: always;
+}
+
+.page.active {
+  display: block;
+}
+
+.pagination {
+  align-content: center;
+  margin-top: 20px;
+  text-align: center;
+}
+
+.pagination button {
+  border-radius: 5px;
+  padding: 10px;
+  margin: 5px;
+  cursor: pointer;
+  outline: 2px solid #FFCD79;
+  background-color: #000;
+
+}
+
+.archive {
+  margin-top: 20px;
+  display: flex;
+  justify-content: center;
+}
+
+.archive-number {
+  padding: 10px;
+  margin: 5px;
+  cursor: pointer;
+  border: 1px solid #fff;
+  color: #fff;
+  border-radius: 5px;
+}
+
+.archive-number.active {
+  background-color: #000;
+  color: #FFCD79;
+  outline: 2px solid #FFCD79;
+
+}
+
+@media only screen and (max-width: 600px) {
+  .diary p {
+    padding-left: 0px;
+    color: #000;
+    font-size: 16px;
+    line-height: 1.5em;
+  }
+}
+
+/* MAP */
+#locationHeader {
+  text-align: center;
+}
+
+#location-container {
+  background-color: #1B1B1B;
+  outline: 2px solid #3D3D3D;
+  margin: auto;
+  padding: 15px;
+}
+
+.locationArchive {
+  display: flex;
+  flex-wrap: wrap;
+  /* Allow the items to wrap to the next line */
+  justify-content: flex-start;
+  /* Adjust as needed, e.g., flex-start, center, space-between */
+  margin-top: 15px;
+  margin-bottom: 15px;
+}
+
+.archive-text {
+  flex: 0 0 calc(25% - 10px);
+  margin: 5px;
+  padding: 10px;
+  background-color: #1B1B1B;
+  color: #fff;
+  border: 1px solid #ccc;
+  cursor: pointer;
+}
+
+
+.archive-text.active {
+  color: #FFCD79;
+  border: 2px solid #FFCD79;
+}
+
+#paginationLocation {
+  align-content: center;
+  margin-top: 20px;
+  margin-bottom: 20px;
+  text-align: center;
+}
+
+#paginationLocation button {
+  border-radius: 5px;
+  padding: 10px;
+  margin: 5px;
+  cursor: pointer;
+}
+
+@media screen and (max-width: 600px) {
+  .archive-text {
+    flex: 0 0 calc(50% - 10px);
+    /* Adjust for larger screens, three buttons per row */
+  }
+}
+
+
+/* GALLERY */
+.row {
+  display: flex;
+  flex-wrap: wrap;
+  padding: 0 4px;
+}
+
+.column {
+  flex: 25%;
+  max-width: 25%;
+  padding: 0 4px;
+}
+
+.column img {
+  margin-top: 8px;
+  vertical-align: middle;
+  width: 100%;
+}
+
+/* Responsive layout - makes a two column-layout instead of four columns */
+@media screen and (max-width: 800px) {
+  .column {
+    flex: 50%;
+    max-width: 50%;
+  }
+}
+
+/* Responsive layout - makes the two columns stack on top of each other instead of next to each other */
+@media screen and (max-width: 600px) {
+  .column {
+    flex: 100%;
+    max-width: 100%;
+  }
+}
+
+/* FOOTER */
+footer {
+  color: #ffffff;
+  margin: auto;
+  font-size: 12px;
+  text-align: center;
+  padding: 30px;
+}
+
+footer p {
+  margin: 8px;
+}
+
+footer a {
+  color: #c8d32b
+}
+
+footer a:hover {
+  color: #868d26
+}
+
+
+footer .social-icons {
+  position: absolute;
+  bottom: 10px;
+  left: 50%;
+  transform: translateX(-50%);
+  text-align: center;
+}
+
+#social-icons a {
+  display: inline-block;
+  margin: 0 5px;
+  /* Adjust the space between icons */
+  font-size: 24px;
+  /* Adjust the icon size */
+  color: #fff;
+  /* Adjust the icon color */
+}
+
+/* take away margins from the edges of the screen */
+html,
+body {
+  margin: 0;
+}
