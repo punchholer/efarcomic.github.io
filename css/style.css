@@ -1564,17 +1564,6 @@ img {
   color: #3e3e3e
 }
 
-#disqus_thread {
-  outline: 2px solid #3D3D3D;
-  padding: 15px;
-  width: 900px;
-  max-width: 98%;
-  text-align: left;
-  margin: auto;
-  margin-top: 20px;
-  color: #fff;
-}
-
 #disclaimer {
   display: flex;
   align-items: center;
