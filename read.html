@@ -56,6 +56,23 @@ comments: true
   </div>
 
   {% if page.comments %}
+
+  <style>
+    /* Add your custom styles here */
+    #disqus_thread {
+      margin-top: 20px;
+      /* Adjust the top margin as needed */
+    }
+
+    .disqus-comment {
+      /* Customize the style of individual comments if needed */
+      margin-bottom: 15px;
+      padding: 10px;
+      border: 1px solid #ccc;
+      border-radius: 5px;
+    }
+  </style>
+
   <div id="disqus_thread"></div>
   <script>
     /**
