@@ -77,7 +77,7 @@ const pgData = [
     {
         pgNum: 3,
         title: "Chapter 1 Page 02",
-        date: writeDate(2021, 9, 7),
+        date: writeDate(2017, 9, 7),
         chapter: 1,
         imageFiles: 4,
         altText: "",
@@ -88,7 +88,7 @@ const pgData = [
     {
         pgNum: 4,
         title: "Chapter 1 Page 03",
-        date: writeDate(2021, 9, 7),
+        date: writeDate(2017, 9, 7),
         chapter: 1,
         imageFiles: 3,
         altText: "",
