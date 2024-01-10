@@ -662,7 +662,7 @@ const pgData = [
         imageFiles: 3,
         altText: "",
         authorNotes: `
-           <p>TBA</p>
+           <p>Test</p>
             `,
     },
     {
@@ -673,7 +673,7 @@ const pgData = [
         imageFiles: 5,
         altText: "",
         authorNotes: `
-           <p>TBA</p>
+           <p>Test</p>
             `,
     },
     {
