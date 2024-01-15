@@ -79,8 +79,9 @@
                 </a>
 
                 <div id="location-desc">
-                    <h2>WIP</h2>
-                    <p>text</p>
+                    <h2>Holding Areas</h2>
+                    <p>These are smaller, transitional rooms meant to keep contestants grouped together before they're
+                        ready for the next location. Personally, I think they're rather useless.</p>
                 </div>
                 <div id="location-img">
                     <img src="img/map/doors/bluedoor.png" width="75" alt="">
@@ -96,8 +97,9 @@
                 </a>
 
                 <div id="location-desc">
-                    <h2>WIP</h2>
-                    <p>text</p>
+                    <h2>Gilded Fountain</h2>
+                    <p>A room made of gold blocks and fountains that has a fairly simple puzzle. Its glittery facade
+                        hides the most painful traps.</p>
                 </div>
                 <div id="location-img">
                     <img src="img/map/doors/bluedoor.png" width="75" alt="">
@@ -113,8 +115,9 @@
                 </a>
 
                 <div id="location-desc">
-                    <h2>WIP</h2>
-                    <p>text</p>
+                    <h2>Snowy Area/Cabin</h2>
+                    <p>A lone cabin surrounded by a harsh snowstorm. A nostalgic place, for someone else at
+                        least.</p>
                 </div>
                 <div id="location-img">
                     <img src="img/map/doors/bluedoor.png" width="75" alt="">
@@ -130,8 +133,9 @@
                 </a>
 
                 <div id="location-desc">
-                    <h2>WIP</h2>
-                    <p>text</p>
+                    <h2>The Backstage</h2>
+                    <p>This place definitely has some backtory to it. Beware of ghosts and their tendency to ramble on
+                        about their past trauma.</p>
                 </div>
                 <div id="location-img">
                     <img src="img/map/doors/bluedoor.png" width="75" alt="">
@@ -147,8 +151,10 @@
                 </a>
 
                 <div id="location-desc">
-                    <h2>WIP</h2>
-                    <p>text</p>
+                    <h2>The Library</h2>
+                    <p>This place links to the Backstage, and is one of the main 'control rooms' of Abject Reality. It
+                        is decrepit and all the machinery is unused, but at least it distracts all the nerds and their
+                        need for lore.</p>
                 </div>
                 <div id="location-img">
                     <img src="img/map/doors/bluedoor.png" width="75" alt="">
@@ -164,8 +170,9 @@
                 </a>
 
                 <div id="location-desc">
-                    <h2>WIP</h2>
-                    <p>text</p>
+                    <h2>Playtest Mountains</h2>
+                    <p>A fun place to test out new weaponry for your first-placers! Purple mountains and floating robot
+                        eyeballs, what's not to be excited about? </p>
                 </div>
                 <div id="location-img">
                     <img src="img/map/doors/bluedoor.png" width="75" alt="">
@@ -181,8 +188,13 @@
                 </a>
 
                 <div id="location-desc">
-                    <h2>WIP</h2>
-                    <p>text</p>
+                    <h2>Jungle/Volcano</h2>
+                    <p>A seemingly endless jungle that's so expansive it would take a week to find your way out. Watch
+                        your step, or spiky vines would entrap you, and you could also risk being burnt by molten Regia
+                        crystals. <br>
+                        The top of the mountain leads to an active volcano, with a pool of corrosive Regia lava before
+                        you could access the next room. Sounds simple? It probably isn't.
+                    </p>
                 </div>
                 <div id="location-img">
                     <img src="img/map/doors/bluedoor.png" width="75" alt="">
@@ -198,8 +210,10 @@
                 </a>
 
                 <div id="location-desc">
-                    <h2>WIP</h2>
-                    <p>text</p>
+                    <h2>Void</h2>
+                    <p> There are two separate voids. One of them before Abject Reality, and the other, a final resting
+                        place for ill-fated contestants.
+                    </p>
                 </div>
                 <div id="location-img">
                     <img src="img/map/doors/bluedoor.png" width="75" alt="">
@@ -224,81 +238,82 @@
             <h1>Items</h1>
         </div>
         <hr>
-        <!-- footer -->
-        <div class="writeFooter"></div>
+    </div>
+    <!-- footer -->
+    <div class="writeFooter"></div>
 
-        <!-- at the end of this page we only call the header and footer scripts, because we don't need use any functions from the other scripts. -->
-        <script src="js/comic_header.js" defer></script>
-        <script src="js/comic_footer.js" defer></script>
-        <script data-goatcounter="https://efarcomic.goatcounter.com/count" async src="//gc.zgo.at/count.js"></script>
-        <script>
-            const options = {
-                Thumbs: {
-                    type: "classic",
-                },
-            };
+    <!-- at the end of this page we only call the header and footer scripts, because we don't need use any functions from the other scripts. -->
+    <script src="js/comic_header.js" defer></script>
+    <script src="js/comic_footer.js" defer></script>
+    <script data-goatcounter="https://efarcomic.goatcounter.com/count" async src="//gc.zgo.at/count.js"></script>
+    <script>
+        const options = {
+            Thumbs: {
+                type: "classic",
+            },
+        };
 
-            Fancybox.bind('[data-fancybox="location"]', {
-                groupAll: true,
+        Fancybox.bind('[data-fancybox="location"]', {
+            groupAll: true,
 
-            });
-        </script>
+        });
+    </script>
 
 
-        <script>
-            let currentPage = 0;
-            const pages = document.querySelectorAll('.page');
-            const archiveContainer = document.getElementById('archiveContainer');
-            const customTexts = [
-                "Starting Fields",
-                "Rock Labyrinth",
-                "Holding Areas",
-                "Gilded Fountain",
-                "Snowy Area/Cabin",
-                "The Backstage",
-                "The Library",
-                "Playtest Mountains",
-                "Jungle/Volcano",
-                "Void",
-                // Add more custom texts for each page as needed
-            ];
+    <script>
+        let currentPage = 0;
+        const pages = document.querySelectorAll('.page');
+        const archiveContainer = document.getElementById('archiveContainer');
+        const customTexts = [
+            "Starting Fields",
+            "Rock Labyrinth",
+            "Holding Areas",
+            "Gilded Fountain",
+            "Snowy Area/Cabin",
+            "The Backstage",
+            "The Library",
+            "Playtest Mountains",
+            "Jungle/Volcano",
+            "Void",
+            // Add more custom texts for each page as needed
+        ];
 
-            function changePage(delta) {
-                currentPage += delta;
-                if (currentPage < 0) {
-                    currentPage = 0;
-                } else if (currentPage >= pages.length) {
-                    currentPage = pages.length - 1;
-                }
-
-                updatePagination();
-                updateArchive();
+        function changePage(delta) {
+            currentPage += delta;
+            if (currentPage < 0) {
+                currentPage = 0;
+            } else if (currentPage >= pages.length) {
+                currentPage = pages.length - 1;
             }
 
-            function updatePagination() {
-                pages.forEach((page, index) => {
-                    page.classList.toggle('active', index === currentPage);
-                });
-            }
-
-            function updateArchive() {
-                archiveContainer.innerHTML = '';
-                pages.forEach((page, index) => {
-                    const archiveText = document.createElement('div');
-                    archiveText.classList.add('archive-text');
-                    archiveText.textContent = customTexts[index]; // Use custom text instead of index
-                    archiveText.addEventListener('click', () => changePage(index - currentPage));
-                    if (index === currentPage) {
-                        archiveText.classList.add('active');
-                    }
-                    archiveContainer.appendChild(archiveText);
-                });
-            }
-
-
-            // Initialize the archive
+            updatePagination();
             updateArchive();
-        </script>
+        }
+
+        function updatePagination() {
+            pages.forEach((page, index) => {
+                page.classList.toggle('active', index === currentPage);
+            });
+        }
+
+        function updateArchive() {
+            archiveContainer.innerHTML = '';
+            pages.forEach((page, index) => {
+                const archiveText = document.createElement('div');
+                archiveText.classList.add('archive-text');
+                archiveText.textContent = customTexts[index]; // Use custom text instead of index
+                archiveText.addEventListener('click', () => changePage(index - currentPage));
+                if (index === currentPage) {
+                    archiveText.classList.add('active');
+                }
+                archiveContainer.appendChild(archiveText);
+            });
+        }
+
+
+        // Initialize the archive
+        updateArchive();
+    </script>
 </body>
 
 </html>
