@@ -1591,6 +1591,17 @@ img {
   color: #FFCD79;
 }
 
+#ad-space {
+  background-color: #1B1B1B;
+  outline: 2px solid #3D3D3D;
+  padding: 15px;
+  width: 900px;
+  max-width: 98%;
+  text-align: left;
+  margin: auto;
+  margin-top: 20px;
+}
+
 @media screen and (max-width: 600px) {
 
   /* Adjust styles for smaller screens */
