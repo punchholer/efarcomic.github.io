@@ -615,6 +615,10 @@ img {
 
 /* Characters Page */
 
+#subPage:is(.indexPage) {
+  margin-top: 15px;
+}
+
 #button-container img {
   margin: 5px;
   transition: transform 0.05s ease-in-out;
