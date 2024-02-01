@@ -1374,8 +1374,8 @@ img {
 }
 
 #news-title {
-  background-color: #232424;
-  outline: 2px solid #FFCD79;
+  background-color: rgb(0 0 0 / 0%);
+  outline: 0px solid #FFCD79;
   width: 800px;
   max-width: 98%;
   display: flex;
