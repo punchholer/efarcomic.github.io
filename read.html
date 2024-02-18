@@ -51,7 +51,7 @@ comments: true
     <img src="img/disclaimer.png" alt="Disclaimer">
     <p>Javascript needs to be enabled to view this comic. This webcomic is psychological horror and contains themes
       that some viewers might find disturbing. Certain pages contain .gif images (46a-f) which contains flashing
-      images and colors.</p>
+      images and colors. Make sure to clear your cache if the comic pages are not loading in.</p>
   </div>
   <div id="authorNotes">
     <h2>Author Notes</h2>
@@ -128,7 +128,6 @@ comments: true
       const selectedPage = document.getElementById('page-dropdown').value;
 
       if (selectedPage === 'random') {
-        // Generate a random page number between 1 and maxpg
         const randomPage = Math.floor(Math.random() * maxpg) + 1;
         window.location.href = `read.html?pg=${randomPage}#showComic`;
       } else {
@@ -136,11 +135,9 @@ comments: true
       }
     }
 
-    // Function to populate the dropdown menu with all pages
     function populateDropdown(maxPages) {
       const dropdown = document.getElementById('page-dropdown');
 
-      // Clear existing options
       dropdown.innerHTML = '';
 
       let currentChapter = null;
@@ -153,9 +150,7 @@ comments: true
       for (let i = 1; i <= maxPages; i++) {
         const option = document.createElement('option');
 
-        // Check if there is chapter information for the current page
         if (pgData.length >= i && pgData[i - 1].chapter) {
-          // If the chapter changes, create a new optgroup
           if (pgData[i - 1].chapter !== currentChapter) {
             currentChapter = pgData[i - 1].chapter;
             const optgroup = document.createElement('optgroup');
@@ -165,7 +160,6 @@ comments: true
           option.value = i;
           option.text = `${pgData[i - 1].title}`;
         } else {
-          // If there is no chapter information, use a default label
           option.value = i;
           option.text = `Page ${i}`;
         }
@@ -173,19 +167,15 @@ comments: true
         dropdown.appendChild(option);
       }
 
-      // Set the selected option to the current page
       dropdown.value = pg;
 
-      // Set an event listener for dropdown change
       dropdown.addEventListener('change', handleDropdownChange);
     }
 
     // Call the function to populate the dropdown when the DOM is loaded
     document.addEventListener('DOMContentLoaded', function () {
-      // Assuming you have a variable maxpg that represents the total number of pages
-      const maxPages = maxpg; // Replace with the actual variable name or value
+      const maxPages = maxpg;
 
-      // Call the function to populate the dropdown with all pages
       populateDropdown(maxPages);
     });
   </script>
