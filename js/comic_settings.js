@@ -999,6 +999,17 @@ const pgData = [
            <p>I wonder what's inside that <a href="diary.html">diary</a>.</p>
             `,
     },
+    {
+        pgNum: 85,
+        title: `Chapter 4 Page 76`,
+        date: writeDate(2024, 3, 4),
+        chapter: 4,
+        imageFiles: 11,
+        altText: "",
+        authorNotes: `
+           <p>Trust me, it's a lot more difficult to roll on the ground while carrying a stack of books.</p>
+            `,
+    },
 
 ];
 
