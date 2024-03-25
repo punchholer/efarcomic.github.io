@@ -4,7 +4,7 @@ document.querySelector(".writeFooter").innerHTML = `
         <a href="https://ko-fi.com/punchyholery" target="_blank"><img src="img/icons/kofi.svg" alt="kofi" width="32" height="32"></a>
 
             <a href="https://tapas.io/series/EFAR/info" target="_blank"><img src="img/icons/tapas.svg" alt="tapas" width="32" height="32"></a>
-            <a href="https://discord.gg/vnvMKxREHN" target="_blank"><img src="img/icons/discord.svg" alt="discord" width="32" height="32"></a>
+            <a href="https://discord.gg/Vdje2EwuBD" target="_blank"><img src="img/icons/discord.svg" alt="discord" width="32" height="32"></a>
             <a href="https://twitter.com/efarcomic" target="_blank"><img src="img/icons/twitter.svg" alt="twitter" width="32" height="32"></a>
             <a href="https://www.youtube.com/channel/UCq02sauux-1yqpIly8wI7Nw" target="_blank"><img src="img/icons/youtube.svg" alt="youtube" width="32" height="32"></a>
             <a href="https://www.tumblr.com/efarcomic" target="_blank"><img src="img/icons/tumblr.svg" alt="tumblr" width="32" height="32"></a>
