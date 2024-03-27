@@ -339,7 +339,52 @@ img {
   /* Remove border for the last entry */
 }
 
+#patreon-title {
+  text-align: center;
+}
+
+
+#patreon-container {
+  width: 800px;
+  max-width: 98%;
+  display: block;
+  justify-content: center;
+  margin: auto;
+  align-content: center;
+  padding: 15px;
+}
+
+
+#patreon-icon-container {
+  vertical-align: top;
+  display: inline-block;
+  text-align: center;
+  width: 120px;
+}
+
+#patreon-icon-container img {
+  margin: 5px;
+  transition: transform 0.05s ease-in-out;
+  z-index: 1;
+}
+
+#patreon-icon-container img:hover {
+  transform: scale(1.1);
+  /* Adjust the scale factor as needed */
+}
+
+.caption {
+  display: block;
+  color: #FFFFFF;
+}
+
+#patreon-desc {
+  text-align: center;
+}
+
+
 #extras-container {
+  text-align: center;
   justify-content: space-evenly;
   display: flex;
   flex-wrap: wrap;
