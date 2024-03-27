@@ -359,7 +359,10 @@ img {
   vertical-align: top;
   display: inline-block;
   text-align: center;
-  width: 120px;
+}
+
+#patreon-icon-container p {
+  margin-top: 3px;
 }
 
 #patreon-icon-container img {
