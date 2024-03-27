@@ -361,7 +361,8 @@ img {
   text-align: center;
 }
 
-#patreon-icon-container p {
+#caption {
+  color: #FFFFFF;
   margin-top: 3px;
 }
 
