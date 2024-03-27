@@ -373,12 +373,6 @@ img {
 
 #patreon-icon-container img:hover {
   transform: scale(1.1);
-  /* Adjust the scale factor as needed */
-}
-
-.caption {
-  display: block;
-  color: #FFFFFF;
 }
 
 #patreon-desc {
