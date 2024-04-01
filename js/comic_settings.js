@@ -3,7 +3,7 @@
 //this is the main file you'll be messing with to manage and update your comic. most (not all) of the main toggle-able settings are here.
 
 //comic_archive has more settings pertaining to the archive page, and comic_show has settings pertaining to the main place that pages of your comic are displayed.
-const maxpg = 85;
+const maxpg = 86;
 // your value for maxpg
 //the current number of pages your comic has in total. this DOESNT necessarily mean number of IMAGE FILES as it doesn't count pages split into multiple files. 
 //YOU MUST UPDATE THIS NUMBER EVERY TIME YOU ADD A NEW PAGE or else it wont display the most recent page
@@ -1010,6 +1010,18 @@ const pgData = [
            <p>Trust me, it's a lot more difficult to roll on the ground while carrying a stack of books.</p>
             `,
     },
+    {
+        pgNum: 86,
+        title: `Chapter 4 Page 77`,
+        date: writeDate(2024, 4, 1),
+        chapter: 4,
+        imageFiles: 9,
+        altText: "",
+        authorNotes: `
+           <p>Blue team keeps April fooling around, and eventually, they will find out.</p>
+            `,
+    },
+
 
 ];
 
