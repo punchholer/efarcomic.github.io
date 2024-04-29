@@ -40,7 +40,7 @@
         <p>A gallery for art, miscellaneous comics, and animations that are EFAR related.</p>
         <br>
         <h2>Artwork</h2>
-        <p>Artwork that I created for Objectober 2021</p>
+        <p>Artwork created for Objectober 2021</p>
         <hr>
         <a href="img/gallery/artwork/oct01.PNG" data-fancybox="objectober">
             <img src="img/gallery/artwork/oct01.PNG" height="50" style="width:20%;" alt="">
@@ -72,6 +72,16 @@
         <a href="img/gallery/artwork/oct10.PNG" data-fancybox="objectober">
             <img src="img/gallery/artwork/oct10.PNG" height="50" style="width:20%;" alt="">
         </a>
+        <h2>Extras</h2>
+        <p>Reference sheet for the events of <a href="https://efarcomic.com/diary">???'s Diary</a></p>
+        <a href="img/gallery/elixir/EF_ref.png" data-fancybox="elixir">
+            <img src="img/gallery/elixir/EF_ref.png" height="50" style="width:20%;" alt="">
+        </a>
+        <a href="img/gallery/elixir/EF_poster.png" data-fancybox="elixir">
+            <img src="img/gallery/elixir/EF_poster.png" height="50" style="width:20%;" alt="">
+        </a>
+        <hr>
+        <br>
         <br>
         <h2>Animations</h2>
         <p>Excluding the animated pages within the comic itself.</p>
@@ -185,7 +195,6 @@
     <!-- JavaScript files -->
     <script src="js/comic_characters.js" defer></script>
     <script src="js/comic_header.js" defer></script>
-    <script src="js/comic_decoder.js" defer></script>
     <script src="js/comic_footer.js" defer></script>
     <script src="js/fancybox.js" defer></script>
 
@@ -225,6 +234,10 @@
         });
 
         Fancybox.bind('[data-fancybox="badgey"]', {
+            groupAll: true,
+        });
+
+        Fancybox.bind('[data-fancybox="elixir"]', {
             groupAll: true,
         });
 
