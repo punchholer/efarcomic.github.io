@@ -63,11 +63,17 @@
       <description>A new page has been uploaded!</description>
       <guid>https://efarcomic.com/read.html?pg=87</guid>
     </item>
-          <item>
+      <item>
       <title>Chapter 3 Page 79</title>
       <link>https://efarcomic.com/read.html?pg=88</link>
       <description>A new page has been uploaded!</description>
       <guid>https://efarcomic.com/read.html?pg=88</guid>
+    </item>
+      <item>
+      <title>Chapter 3 Page 80</title>
+      <link>https://efarcomic.com/read.html?pg=89</link>
+      <description>A new page has been uploaded!</description>
+      <guid>https://efarcomic.com/read.html?pg=89</guid>
     </item>
     <!-- Add more items for each page -->
   </channel>
