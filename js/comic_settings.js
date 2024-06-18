@@ -1075,7 +1075,7 @@ const pgData = [
         imageFiles: 8,
         altText: "",
         authorNotes: `
-           <p>It's really been a while Snake Oil had spoken the blue team, all the way back in chapter 1!</p>`,
+           <p>It's really been a while since Snake Oil had spoken the blue team, all the way back in chapter 1!</p>`,
     },
 ];
 
