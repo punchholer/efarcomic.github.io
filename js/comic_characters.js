@@ -353,7 +353,7 @@ const characters = [
                 <img src="img/characters/biocircles/squ_will.png" alt="Willpower">
             </div>
         `,
-        description: '<p><strong>Object type:</strong> S Shaped Block</p><p><strong>Description:</strong></p><p>Squiggly is the older twin, but he is more anxious than his younger brother, Z. His other name is known as ‘Rhodes’. Without his brother, he feels that he became a half of a whole. He tries his best to care about the safety of his friends and is confident about questioning the ambiguous nature of Abject Reality, even if he appears paranoid about everything wrong that could happen.</p>',
+        description: '<p><strong>Object type:</strong> S Shaped Wooden Block</p><p><strong>Description:</strong></p><p>Squiggly is the older twin, but he is more anxious than his younger brother, Z. His other name is known as ‘Rhodes’. Without his brother, he feels that he became a half of a whole. He tries his best to care about the safety of his friends and is confident about questioning the ambiguous nature of Abject Reality, even if he appears paranoid about everything wrong that could happen.</p>',
         status: '<strong>Status:</strong> Alive'
     },
     {
@@ -416,7 +416,7 @@ const characters = [
                 <img src="img/characters/biocircles/z_will.png" alt="Willpower">
             </div>
         `,
-        description: '<p><strong>Object type:</strong> Z Shaped Block</p><p><strong>Description:</strong></p><p>Z is the younger brother of the twins. His direct confidence can easily gain trust from anyone. His cool exterior does not last very long, as in turmoil, he becomes easily frustrated by his own mistakes and the situation around him. His other name is known as ‘Cleveland’. Z wears sunglasses due to his photosensitivity, and hydrophobic from the fear of water entering his eyes.</p>',
+        description: '<p><strong>Object type:</strong> Z Shaped Wooden Block</p><p><strong>Description:</strong></p><p>Z is the younger brother of the twins. His direct confidence can easily gain trust from anyone. His cool exterior does not last very long, as in turmoil, he becomes easily frustrated by his own mistakes and the situation around him. His other name is known as ‘Cleveland’. Z wears sunglasses due to his photosensitivity, and hydrophobic from the fear of water entering his eyes.</p>',
         status: '<strong>Status:</strong> Alive'
     },
     {
@@ -440,7 +440,7 @@ const characters = [
         imageFilename: 'TheBucket.png',
         details:
             ``,
-        description: '<p><strong>Object type:</strong> <em>Vessel For Hundreds Of Eyes</em></p><p><strong>Description:</strong></p><p>Not much is known about this object, other than the fact that it appeared in Abject Reality and currently in the hands of someone else. This object is made up of hundreds of voices from an alternate dimension, and peculiarly, defies the laws of physics. Further testing is required.</p>',
+        description: '<p><strong>Object type:</strong> <em>Vessel For Hundreds Of Eyes</em></p><p><strong>Description:</strong></p><p>Not much is known about this object, other than the fact that an instance of it has appeared in Abject Reality and currently in the hands of someone else. This object is made up of hundreds of voices from an alternate dimension, and peculiarly, defies the laws of physics. While they speak as a singular voice, their personality and motives are inconsistent. It prefers to take the form of an inanimate metal pail and stays silent most of the time. Further testing is required.</p>',
         status: '<strong>Status:</strong> Fifteen Letters'
     },
 ];
