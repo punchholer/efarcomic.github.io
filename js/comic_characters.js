@@ -440,7 +440,7 @@ const characters = [
         imageFilename: 'TheBucket.png',
         details:
             ``,
-        description: '<p><strong>Object type:</strong> <em>Vessel For Hundreds Of Eyes</em></p><p><strong>Description:</strong></p><p>Not much is known about this object, other than the fact that an instance of it has appeared in Abject Reality and currently in the hands of someone else. This object is made up of hundreds of voices from an alternate dimension, and peculiarly, defies the laws of physics. While they speak as a singular voice, their personality and motives are inconsistent. It prefers to take the form of an inanimate metal pail and stays silent most of the time.</p>',
+        description: '<p><strong>Object type:</strong> <em>Vessel For Hundreds Of Eyes</em></p><p><strong>Description:</strong></p><p>Not much is known about this object, other than the fact that an instance of it has appeared in Abject Reality and currently in the hands of someone else. This object is made up of hundreds of entities from an alternate dimension, and peculiarly, defies the laws of physics. Their personality and motives are inconsistent, as it tries to speak as a single voice. It prefers to take the form of an inanimate metal pail and stays silent most of the time.</p>',
         status: '<strong>Status:</strong> Fifteen Letters'
     },
 ];
