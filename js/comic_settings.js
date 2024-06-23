@@ -1077,6 +1077,16 @@ const pgData = [
         authorNotes: `
            <p>It's really been a while Snake Oil had spoken the blue team, all the way back in chapter 1!</p>`,
     },
+    {
+        pgNum: 92,
+        title: `Chapter 4 Page 81`,
+        date: writeDate(2024, 6, 24),
+        chapter: 4,
+        imageFiles: 8,
+        altText: "",
+        authorNotes: `
+           <p>What a dark episode.</p>`,
+    },
 ];
 
 //below is a function you dont rly need to mess with but if you're more experienced with js you can
