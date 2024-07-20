@@ -19,7 +19,7 @@ writeArchive("chapter2", 18, 36, -1, false, false);
 
 writeArchive("chapter3", 37, 82, -1, false, false);
 
-writeArchive("chapter4", 83, 92, -1, false, false);
+writeArchive("chapter4", 83, 93, -1, false, false);
 
 //below this point is stuff you don't really need to pay attention to if you're not super familiar with JS 
 
