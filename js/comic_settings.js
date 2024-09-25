@@ -148,7 +148,7 @@ const pgData = [
         imageFiles: 5,
         altText: "",
         authorNotes: `
-            <p>TBA</p>
+            <p>This page was edited with a few extra panels on 25 September 2024.</p>
             `,
     },
     {
