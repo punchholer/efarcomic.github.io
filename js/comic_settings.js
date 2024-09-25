@@ -145,7 +145,7 @@ const pgData = [
         title: `Chapter 1 Page 08`,
         date: writeDate(2017, 10, 22),
         chapter: 1,
-        imageFiles: 4,
+        imageFiles: 5,
         altText: "",
         authorNotes: `
             <p>TBA</p>
