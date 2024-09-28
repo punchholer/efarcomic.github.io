@@ -234,19 +234,20 @@ img {
 @media only screen and (min-width: 601px) {
   .desktop-nav {
     position: relative;
-    /* Change to relative positioning */
-    width: 600px;
-    /* Adjust the width as needed */
-    margin: auto;
-    /* Center the navigation */
+    width: 100%;
+    max-width: 600px;
+    margin: 0 auto;
     z-index: 1000;
+    box-sizing: border-box;
+    text-align: center;
   }
 
   .desktop-nav ul {
-    list-style-type: none;
-    padding: 0;
+    display: -webkit-box;
+    display: -ms-flexbox;
     display: flex;
-    justify-content: space-around;
+    justify-content: center;
+    text-align: center;
   }
 
   .desktop-nav li {
@@ -1359,11 +1360,8 @@ img {
 @media only screen and (min-width: 601px) {
   .desktop-nav {
     position: relative;
-    /* Change to relative positioning */
     width: 600px;
-    /* Adjust the width as needed */
     margin: auto;
-    /* Center the navigation */
     z-index: 1000;
   }
 
@@ -1371,7 +1369,6 @@ img {
     list-style-type: none;
     padding: 0;
     display: flex;
-    justify-content: space-around;
   }
 
   .desktop-nav li {
