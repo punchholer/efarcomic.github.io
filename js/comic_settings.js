@@ -60,7 +60,7 @@ const pgData = [
         imageFiles: 1, //how many image files this page is split into
         altText: "",
         authorNotes: `
-            <p>TBA</p>
+            <p>Where it all began.</p>
             `,
     },
     {
@@ -71,7 +71,7 @@ const pgData = [
         imageFiles: 3, //how many image files this page is split into
         altText: "",
         authorNotes: `
-            <p>TBA</p>
+            <p>The dreaded roll call, just like they used to do in school assemblies. Just have to make sure that everyone is present!</p>
             `,
     },
     {
@@ -82,7 +82,7 @@ const pgData = [
         imageFiles: 4,
         altText: "",
         authorNotes: `
-            <p>TBA</p>
+            <p>Tunnel Snakes Rule!</p>
             `,
     },
     {
@@ -93,7 +93,7 @@ const pgData = [
         imageFiles: 3,
         altText: "",
         authorNotes: `
-            <p>TBA</p>
+            <p>The slide must've left quite a mark on Badgey's face.</p>
             `,
     },
     {
@@ -104,7 +104,7 @@ const pgData = [
         imageFiles: 4,
         altText: "",
         authorNotes: `
-            <p>TBA</p>
+            <p>The first of the 'poll pages'. How it works was that the readers will usually vote between two choices to decide on the fate on the beloved characters! Surely there won't be any consequences to these decisions!</p>
             `,
     },
     {
