@@ -1578,6 +1578,24 @@ img {
   margin-top: 20px;
 }
 
+
+/* hide text spoilers */
+.spoiler {
+  color: transparent;
+  background-color: #333;
+  border-radius: 5px;
+  padding: 2px 5px;
+}
+
+.hidden {
+  display: none;
+}
+
+.spoiler.revealed {
+  color: inherit;
+  background-color: inherit;
+}
+
 /* Style the dropdown container */
 #page-dropdown {
   padding: 10px;
@@ -1866,7 +1884,7 @@ img {
 /* Style for the decode button */
 #decoder-form button {
   padding: 8px 12px;
-  outline: 2px solid #E4A754;
+  outline: 2px solid #CBFFFC;
   background-color: #000;
   /* Green background color */
   color: #fff;

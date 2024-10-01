@@ -12,46 +12,36 @@ function changeCharacter(characterData) {
     if (cipherDecoderContainer) {
         cipherDecoderContainer.parentNode.removeChild(cipherDecoderContainer);
     }
-    // Check if the current character is 'The Bucket' or 'Foamy'
     if (characterData.characterName === 'The Bucket' || characterData.characterName === 'Foamy' || characterData.characterName === 'Snake Oil') {
-        // Set opacity to 0.1 for status
         statusElement.style.opacity = 0.1;
 
-        // Create the decoder container for 'The Bucket' only
         if (characterData.characterName === 'The Bucket') {
             // Create the decoder container
             const decoderContainer = document.createElement('div');
             decoderContainer.id = 'cipher-decoder-container';
 
-            // Add content to the decoder container (e.g., a form)
             decoderContainer.innerHTML = `
                 <form id="decoder-form">
-                    <h2>Bucket decoder</h2>
+                    <h2><span style="color: #CBFFFC">Bucket decoder</span></h2>
                     <input type="text" id="cipher-text" name="cipher-text" required>
                     <button type="button" onclick="decodeCipher()">Decode</button>
                     <p id="decoded-text"></p>
                 </form>
             `;
 
-            // Append the decoder container between content-container and footer
             const contentContainer = document.getElementById('content-container');
             contentContainer.parentNode.insertBefore(decoderContainer, document.getElementById('footer'));
 
-            // Hide the reveal button for 'The Bucket'
             revealButton.style.display = 'none';
         }
-        // Remove the 'pressed' class from all buttons
         const allButtons = document.querySelectorAll('#button-container img');
         allButtons.forEach(button => button.classList.remove('pressed'));
 
-        // Add the 'pressed' class to the clicked button
         const pressedButton = document.querySelector(`#button-container img[alt="${characterData.characterName}"]`);
         pressedButton.classList.add('pressed');
     } else {
-        // For other characters, set opacity to 1 for status
         statusElement.style.opacity = 1;
 
-        // Reset the status and button
         statusElement.style.display = 'none';
         revealButton.style.display = 'inline-block';
         revealButton.onclick = function () {
@@ -61,27 +51,22 @@ function changeCharacter(characterData) {
         const allButtons = document.querySelectorAll('#button-container img');
         allButtons.forEach(button => button.classList.remove('pressed'));
 
-        // Add the 'pressed' class to the clicked button
         const pressedButton = document.querySelector(`#button-container img[alt="${characterData.characterName}"]`);
         pressedButton.classList.add('pressed');
     }
 
-    // Create a new image element
     const newImage = document.createElement('img');
     newImage.src = `img/characters/profile/${characterData.imageFilename}`;
     newImage.alt = 'Displayed Image';
 
-    // Update the content with HTML
     characterNameElement.textContent = characterData.characterName;
     detailsElement.innerHTML = characterData.details || '';
     descriptionElement.innerHTML = characterData.description || 'Description goes here.';
     statusElement.innerHTML = characterData.status || 'Status goes here.';
 
-    // Clear previous content and append the new image
     imageContainer.innerHTML = '';
     imageContainer.appendChild(newImage);
 
-    // Reset the status and button
     statusElement.style.display = 'none';
     revealButton.style.display = 'inline-block';
     revealButton.onclick = function () {

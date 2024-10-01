@@ -60,7 +60,7 @@ const pgData = [
         imageFiles: 1, //how many image files this page is split into
         altText: "",
         authorNotes: `
-            <p>Where it all began.</p>
+            <p>Where it all <span class="spoiler">began</span>.</p>
             `,
     },
     {
@@ -104,7 +104,14 @@ const pgData = [
         imageFiles: 4,
         altText: "",
         authorNotes: `
-            <p>The first of the 'poll pages'. How it works was that the readers will usually vote between two choices to decide on the fate on the beloved characters! Surely there won't be any consequences to these decisions!</p>
+        <p>The first of the 'poll pages'. How it works was that the readers will usually vote between two choices to decide on the fate on the beloved characters! Surely there won't be any consequences to these decisions!
+        <p><button class="spoiler-btn" onclick="toggleSpoiler(this)">Show Spoilers</button></p>
+        <div class="spoiler-container">
+            <p><span class="spoiler hidden">Total vote count: 42</span></p>
+            <h3><span class="spoiler hidden"><span style="color: #CBFFFC">ENTER THE DOOR: 64% (27)</span></h3>
+            <h3><span class="spoiler hidden"><span style="color: #FFFFFF">BACKTRACK: 36% (15)</span></h3>
+        </div>
+        </p>
             `,
     },
     {
@@ -126,7 +133,14 @@ const pgData = [
         imageFiles: 4,
         altText: "",
         authorNotes: `
-            <p>TBA</p>
+        <p>It's just one diaster after another, but at least Z's got company...right?
+        <p><button class="spoiler-btn" onclick="toggleSpoiler(this)">Show Spoilers</button></p>
+        <div class="spoiler-container">
+            <p><span class="spoiler hidden">Total vote count: 49</span></p>
+            <h3><span class="spoiler hidden"><span style="color: #CBFFFC">STICK TOGETHER: 87.8% (43)</span></h3>
+            <h3><span class="spoiler hidden"><span style="color: #FFFFFF">SPLIT UP: 12.2% (6)</span></h3>
+        </div>
+        </p>
             `,
     },
     {
@@ -170,7 +184,14 @@ const pgData = [
         imageFiles: 5,
         altText: "",
         authorNotes: `
-           <p>TBA</p>
+        <p>Another tough decision for Z and his team. That diagram wasn't descriptive enough!
+        <p><button class="spoiler-btn" onclick="toggleSpoiler(this)">Show Spoilers</button></p>
+        <div class="spoiler-container">
+            <p><span class="spoiler hidden">Total vote count: 46</span></p>
+            <h3><span class="spoiler hidden"><span style="color: #CBFFFC">JEANS: 52.2% (24)</span></h3>
+            <h3><span class="spoiler hidden"><span style="color: #FFFFFF">WET WIPES: 47.8% (22)</span></h3>
+        </div>
+        </p>
             `,
     },
     {
@@ -260,7 +281,14 @@ const pgData = [
         imageFiles: 8,
         altText: "",
         authorNotes: `
-           <p>TBA</p>
+        <p> Pinky you can't just assume that every vaguely rectangular being is a bad guy.
+        <p><button class="spoiler-btn" onclick="toggleSpoiler(this)">Show Spoilers</button></p>
+        <div class="spoiler-container">
+            <p><span class="spoiler hidden">Total vote count: 78</span></p>
+            <h3><span class="spoiler hidden"><span style="color: #CBFFFC">LEAVE: 52.6% (41)</span></h3>
+            <h3><span class="spoiler hidden"><span style="color: #FFFFFF">STAY: 47.4% (37)</span></h3>
+        </div>
+        </p>
             `,
     },
     {
@@ -271,7 +299,14 @@ const pgData = [
         imageFiles: 7,
         altText: "",
         authorNotes: `
-           <p>TBA</p>
+        <p> Meanwhile, a similar decision was being made by the youngest contestant in the aftermath of a tragedy.
+        <p><button class="spoiler-btn" onclick="toggleSpoiler(this)">Show Spoilers</button></p>
+        <div class="spoiler-container">
+            <p><span class="spoiler hidden">Total vote count: 85</span></p>
+            <h3><span class="spoiler hidden"><span style="color: #CBFFFC">BE WITH Z: 81.2% (69)</span></h3>
+            <h3><span class="spoiler hidden"><span style="color: #FFFFFF">JOIN THEM: 18.8% (16)</span></h3>
+        </div>
+        </p>
             `,
     },
     {
@@ -381,7 +416,14 @@ const pgData = [
         imageFiles: 9,
         altText: "",
         authorNotes: `
-           <p>TBA</p>
+        <p> Silica may not trust Mirror, but will Squiggly be open to listen to her?
+        <p><button class="spoiler-btn" onclick="toggleSpoiler(this)">Show Spoilers</button></p>
+        <div class="spoiler-container">
+            <p><span class="spoiler hidden">Total vote count: 71</span></p>
+            <h3><span class="spoiler hidden"><span style="color: #CBFFFC">STAY WITH MIRROR: 84.5% (60)</span></h3>
+            <h3><span class="spoiler hidden"><span style="color: #FFFFFF">RETURN TO STYROFOAM: 15.5% (11)</span></h3>
+        </div>
+        </p>
             `,
     },
     {
@@ -425,7 +467,14 @@ const pgData = [
         imageFiles: 6,
         altText: "",
         authorNotes: `
-           <p>TBA</p>
+        <p> It's Silica's turn to face a difficult decision, but this time it's more dire...
+        <p><button class="spoiler-btn" onclick="toggleSpoiler(this)">Show Spoilers</button></p>
+        <div class="spoiler-container">
+            <p><span class="spoiler hidden">Total vote count: 51</span></p>
+            <h3><span class="spoiler hidden"><span style="color: #CBFFFC">SAVE HIM: 60.8% (31)</span></h3>
+            <h3><span class="spoiler hidden"><span style="color: #FFFFFF">LET HIM GO: 39.2% (20)</span></h3>
+        </div>
+        </p>
             `,
     },
     {
@@ -525,7 +574,8 @@ const pgData = [
         imageFiles: 7,
         altText: "",
         authorNotes: `
-           <p>TBA</p>
+        <h4><span style="color: #CBFFFC">Badgey's bond with us is inseperable...</span></h4>
+        </p>
             `,
     },
     {
@@ -580,7 +630,12 @@ const pgData = [
         imageFiles: 5,
         altText: "",
         authorNotes: `
-           <p>TBA</p>
+        <h4><span style="color: #CBFFFC">Sd cdi ldggn pqdji bt X lxaa gtijgc</span></h4>
+        <p><button class="spoiler-btn" onclick="toggleSpoiler(this)">Show Spoilers</button></p>
+        <div class="spoiler-container">
+            <h3><span class="spoiler hidden"><span style="color: #CBFFFC">Lqepc lww, T'x xfns xzcp esly jzf nzfwo pgpc txlrtyp.</span></h3>
+        </div>
+        </p>
             `,
     },
     {
@@ -887,7 +942,14 @@ const pgData = [
         imageFiles: 11,
         altText: "",
         authorNotes: `
-           <p>TBA</p>
+        <h3><span style="color: #CBFFFC">WZZV HSLE JZF'GP OZYP.</span></h3>
+        <p><button class="spoiler-btn" onclick="toggleSpoiler(this)">Show Spoilers</button></p>
+        <div class="spoiler-container">
+            <p><span class="spoiler hidden">Total vote count: 156</span></p>
+            <h3><span class="spoiler hidden"><span style="color: #CBFFFC">QPSVTN: 50.6% (79)</span></h3>
+            <h3><span class="spoiler hidden"><span style="color: #FFFFFF">BADGEY: 49.4% (77)</span></h3>
+        </div>
+        </p>
             `,
     },
 
@@ -950,7 +1012,14 @@ const pgData = [
         imageFiles: 10,
         altText: "",
         authorNotes: `
-           <p>TBA</p>
+        <p>"Can't risk your own safety for a dead man"</p>
+        <p><button class="spoiler-btn" onclick="toggleSpoiler(this)">Show Spoilers</button></p>
+        <div class="spoiler-container">
+            <p><span class="spoiler hidden">Total vote count: 135</span></p>
+            <h3><span class="spoiler hidden"><span style="color: #CBFFFC">RESCUE WIPES: 52.6% (71)</span></h3>
+            <h3><span class="spoiler hidden"><span style="color: #FFFFFF">LISTEN TO BASKET: 47.4% (64)</span></h3>
+        </div>
+        </p>
             `,
     },
 
@@ -1029,8 +1098,14 @@ const pgData = [
         imageFiles: 10,
         altText: "",
         authorNotes: `
-           <p><a
-           href="https://forms.gle/2sfdMa5P1t9vzKd68">SQUIGGLY: TAKE THE A.R.M?</a></p>
+        <p>Getting an extra hand seems tempting, especially for someone as lopsided as Squiggly.</p>
+        <p><button class="spoiler-btn" onclick="toggleSpoiler(this)">Show Spoilers</button></p>
+        <div class="spoiler-container">
+            <p><span class="spoiler hidden">Total vote count: 95</span></p>
+            <h3><span class="spoiler hidden"><span style="color: #CBFFFC">YES: 57.9% (55)</span></h3>
+            <h3><span class="spoiler hidden"><span style="color: #FFFFFF">NO: 42.1% (40)</span></h3>
+        </div>
+        </p>
             `,
     },
     {
@@ -1052,7 +1127,7 @@ const pgData = [
         gifPath: "img/comics/EFAR89.gif",
         altText: "",
         authorNotes: `
-           <p>TBA</p>
+           <p>Well,</p>
             `,
     },
     {
@@ -1064,7 +1139,7 @@ const pgData = [
         gifPath: "img/comics/EFAR90.gif",
         altText: "",
         authorNotes: `
-           <p>TBA</p>
+           <p>Well,</p>
             `,
     },
     {
@@ -1075,7 +1150,7 @@ const pgData = [
         imageFiles: 8,
         altText: "",
         authorNotes: `
-           <p>It's really been a while Snake Oil had spoken the blue team, all the way back in chapter 1!</p>`,
+           <p>... Well! It's really been a while Snake Oil had spoken the blue team, all the way back in chapter 1!</p>`,
     },
     {
         pgNum: 92,
@@ -1128,8 +1203,26 @@ function writeDate(year, month, day) { //write date of comic page
         .toString() //convert it to a string
         .slice(4) //remove the Day
     return date
-
-
-
 }
 
+
+function toggleSpoiler(button) {
+    // Find the container with spoilers
+    const spoilerContainer = button.parentNode.nextElementSibling;
+
+    // Select all spoilers within the container
+    const spoilers = spoilerContainer.querySelectorAll('.spoiler');
+
+    spoilers.forEach(spoiler => {
+        // Toggle between 'hidden' and 'revealed' class
+        if (spoiler.classList.contains('hidden')) {
+            spoiler.classList.remove('hidden');
+            spoiler.classList.add('revealed');
+            button.textContent = 'Hide Spoilers';  // Change button text
+        } else {
+            spoiler.classList.remove('revealed');
+            spoiler.classList.add('hidden');
+            button.textContent = 'Show Spoilers';  // Revert button text
+        }
+    });
+}
