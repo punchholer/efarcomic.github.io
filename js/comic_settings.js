@@ -3,7 +3,7 @@
 //this is the main file you'll be messing with to manage and update your comic. most (not all) of the main toggle-able settings are here.
 
 //comic_archive has more settings pertaining to the archive page, and comic_show has settings pertaining to the main place that pages of your comic are displayed.
-const maxpg = 94;
+const maxpg = 95;
 // your value for maxpg
 //the current number of pages your comic has in total. this DOESNT necessarily mean number of IMAGE FILES as it doesn't count pages split into multiple files. 
 //YOU MUST UPDATE THIS NUMBER EVERY TIME YOU ADD A NEW PAGE or else it wont display the most recent page
@@ -1181,6 +1181,16 @@ const pgData = [
         altText: "",
         authorNotes: `
            <p>This page stakes place after The Bucket's explosion, and before Snake Oil was contacted by Amulet in chapter 3.</p>`,
+    },
+    {
+        pgNum: 95,
+        title: `Chapter 4 Page 84`,
+        date: writeDate(2024, 10, 14),
+        chapter: 4,
+        imageFiles: 9,
+        altText: "",
+        authorNotes: `
+           <p>I can't believe Swabs was murdered in cold blood... Nah, just messing with you. Or am I...</p>`,
     },
 ];
 
