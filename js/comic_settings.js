@@ -943,7 +943,7 @@ Puitg paa, X'b bjrw bdgt iwpc ndj rdjas tktg xbpvxct.</span></h3>
         imageFiles: 11,
         altText: "",
         authorNotes: `
-        <h3><span style="color: #CBFFFC">WZZV HSLE JZF'GP OZYP.</span></h3>
+        <h3><span style="color: #CBFFFC">ADDZ LWPI NDJ'KT SDCT.</span></h3>
         <p><button class="spoiler-btn" onclick="toggleSpoiler(this)">Show Spoilers</button></p>
         <div class="spoiler-container">
             <p><span class="spoiler hidden">Total vote count: 156</span></p>
