@@ -633,7 +633,8 @@ const pgData = [
         <h4><span style="color: #CBFFFC">Sd cdi ldggn pqdji bt X lxaa gtijgc</span></h4>
         <p><button class="spoiler-btn" onclick="toggleSpoiler(this)">Show Spoilers</button></p>
         <div class="spoiler-container">
-            <h3><span class="spoiler hidden"><span style="color: #CBFFFC">Lqepc lww, T'x xfns xzcp esly jzf nzfwo pgpc txlrtyp.</span></h3>
+            <h3><span class="spoiler hidden"><span style="color: #CBFFFC">
+Puitg paa, X'b bjrw bdgt iwpc ndj rdjas tktg xbpvxct.</span></h3>
         </div>
         </p>
             `,
