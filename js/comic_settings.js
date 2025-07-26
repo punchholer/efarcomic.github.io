@@ -3,7 +3,7 @@
 //this is the main file you'll be messing with to manage and update your comic. most (not all) of the main toggle-able settings are here.
 
 //comic_archive has more settings pertaining to the archive page, and comic_show has settings pertaining to the main place that pages of your comic are displayed.
-const maxpg = 96;
+const maxpg = 97;
 // your value for maxpg
 //the current number of pages your comic has in total. this DOESNT necessarily mean number of IMAGE FILES as it doesn't count pages split into multiple files. 
 //YOU MUST UPDATE THIS NUMBER EVERY TIME YOU ADD A NEW PAGE or else it wont display the most recent page
@@ -1202,6 +1202,16 @@ Puitg paa, X'b bjrw bdgt iwpc ndj rdjas tktg xbpvxct.</span></h3>
         altText: "",
         authorNotes: `
            <p>In Abject Reality, the door opens you... yeah that made no sense.</p>`,
+    },
+    {
+        pgNum: 97,
+        title: `Chapter 4 Page 86`,
+        date: writeDate(2025, 7, 26),
+        chapter: 4,
+        imageFiles: 8,
+        altText: "",
+        authorNotes: `
+           <p>It's been a while since we've seen these characters due to the hiatus, but Pinky is finally ready to confront her past!</p>`,
     },
 ];
 

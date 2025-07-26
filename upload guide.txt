@@ -1,0 +1,67 @@
+To upload pages:
+>comic_settings.js
+
+const maxpg = XX;
+
+    {
+        pgNum: XX,
+        title: `Chapter X Page XX`,
+        date: writeDate(YYYY, MM, DD),
+        chapter: X,
+        imageFiles: X,
+        altText: "",
+        authorNotes: `
+           <p>XXXXX
+           </p>`,
+    },
+
+>if there was a poll in previous page add this:
+    <p><button class="spoiler-btn" onclick="toggleSpoiler(this)">Show Spoilers</button></p>
+        <div class="spoiler-container">
+            <p><span class="spoiler hidden">Total vote count: 95</span></p>
+            <h3><span class="spoiler hidden"><span style="color: #CBFFFC">YES: 57.9% (55)</span></h3>
+            <h3><span class="spoiler hidden"><span style="color: #FFFFFF">NO: 42.1% (40)</span></h3>
+        </div>
+        </p>
+
+>if page is a gif
+
+    {
+        pgNum: XX,
+        title: `Chapter X Page XX`,
+        date: writeDate(YYYY, MM, DD),
+        chapter: X,
+        imageFiles: 0,
+        gifPath: "img/comics/EFAR49.gif",
+        altText: "",
+        authorNotes: `
+           <p>TBA</p>
+            `,
+    },
+
+>if page is a video
+    {
+        pgNum: 79,
+        title: `Chapter X Page XX [VIDEO]`,
+        date: writeDate(YYYY, MM, DD),
+        chapter: 3,
+        imageFiles: 0,
+        altText: "",
+        videoId: "7VfXUeOK-yc (this is the youtube id)",
+        authorNotes: `
+           <p>TBA</p>
+            `,
+    },
+
+>comic_archive.js
+
+writeArchive("chapter4", 83, XX, -1, false, false);
+
+>rss.xml
+    </item>
+          <item>
+      <title>Chapter 4 Page 86</title>
+      <link>https://efarcomic.com/read.html?pg=97</link>
+      <description>Time for round two!</description>
+      <guid>https://efarcomic.com/read.html?pg=97</guid>
+    </item>
