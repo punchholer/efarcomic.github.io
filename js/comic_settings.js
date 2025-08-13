@@ -19,7 +19,7 @@ let pg = Number(findGetParameter("pg")); //make "pg" mean the current page numbe
 
 // COMIC PAGE SETTINGS
 const folder = "img/comics"; //directory of the folder where you keep all the comics
-const videoId = "youtubeVideo";
+const videoId = "archiveVideo";
 const gifPath = "img/comics";
 const image = "EFAR"; //what you'll name all your comic pages
 const imgPart = "." //special character(s) you put after the page number to subdivide pages into multiple image files (ie pg2_1, pg2_2, etc)
@@ -233,7 +233,7 @@ const pgData = [
         date: writeDate(2018, 1, 7),
         chapter: 1,
         imageFiles: 0,
-        videoId: "ajP3rNKVZWw",
+        videoId: "escape-from-abject-reality-end-of-the-labyrinth",
         altText: "",
         authorNotes: `
             <p>TBA</p>
@@ -999,7 +999,7 @@ Puitg paa, X'b bjrw bdgt iwpc ndj rdjas tktg xbpvxct.</span></h3>
         chapter: 3,
         imageFiles: 0,
         altText: "",
-        videoId: "7VfXUeOK-yc",
+        videoId: "escape-from-abject-reality-a-heated-situation",
         authorNotes: `
            <p>TBA</p>
             `,
