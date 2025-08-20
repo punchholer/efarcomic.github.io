@@ -11,7 +11,7 @@ document.querySelector(".writeFooter").innerHTML = `
             <a href="https://efarcomic.com/rss.xml" target="_blank"><img src="img/icons/rss.svg" alt="rss" width="32" height="32"></a>
             <!-- Add more social media icons as needed -->   
         </div>
-        <p>© 2017 - 2024 Punch-Holer | Powered by <a href="https://rarebit.neocities.org">Rarebit</a></p>
+        <p>© 2017 - 2024 Punch-Holer | Powered by <a href="https://rarebit.neocities.org">Rarebit and Github Pages</a></p>
     </footer>
 `;
 
