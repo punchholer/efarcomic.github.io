@@ -60,7 +60,7 @@ const pgData = [
         imageFiles: 1, //how many image files this page is split into
         altText: "",
         authorNotes: `
-            <p>Where it all started.</p>
+            <p>Where it all started...</p>
             `,
     },
     {
