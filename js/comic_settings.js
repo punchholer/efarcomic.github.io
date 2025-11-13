@@ -594,7 +594,7 @@ const pgData = [
         title: `Chapter 3 Page 42`,
         date: writeDate(2020, 11, 7),
         chapter: 3,
-        imageFiles: 6,
+        imageFiles: 7,
         altText: "",
         authorNotes: `
            <p>TBA</p>
