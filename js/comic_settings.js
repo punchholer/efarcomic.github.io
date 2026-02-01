@@ -1228,7 +1228,7 @@ Puitg paa, X'b bjrw bdgt iwpc ndj rdjas tktg xbpvxct.</span></h3>
         title: `Chapter 4 Page 88`,
         date: writeDate(2026, 2, 1),
         chapter: 4,
-        imageFiles: 9,
+        imageFiles: 8,
         altText: "",
         authorNotes: `
         <p>Embrace love, or realize the harsh truth? <a href="https://forms.gle/MGBXvbN1M6taL5Ri7">Poll ends on 15 Feb 2026.</a>
