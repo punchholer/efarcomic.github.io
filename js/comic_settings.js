@@ -1225,7 +1225,7 @@ Puitg paa, X'b bjrw bdgt iwpc ndj rdjas tktg xbpvxct.</span></h3>
     },
     {
         pgNum: 99,
-        title: `Chapter 4 Page 88`,
+        title: `Chapter 4 Page 88*`,
         date: writeDate(2026, 2, 1),
         chapter: 4,
         imageFiles: 8,
