@@ -66,7 +66,7 @@ function writePage() {
 
     if (pgData[pg - 1].videoId) {
       // Display YouTube video on the specified page
-      page = `<iframe width="560" height="315" src="https://www.youtube.com/embed/${pgData[pg - 1].videoId}" frameborder="0" allowfullscreen></iframe>`;
+      page = `<iframe src="https://archive.org/embed/${pgData[pg - 1].videoId}" width="560" height="315" frameborder="0" webkitallowfullscreen="true" mozallowfullscreen="true" allowfullscreen></iframe>`;
     } else if (pgData[pg - 1].imageFiles > 1) { //if there's more than one page segment (e.g., for a multi-part image)
       for (let i = 1; i <= pgData[pg - 1].imageFiles; i++) { //for loop to put all the parts of the image on the webpage
         partExtension = imgPart + i.toString();
