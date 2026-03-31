@@ -236,7 +236,7 @@ const pgData = [
         videoId: "escape-from-abject-reality-end-of-the-labyrinth",
         altText: "",
         authorNotes: `
-            <p>TBA</p>
+            <p>If you are unable to access the video on this website, here is the <a href="https://www.youtube.com/watch?v=ajP3rNKVZWw">link.</a></p>
             `,
     },
     {
@@ -1001,7 +1001,7 @@ Puitg paa, X'b bjrw bdgt iwpc ndj rdjas tktg xbpvxct.</span></h3>
         altText: "",
         videoId: "escape-from-abject-reality-a-heated-situation",
         authorNotes: `
-           <p>TBA</p>
+           <p>If you are unable to access the video on this website, here is the <a href="https://www.youtube.com/watch?v=7VfXUeOK-yc">link.</a></p>
             `,
     },
 
