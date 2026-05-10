@@ -360,10 +360,13 @@ img {
   vertical-align: top;
   display: inline-block;
   text-align: center;
+  width: 100%
 }
 
 #caption {
   margin-top: 3px;
+  display: inline-block;
+  padding: 0 10px;
 }
 
 #patreon-icon-container img {
