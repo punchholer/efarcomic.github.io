@@ -3,7 +3,7 @@
 //this is the main file you'll be messing with to manage and update your comic. most (not all) of the main toggle-able settings are here.
 
 //comic_archive has more settings pertaining to the archive page, and comic_show has settings pertaining to the main place that pages of your comic are displayed.
-const maxpg = 99;
+const maxpg = 100;
 // your value for maxpg
 //the current number of pages your comic has in total. this DOESNT necessarily mean number of IMAGE FILES as it doesn't count pages split into multiple files. 
 //YOU MUST UPDATE THIS NUMBER EVERY TIME YOU ADD A NEW PAGE or else it wont display the most recent page
@@ -1234,11 +1234,20 @@ Puitg paa, X'b bjrw bdgt iwpc ndj rdjas tktg xbpvxct.</span></h3>
         <p>Embrace love, or realize the harsh truth? <a href="https://forms.gle/MGBXvbN1M6taL5Ri7">Poll ends on 15 Feb 2026.</a>
         <p><button class="spoiler-btn" onclick="toggleSpoiler(this)">Show Spoilers</button></p>
         <div class="spoiler-container">
-            <p><span class="spoiler hidden">Total vote count: TBD</span></p>
-            <h3><span class="spoiler hidden"><span style="color: #FFFFFF">LOVE: 0% (TBD)</span></h3>
-            <h3><span class="spoiler hidden"><span style="color: #FFFFFF">TRUTH: 0% (TBD)</span></h3>
+            <p><span class="spoiler hidden">Total vote count: 113</span></p>
+            <h3><span class="spoiler hidden"><span style="color: #FFFFFF">LOVE: 29.2% (TBD)</span></h3>
+            <h3><span class="spoiler hidden"><span style="color: #FFFFFF">TRUTH: 70.8% (TBD)</span></h3>
         </div>
         </p>`,
+    },
+    {
+        pgNum: 100,
+        title: `Chapter 4 Page 89`,
+        date: writeDate(2026, 7, 19),
+        chapter: 4,
+        imageFiles: 8,
+        altText: "",
+        authorNotes: `<p>Hey look Squiggly has a new design.</p>`
     },
 ];
 
