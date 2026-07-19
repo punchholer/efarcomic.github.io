@@ -1235,8 +1235,8 @@ Puitg paa, X'b bjrw bdgt iwpc ndj rdjas tktg xbpvxct.</span></h3>
         <p><button class="spoiler-btn" onclick="toggleSpoiler(this)">Show Spoilers</button></p>
         <div class="spoiler-container">
             <p><span class="spoiler hidden">Total vote count: 113</span></p>
-            <h3><span class="spoiler hidden"><span style="color: #FFFFFF">LOVE: 29.2% (TBD)</span></h3>
-            <h3><span class="spoiler hidden"><span style="color: #FFFFFF">TRUTH: 70.8% (TBD)</span></h3>
+            <h3><span class="spoiler hidden"><span style="color: #FFFFFF">LOVE: 29.2% (33)</span></h3>
+            <h3><span class="spoiler hidden"><span style="color: #CBFFFC">TRUTH: 70.8% (80)</span></h3>
         </div>
         </p>`,
     },
