@@ -88,18 +88,15 @@ function decodeCipher() {
     const cipherTextElement = document.getElementById('cipher-text');
     const decodedTextElement = document.getElementById('decoded-text');
 
-    // Get the input values
     const cipherText = cipherTextElement.value;
-    const shift = 15; // Set your desired shift value here, or you can get it from user input
-
+    const shift = 15; 
     // Decode the cipher text using your caesarDecode function
     const decodedText = caesarDecode(cipherText, shift);
 
-    // Display the result
     decodedTextElement.textContent = `Decoded Text: ${decodedText}`;
 }
 
-// Example Caesar cipher decoding function
+// Caesar cipher decoding function
 function caesarDecode(text, shift) {
     return text.replace(/[a-zA-Z]/g, function (char) {
         const isUpperCase = char === char.toUpperCase();
@@ -126,7 +123,6 @@ function initializeButtons() {
 
         buttonImage.addEventListener('click', () => {
             changeCharacter(character);
-            // Optionally, you can prevent the button from being clicked again
             buttonImage.removeEventListener('click', arguments.callee);
         });
 
